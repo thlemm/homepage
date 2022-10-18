@@ -1,21 +1,23 @@
 <template>
   <v-card
     :width="width"
-    elevation="0"
-    color="#C6D2CB"
+    :elevation="hover ? 3 : 0"
+    :color="colorTile"
     class="pt-3 pb-2 ma-3"
+    @mouseover="hover = true"
+    @mouseout="hover = false"
   >
-    <v-card-title class="secondary--text">Hallo das ist Inhalt</v-card-title>
-    <v-card-text class="secondary--text">Hallo das ist Inhalt</v-card-text>
+    <v-card-title :class="colorText + '--text'"> {{ title }}</v-card-title>
+    <v-card-text class="colorText + '--text'">{{ subtitle }}</v-card-text>
     <v-card-text class="text-center">
-      <v-icon color="secondary" :size="width - 50">{{ mdiAnchor}}</v-icon>
+      <v-icon :color="colorText" :size="width - 50">{{ icon }}</v-icon>
     </v-card-text>
 
   </v-card>
 </template>
 
 <script>
-import { mdiAnchor } from '@mdi/js'
+
 export default {
   name: 'projectTile',
 
@@ -29,12 +31,32 @@ export default {
       type: Number,
       required: false,
       default: 300
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    subtitle: {
+      type: String,
+      required: true
+    },
+    colorTile: {
+      type: String,
+      required: true
+    },
+    colorText: {
+      type: String,
+      required: true
+    },
+    icon: {
+      type: String,
+      required: true
     }
   },
 
   data () {
     return {
-      mdiAnchor
+      hover: false
     }
   }
 }

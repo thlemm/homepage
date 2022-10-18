@@ -5,12 +5,14 @@
     </v-main>
 
     <v-footer
+      height="30"
       color="secondary"
       padless
     >
       <v-row no-gutters align="center">
         <v-spacer></v-spacer>
-        <a class="white--text text-subtitle-2 font-weight-light mr-3 mb-1" target="_self" href="/impressum">{{ $t('footer_imprint') }}</a>
+<!--        <a class="white&#45;&#45;text text-subtitle-2 font-weight-light mr-3 mb-1" target="_self" href="/impressum">{{ $t('footer_imprint') }}</a>-->
+        <a class="white--text text-subtitle-2 font-weight-light mr-3 mb-1"><strong><v-icon color="white" small>{{ mdiCopyright }}</v-icon> Thomas Lemmerz {{ new Date().getFullYear() }}</strong></a>
         <v-spacer></v-spacer>
       </v-row>
     </v-footer>
@@ -18,10 +20,14 @@
 </template>
 
 <script>
+import { mdiCopyright } from '@mdi/js'
+
 export default {
   name: 'default-layout',
   data() {
-    return {}
+    return {
+      mdiCopyright
+    }
   }
 }
 </script>

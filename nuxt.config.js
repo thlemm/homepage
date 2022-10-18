@@ -57,8 +57,9 @@ export default {
           info: colors.beige.base,
           warning: colors.red.base,
           error: colors.purple.base,
-          success: colors.green.base
+          success: colors.green.base,
           // custom colors
+          background: colors.beige.base
         },
         dark: {
           // standard colors
@@ -69,8 +70,9 @@ export default {
           info: colors.beige.base,
           warning: colors.red.base,
           error: colors.purple.base,
-          success: colors.green.base
+          success: colors.green.base,
           // custom colors
+          background: colors.beige.base
         }
       }
     }
@@ -97,5 +99,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    loaders: {
+      css: {
+        modules: false
+      }
+    }
   }
 }

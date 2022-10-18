@@ -1,15 +1,20 @@
 <template>
   <div>
-    <v-card height="300" color="tertiary" elevation="0"></v-card>
-    <sections-projects></sections-projects>
+    <section-image />
+    <section-experience />
+    <section-projects />
+    <section-contact />
   </div>
 </template>
 
 <script>
 
-import SectionsProjects from "~/components/sections/sectionProjects";
+import SectionProjects from "~/components/sections/sectionProjects";
+import SectionImage from "~/components/sections/sectionImage";
+import SectionExperience from "~/components/sections/sectionExperience";
+import SectionContact from "~/components/sections/sectionContact";
 export default {
   name: 'index',
-  components: { SectionsProjects }
+  components: {SectionContact, SectionExperience, SectionImage, SectionProjects }
 }
 </script>

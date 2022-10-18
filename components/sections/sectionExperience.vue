@@ -4,7 +4,7 @@
       align="center"
       justify="center"
     >
-      <div class="text-h4 primary--text ml-5 pa-2">Projects</div>
+      <div class="text-h4 secondary--text ml-5 pa-2">Experience</div>
     </v-row>
     <v-row
       align="center"
@@ -13,24 +13,24 @@
     >
       <v-spacer></v-spacer>
       <project-tile
-        :icon="mdiChartBarStacked"
-        title="Live data visualization"
+        :icon="mdiMapMarkerRadius"
+        title="Geoinformation systems"
         subtitle="Hallo das ist Inhalt"
-        color-text="primary"
+        color-text="secondary"
         color-tile="#C6D2CB"
       />
       <project-tile
-        :icon="mdiCellphoneText"
-        title="Catalog app"
+        :icon="mdiGraph"
+        title="Stream processing"
         subtitle="Hallo das ist Inhalt"
-        color-text="primary"
+        color-text="secondary"
         color-tile="#C6D2CB"
       />
       <project-tile
-        :icon="mdiHandSaw"
-        title="Wood working"
+        :icon="mdiThermometer"
+        title="Energy monitoring"
         subtitle="Hallo das ist Inhalt"
-        color-text="primary"
+        color-text="secondary"
         color-tile="#C6D2CB"
       />
       <v-spacer></v-spacer>
@@ -39,18 +39,18 @@
 </template>
 
 <script>
-import { mdiAnchor, mdiChartBarStacked, mdiCellphoneText, mdiHandSaw } from '@mdi/js'
+import { mdiAnchor, mdiThermometer, mdiMapMarkerRadius, mdiGraph } from '@mdi/js'
 import ProjectTile from "~/components/projects/projectsTile";
 export default {
-  name: 'sectionProjects',
+  name: 'sectionExperience',
   components: { ProjectTile },
 
   data () {
     return {
       mdiAnchor,
-      mdiChartBarStacked,
-      mdiCellphoneText,
-      mdiHandSaw
+      mdiThermometer,
+      mdiMapMarkerRadius,
+      mdiGraph
     }
   }
 }
