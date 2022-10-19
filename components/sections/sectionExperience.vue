@@ -11,29 +11,35 @@
       justify="center"
       class="mb-15"
     >
-      <v-spacer></v-spacer>
-      <project-tile
-        :icon="mdiMapMarkerRadius"
-        title="Geoinformation systems"
-        subtitle="Hallo das ist Inhalt"
-        color-text="secondary"
-        color-tile="#C6D2CB"
-      />
-      <project-tile
-        :icon="mdiGraph"
-        title="Stream processing"
-        subtitle="Hallo das ist Inhalt"
-        color-text="secondary"
-        color-tile="#C6D2CB"
-      />
-      <project-tile
-        :icon="mdiThermometer"
-        title="Energy monitoring"
-        subtitle="Hallo das ist Inhalt"
-        color-text="secondary"
-        color-tile="#C6D2CB"
-      />
-      <v-spacer></v-spacer>
+      <v-col cols="9">
+        <v-row
+          no-gutters
+          align="center"
+          justify="center"
+        >
+          <project-tile
+            :icon="mdiMapMarkerRadius"
+            title="Geoinformation systems"
+            subtitle="Hallo das ist Inhalt"
+            color-text="secondary"
+            color-tile="#C6D2CB"
+          />
+          <project-tile
+            :icon="mdiGraph"
+            title="Stream processing"
+            subtitle="Hallo das ist Inhalt"
+            color-text="secondary"
+            color-tile="#C6D2CB"
+          />
+          <project-tile
+            :icon="mdiThermometer"
+            title="Energy monitoring"
+            subtitle="Hallo das ist Inhalt"
+            color-text="secondary"
+            color-tile="#C6D2CB"
+          />
+        </v-row>
+      </v-col>
     </v-row>
   </div>
 </template>

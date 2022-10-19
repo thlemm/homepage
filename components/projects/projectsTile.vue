@@ -4,6 +4,7 @@
     :elevation="hover ? 3 : 0"
     :color="colorTile"
     class="pt-3 pb-2 ma-3"
+    to="/"
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
@@ -12,7 +13,6 @@
     <v-card-text class="text-center">
       <v-icon :color="colorText" :size="width - 50">{{ icon }}</v-icon>
     </v-card-text>
-
   </v-card>
 </template>
 

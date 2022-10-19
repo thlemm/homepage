@@ -11,29 +11,35 @@
       justify="center"
       class="mb-15"
     >
-      <v-spacer></v-spacer>
-      <project-tile
-        :icon="mdiChartBarStacked"
-        title="Live data visualization"
-        subtitle="Hallo das ist Inhalt"
-        color-text="primary"
-        color-tile="#C6D2CB"
-      />
-      <project-tile
-        :icon="mdiCellphoneText"
-        title="Catalog app"
-        subtitle="Hallo das ist Inhalt"
-        color-text="primary"
-        color-tile="#C6D2CB"
-      />
-      <project-tile
-        :icon="mdiHandSaw"
-        title="Wood working"
-        subtitle="Hallo das ist Inhalt"
-        color-text="primary"
-        color-tile="#C6D2CB"
-      />
-      <v-spacer></v-spacer>
+      <v-col cols="9">
+        <v-row
+          no-gutters
+          align="center"
+          justify="center"
+        >
+          <project-tile
+            :icon="mdiChartBarStacked"
+            title="Live data visualization"
+            subtitle="Hallo das ist Inhalt"
+            color-text="primary"
+            color-tile="#C6D2CB"
+          />
+          <project-tile
+            :icon="mdiCellphoneText"
+            title="Catalog app"
+            subtitle="Hallo das ist Inhalt"
+            color-text="primary"
+            color-tile="#C6D2CB"
+          />
+          <project-tile
+            :icon="mdiHandSaw"
+            title="Wood working"
+            subtitle="Hallo das ist Inhalt"
+            color-text="primary"
+            color-tile="#C6D2CB"
+          />
+        </v-row>
+      </v-col>
     </v-row>
   </div>
 </template>
