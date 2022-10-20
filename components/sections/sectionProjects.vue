@@ -23,6 +23,7 @@
             subtitle="Hallo das ist Inhalt"
             color-text="primary"
             color-tile="#C6D2CB"
+            to="/visualization"
           />
           <project-tile
             :icon="mdiCellphoneText"
@@ -30,6 +31,7 @@
             subtitle="Hallo das ist Inhalt"
             color-text="primary"
             color-tile="#C6D2CB"
+            to="/catalog"
           />
           <project-tile
             :icon="mdiHandSaw"
@@ -37,6 +39,7 @@
             subtitle="Hallo das ist Inhalt"
             color-text="primary"
             color-tile="#C6D2CB"
+            to="/wood-working"
           />
         </v-row>
       </v-col>

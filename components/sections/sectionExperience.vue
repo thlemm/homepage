@@ -23,6 +23,7 @@
             subtitle="Hallo das ist Inhalt"
             color-text="secondary"
             color-tile="#C6D2CB"
+            to="/gis"
           />
           <project-tile
             :icon="mdiGraph"
@@ -30,6 +31,7 @@
             subtitle="Hallo das ist Inhalt"
             color-text="secondary"
             color-tile="#C6D2CB"
+            to="/stream-processing"
           />
           <project-tile
             :icon="mdiThermometer"
@@ -37,6 +39,7 @@
             subtitle="Hallo das ist Inhalt"
             color-text="secondary"
             color-tile="#C6D2CB"
+            to="energy-monitoring"
           />
         </v-row>
       </v-col>

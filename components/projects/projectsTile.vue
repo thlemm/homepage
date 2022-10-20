@@ -4,7 +4,7 @@
     :elevation="hover ? 3 : 0"
     :color="colorTile"
     class="pt-3 pb-2 ma-3"
-    to="/"
+    :to="to"
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
@@ -51,6 +51,11 @@ export default {
     icon: {
       type: String,
       required: true
+    },
+    to: {
+      type: String,
+      required: false,
+      default: '/'
     }
   },
 
