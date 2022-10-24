@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section-image />
-    <section-details />
-    <section-experience />
-    <section-projects />
-    <section-contact />
+    <section-image id="image" />
+    <section-details id="details" />
+    <section-experience id="experience" />
+    <section-projects id="projects" />
+    <section-contact id="contact" />
   </div>
 </template>
 

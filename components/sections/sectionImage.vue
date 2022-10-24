@@ -1,6 +1,17 @@
 <template>
   <v-card color="background" elevation="0" height="100vh">
-    <v-card color="background" elevation="0" height="25vh" />
+    <v-card color="background" elevation="0" height="25vh">
+      <v-select
+        class="ma-2"
+        v-model="selectedLocale"
+        :items="availableLocales"
+        item-text="code"
+        item-value="code"
+        style="max-width: 50px;"
+        dense
+      >
+      </v-select>
+    </v-card>
     <v-row no-gutters>
       <v-spacer></v-spacer>
       <v-card class="ma-0 pa-0" width="600" color="background" elevation="0">
@@ -39,6 +50,22 @@ export default {
   data () {
     return {
       isVisible: false
+    }
+  },
+
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales
+    },
+    selectedLocale: {
+      get: function () {
+        return this.$i18n.locale
+      },
+      set: function (val) {
+        if (val !== this.$i18n.locale) {
+          this.$i18n.setLocale(val)
+        }
+      }
     }
   },
 

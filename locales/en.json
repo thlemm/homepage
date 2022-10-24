@@ -1,3 +1,10 @@
 {
-  "footer_imprint": "Imprint"
+  "footer_imprint": "Imprint",
+  "action_back_home": "Back to home",
+  "catalog_title": "Catalog App",
+  "catalog_text_1": "In the summer of 2020, I wrote a smartphone app for collaborative digital management and resolution of a household.",
+  "catalog_text_2": "The main purpose of the app was to determine which items someone would actually still like to have and which could be sold or disposed of. For this purpose, all utility items, furniture and other furnishings were added to the catalog and then everyone could select which parts they were still interested in. In this way, a list of all items is finally obtained, with an indication of who would like to take it.",
+  "catalog_text_3": "Another function was to be able to compactly store the furnishings without losing track of where each item was located. For this purpose, the number of the box or shelf in which an item was placed could be entered. In addition, each item was assigned a sequential unique number.",
+  "catalog_text_4": "Via the search function, items can be searched by keyword, type (decoration, furniture, ...) or by their original location (kitchen, living room, ...). Using the part number and the number of the shelf or box, they can then be found quickly. To this day, I regularly search and find things via this app."
+
 }

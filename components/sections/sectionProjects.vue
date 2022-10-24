@@ -27,7 +27,7 @@
           />
           <project-tile
             :icon="mdiCellphoneText"
-            title="Catalog app"
+            :title="$t('catalog_title').toString()"
             subtitle="Hallo das ist Inhalt"
             color-text="primary"
             color-tile="#C6D2CB"

@@ -1,3 +1,9 @@
 {
-  "footer_imprint": "Impressum"
+  "footer_imprint": "Impressum",
+  "action_back_home": "Zurück zu Startseite",
+  "catalog_title": "Katalog-App",
+  "catalog_text_1": "Im Sommer 2020 habe ich einen Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands geschrieben.",
+  "catalog_text_2": "Hauptsächlicher Zweck der App war es zu ermitteln, welche Gegenstände eigentlich noch jemand haben möchte und welche verkauft oder entsorgt werden können. Dazu wurden alle Gebrauchsgegenstände, Möbel und weitere Einrichtung in den Katalog aufgenommen und anschließend konnten alle Beteiligten auswählen, an welchen Teilen sie noch Interesse haben. So erhält man schließlich eine Liste aller Gegenstände mit Angabe darüber, wer diesen gerne mitnehmen möchte.",
+  "catalog_text_3": "Eine weitere Funktion war es die Einrichtungsgegenstände platzsparend zusammen packen zu können, ohne dabei den Überblick zu verlieren, wo sich welcher Gegenstand eigentlich befindet. Dazu konnte die Nummer des Kartons oder des Regals eingetragen werden, in den ein Gegenstand eingeräumt wurde. Zusätzlich bekam jedes Teil eine fortlaufende eindeutige Nummer zugewiesen.",
+  "catalog_text_4": "Durch die Suchfunktion können Gegenstände per Schlagwort, Typ (Dekoration, Möbel, ...) oder über ihren ursprünglichen Standort (Küche, Wohnzimmer, …) gesucht werden. Über die Teilenummer und die Nummer des Regals oder Kartons sind diese dann schnell aufzufinden. Bis heute suche und finde ich regelmäßig Sachen über diese App."
 }
