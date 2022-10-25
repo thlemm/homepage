@@ -6,7 +6,7 @@
       justify="center"
     >
       <v-col cols="12">
-        <v-sheet color="secondary" height="200" fill-height fluid>
+        <v-sheet color="secondary" height="120" fill-height fluid>
           <v-row
             no-gutters
             align="center"
@@ -15,7 +15,7 @@
           >
             <v-scale-transition>
               <v-col v-show="show.title" cols="12">
-                <div class="text-h1 background--text">{{ $t('catalog_title') }}</div>
+                <div class="text-h2 background--text">{{ $t('catalog_title') }}</div>
               </v-col>
             </v-scale-transition>
           </v-row>
@@ -158,17 +158,17 @@ export default {
     }
   },
 
-  beforeDestroy () {
-    if (typeof window === 'undefined') return
-
-    window.removeEventListener('resize', this.onResize, { passive: true })
-  },
-
   mounted () {
     setTimeout(() => (this.show.title = true), 100)
     this.onResize()
 
     window.addEventListener('resize', this.onResize, { passive: true })
+  },
+
+  beforeDestroy () {
+    if (typeof window === 'undefined') return
+
+    window.removeEventListener('resize', this.onResize, { passive: true })
   },
 
   methods: {
