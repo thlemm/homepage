@@ -146,9 +146,6 @@ export default {
           src: '/catalog/catalog.thlemm.de_details.png'
         },
         {
-          src: '/catalog/catalog.thlemm.de_menu.png'
-        },
-        {
           src: '/catalog/catalog.thlemm.de_select.png'
         },
         {
