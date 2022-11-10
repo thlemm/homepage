@@ -40,14 +40,102 @@
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row
+      no-gutters
+      align="end"
+      justify="center"
+    >
       <v-col cols="10">
-        <v-btn @click="previousIndex">
-          prev
-        </v-btn>
-        <v-btn @click="nextIndex">
-          next
-        </v-btn>
+        <v-row no-gutters>
+          <v-card class="ma-1" width="100%">
+            <v-card-actions>
+              <v-spacer />
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    class="ml-3"
+                    elevation="2"
+                    icon
+                    small
+                    tile
+                    color="secondary"
+                    v-bind="attrs"
+                    v-on="on"
+                    @click="toggleAutoPlay"
+                  >
+                    <v-icon>
+                      {{ playing ? mdiPause : mdiPlay }}
+                    </v-icon>
+                  </v-btn>
+                </template>
+                <span>{{ $t('visualization_actions_auto_play') }}</span>
+              </v-tooltip>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    class="ml-3"
+                    elevation="2"
+                    icon
+                    small
+                    tile
+                    color="secondary"
+                    v-bind="attrs"
+                    v-on="on"
+                    @click="stopAutoPlay"
+                  >
+                    <v-icon>
+                      {{ mdiStop }}
+                    </v-icon>
+                  </v-btn>
+                </template>
+                <span>{{ $t('visualization_actions_auto_play') }}</span>
+              </v-tooltip>
+              <v-spacer />
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    class="ml-3"
+                    elevation="2"
+                    icon
+                    small
+                    tile
+                    color="secondary"
+                    :disabled="disabled.previous"
+                    v-bind="attrs"
+                    v-on="on"
+                    @click="previousIndex"
+                  >
+                    <v-icon>
+                      {{ mdiSkipPrevious }}
+                    </v-icon>
+                  </v-btn>
+                </template>
+                <span>{{ $t('visualization_actions_skip_previous') }}</span>
+              </v-tooltip>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    class="ml-3"
+                    elevation="2"
+                    icon
+                    small
+                    tile
+                    color="secondary"
+                    :disabled="disabled.next"
+                    v-bind="attrs"
+                    v-on="on"
+                    @click="nextIndex"
+                  >
+                    <v-icon>
+                      {{ mdiSkipNext }}
+                    </v-icon>
+                  </v-btn>
+                </template>
+                <span>{{ $t('visualization_actions_skip_next') }}</span>
+              </v-tooltip>
+            </v-card-actions>
+          </v-card>
+        </v-row>
       </v-col>
     </v-row>
 
@@ -157,7 +245,7 @@
 import LocalIndexMap from "~/components/visualization/local-index-map"
 import Scatter from "~/components/visualization/scatter"
 import Distribution from "~/components/visualization/distribution"
-import { mdiArrowLeft } from "@mdi/js"
+import { mdiArrowLeft, mdiSkipNext, mdiSkipPrevious, mdiPlay, mdiStop, mdiPause } from "@mdi/js"
 import messages from '@/static/visualization/LSQL-messages-2022-11-10-08-50-57.json'
 
 export default {
@@ -167,6 +255,11 @@ export default {
     return {
       messages,
       mdiArrowLeft,
+      mdiSkipNext,
+      mdiSkipPrevious,
+      mdiPlay,
+      mdiStop,
+      mdiPause,
       show: {
         title: false
       },
@@ -190,7 +283,19 @@ export default {
         scatter: 200,
         map: 400
       },
-      index: 0
+      index: 0,
+      disabled: {
+        next: false,
+        previous: true
+      },
+      playing: false
+    }
+  },
+
+  watch: {
+    index () {
+      this.disabled.previous = this.index === 0
+      this.disabled.next = this.index >= this.messages.length -1
     }
   },
 
@@ -298,6 +403,31 @@ export default {
       this.createScatterData(data.scatterData)
       this.moranData = data.moranData
       this.pvaluesLocal = data.pvaluesLocal
+    },
+    async autoPlay() {
+      this.playing = true
+      // this.index = 0
+      console.log('this.playing = true: ' + this.playing)
+      for (let i = this.index; i < this.messages.length -1; i++) {
+        if (!this.playing) {
+          return
+        }
+        console.log('i: ' + i)
+        this.index = i
+        this.setDataToIndex(this.index)
+        await new Promise(r => setTimeout(r, 2000));
+      }
+    },
+    toggleAutoPlay () {
+      if (!this.playing) {
+        this.autoPlay()
+      } else {
+        this.playing = false
+      }
+    },
+    stopAutoPlay () {
+      this.playing = false
+      this.index = 0
     }
   }
 }

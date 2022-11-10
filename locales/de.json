@@ -7,5 +7,8 @@
   "catalog_text_3": "Eine weitere Funktion war es die Einrichtungsgegenstände platzsparend zusammen packen zu können, ohne dabei den Überblick zu verlieren, wo sich welcher Gegenstand eigentlich befindet. Dazu konnte die Nummer des Kartons oder des Regals eingetragen werden, in den ein Gegenstand eingeräumt wurde. Zusätzlich bekam jedes Teil eine fortlaufende eindeutige Nummer zugewiesen.",
   "catalog_text_4": "Durch die Suchfunktion können Gegenstände per Schlagwort, Typ (Dekoration, Möbel, ...) oder über ihren ursprünglichen Standort (Küche, Wohnzimmer, …) gesucht werden. Über die Teilenummer und die Nummer des Regals oder Kartons sind diese dann schnell aufzufinden. Bis heute suche und finde ich regelmäßig Sachen über diese App.",
 
-  "visualization_title": "Live Data Visualization"
+  "visualization_title": "Live Data Visualization",
+  "visualization_actions_skip_next": "nächstes Zeitfenster",
+  "visualization_actions_skip_previous": "vorheriges Zeitfenster",
+  "visualization_actions_auto_play": "Zeitfenster automatisch abspielen"
 }
