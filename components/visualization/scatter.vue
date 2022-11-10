@@ -52,8 +52,6 @@ export default {
             text: ''
         },
         xAxis: {
-          max: 300,
-          min: -50,
           title: {
             enabled: true,
             text: 'y'
@@ -67,8 +65,6 @@ export default {
           }]
         },
         yAxis: {
-          max: 150,
-          min: -50,
           title: {
             text: 'Wy'
           },
@@ -123,21 +119,13 @@ export default {
       }
     }
   },
-  mounted () {
-  },
+
   watch: {
     lineData () {
       this.$refs["scatterplot"].chart.series[0].setData(this.lineData, true, true, true);
     },
     scatterData () {
       this.$refs["scatterplot"].chart.series[1].setData(this.scatterData, true, true, true);
-    }
-  },
-  methods: {
-    update () {
-      // console.log(this.$refs["histogram"].chart)
-      // this.$refs["histogram"].chart.xAxis[0].options.plotLines[0].value = 0.5
-      // this.$refs["histogram"].chart.xAxis[0].update()
     }
   }
 }
