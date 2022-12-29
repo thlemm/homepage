@@ -41,105 +41,6 @@
     </v-row>
 
     <v-row
-      no-gutters
-      align="end"
-      justify="center"
-    >
-      <v-col cols="10">
-        <v-row no-gutters>
-          <v-card class="ma-1" width="100%">
-            <v-card-actions>
-              <v-spacer />
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    class="ml-3"
-                    elevation="2"
-                    icon
-                    small
-                    tile
-                    color="secondary"
-                    v-bind="attrs"
-                    v-on="on"
-                    @click="toggleAutoPlay"
-                  >
-                    <v-icon>
-                      {{ playing ? mdiPause : mdiPlay }}
-                    </v-icon>
-                  </v-btn>
-                </template>
-                <span>{{ $t('visualization_actions_auto_play') }}</span>
-              </v-tooltip>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    class="ml-3"
-                    elevation="2"
-                    icon
-                    small
-                    tile
-                    color="secondary"
-                    v-bind="attrs"
-                    v-on="on"
-                    @click="stopAutoPlay"
-                  >
-                    <v-icon>
-                      {{ mdiStop }}
-                    </v-icon>
-                  </v-btn>
-                </template>
-                <span>{{ $t('visualization_actions_auto_play') }}</span>
-              </v-tooltip>
-              <v-spacer />
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    class="ml-3"
-                    elevation="2"
-                    icon
-                    small
-                    tile
-                    color="secondary"
-                    :disabled="disabled.previous"
-                    v-bind="attrs"
-                    v-on="on"
-                    @click="previousIndex"
-                  >
-                    <v-icon>
-                      {{ mdiSkipPrevious }}
-                    </v-icon>
-                  </v-btn>
-                </template>
-                <span>{{ $t('visualization_actions_skip_previous') }}</span>
-              </v-tooltip>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    class="ml-3"
-                    elevation="2"
-                    icon
-                    small
-                    tile
-                    color="secondary"
-                    :disabled="disabled.next"
-                    v-bind="attrs"
-                    v-on="on"
-                    @click="nextIndex"
-                  >
-                    <v-icon>
-                      {{ mdiSkipNext }}
-                    </v-icon>
-                  </v-btn>
-                </template>
-                <span>{{ $t('visualization_actions_skip_next') }}</span>
-              </v-tooltip>
-            </v-card-actions>
-          </v-card>
-        </v-row>
-      </v-col>
-    </v-row>
-
-    <v-row
       v-if="!isMobile"
       align="center"
       justify="center"
@@ -150,10 +51,53 @@
         <v-row no-gutters>
           <v-col cols="5">
             <v-row no-gutters>
+              <v-card class="ma-1" width="100%" :height="heights.controls" color="#97aca0">
+                <v-card-title class="pt-2 pb-0">
+                  {{ $t('visualization_title_control') }}
+                </v-card-title>
+                <v-card-actions>
+                  <control-button
+                    css-helper="ml-2 mr-3"
+                    button-color="secondary"
+                    icon-color="tertiary"
+                    :icon="playing ? mdiPause : mdiPlay"
+                    :tooltip="playing ? $t('visualization_actions_auto_pause').toString() : $t('visualization_actions_auto_play').toString()"
+                    @click="toggleAutoPlay"
+                  />
+                  <control-button
+                    button-color="secondary"
+                    icon-color="tertiary"
+                    :icon="mdiStop"
+                    :tooltip="$t('visualization_actions_auto_stop').toString()"
+                    @click="stopAutoPlay"
+                  />
+                  <v-spacer />
+                  <control-button
+                    button-color="secondary"
+                    icon-color="tertiary"
+                    :icon="mdiSkipPrevious"
+                    :tooltip="$t('visualization_actions_skip_previous').toString()"
+                    :disabled="disabled.previous"
+                    @click="previousIndex"
+                  />
+                  <control-button
+                    css-helper="ml-3 mr-2"
+                    button-color="secondary"
+                    icon-color="tertiary"
+                    :icon="mdiSkipNext"
+                    :tooltip="$t('visualization_actions_skip_next').toString()"
+                    :disabled="disabled.next"
+                    @click="nextIndex"
+                  />
+                </v-card-actions>
+              </v-card>
+            </v-row>
+
+            <v-row no-gutters>
               <v-col>
                 <v-card class="ma-1">
-                  <v-card-title>
-                    Permutation tests
+                  <v-card-title class="pt-2 pb-0">
+                    {{ $t('visualization_title_dist') }}
                   </v-card-title>
                   <v-card-text>
                     <distribution :distData="distData" :moranI="moranI" :chart-height="heights.dist" />
@@ -165,8 +109,8 @@
             <v-row no-gutters>
               <v-col>
                 <v-card class="ma-1">
-                  <v-card-title>
-                    Moran scatterplot <v-spacer /><span class="font-weight-light">(b = {{ slope.toFixed(3) }})</span>
+                  <v-card-title class="pt-2 pb-0">
+                    {{ $t('visualization_title_scatter') }} <v-spacer /><span class="font-weight-light">(b = {{ slope.toFixed(3) }})</span>
                   </v-card-title>
                   <v-card-text>
                     <scatter :scatterData="scatterData" :lineData="lineData" :chart-height="heights.scatter" />
@@ -177,14 +121,39 @@
           </v-col>
 
           <v-col cols="7">
-            <v-card class="ma-1">
-              <v-card-title>
-                Local extended Moran’s I
-              </v-card-title>
-              <v-card-text>
-                <local-index-map :moranData="moranData" :pvaluesLocal="pvaluesLocal" :chart-height="heights.map" />
-              </v-card-text>
-            </v-card>
+            <v-row no-gutters>
+              <v-card class="ma-1" width="100%" :height="heights.overview">
+                <v-row no-gutters>
+                  <v-col cols="5">
+                    <v-card-subtitle class="body-1 mb-0 pb-0 pt-3">
+                      I = {{ moranI.toFixed(3) }} (p = {{ pvalue }})
+                    </v-card-subtitle>
+                    <v-card-subtitle class="body-1">
+                      &Psi;<sub>1</sub> = 0,00 &nbsp;&nbsp;&nbsp;&nbsp; &Psi;<sub>2</sub> = 0,00
+                    </v-card-subtitle>
+                  </v-col>
+                  <v-col cols="7">
+                    <v-card-subtitle class="body-1 mb-0 pb-0 pt-3">
+                      Start: {{ windowStart.slice(0, -4) }}
+                    </v-card-subtitle>
+                    <v-card-subtitle class="body-1">
+                      Ende: {{ windowEnd.slice(0, -4) }}
+                    </v-card-subtitle>
+                  </v-col>
+                </v-row>
+              </v-card>
+            </v-row>
+
+            <v-row no-gutters>
+              <v-card class="ma-1" width="100%">
+                <v-card-title class="pt-2 pb-0">
+                  {{ $t('visualization_title_map') }}
+                </v-card-title>
+                <v-card-text>
+                  <local-index-map :moranData="moranData" :pvaluesLocal="pvaluesLocal" :chart-height="heights.map" />
+                </v-card-text>
+              </v-card>
+            </v-row>
           </v-col>
         </v-row>
       </v-col>
@@ -197,6 +166,63 @@
       class="mb-5"
     >
       <v-col cols="10">
+        <v-row no-gutters>
+          <v-card class="ma-1" width="100%" :height="heights.controls" color="#97aca0">
+            <v-card-actions>
+              <control-button
+                css-helper="mr-3"
+                button-color="secondary"
+                icon-color="tertiary"
+                :icon="playing ? mdiPause : mdiPlay"
+                :tooltip="playing ? $t('visualization_actions_auto_pause').toString() : $t('visualization_actions_auto_play').toString()"
+                @click="toggleAutoPlay"
+              />
+              <control-button
+                button-color="secondary"
+                icon-color="tertiary"
+                :icon="mdiStop"
+                :tooltip="$t('visualization_actions_auto_stop').toString()"
+                @click="stopAutoPlay"
+              />
+              <v-spacer />
+              <control-button
+                button-color="secondary"
+                icon-color="tertiary"
+                :icon="mdiSkipPrevious"
+                :tooltip="$t('visualization_actions_skip_previous').toString()"
+                :disabled="disabled.previous"
+                @click="previousIndex"
+              />
+              <control-button
+                css-helper="ml-3"
+                button-color="secondary"
+                icon-color="tertiary"
+                :icon="mdiSkipNext"
+                :tooltip="$t('visualization_actions_skip_next').toString()"
+                :disabled="disabled.next"
+                @click="nextIndex"
+              />
+            </v-card-actions>
+          </v-card>
+        </v-row>
+
+        <v-row no-gutters>
+          <v-card class="ma-1" width="100%">
+            <v-card-subtitle class="body-1 mb-0 pb-0 pt-3">
+              I = {{ moranI.toFixed(3) }} (p = {{ pvalue }})
+            </v-card-subtitle>
+            <v-card-subtitle class="body-1">
+              &Psi;<sub>1</sub> = 0,00 &nbsp;&nbsp;&nbsp;&nbsp; &Psi;<sub>2</sub> = 0,00
+            </v-card-subtitle>
+            <v-card-subtitle class="body-1 mb-0 pb-0 pt-3">
+              Start: {{ windowStart.slice(0, -4) }}
+            </v-card-subtitle>
+            <v-card-subtitle class="body-1">
+              Ende: {{ windowEnd.slice(0, -4) }}
+            </v-card-subtitle>
+          </v-card>
+        </v-row>
+
         <v-row no-gutters>
           <v-col cols="12">
             <v-card class="ma-1">
@@ -247,10 +273,11 @@ import Scatter from "~/components/visualization/scatter"
 import Distribution from "~/components/visualization/distribution"
 import { mdiArrowLeft, mdiSkipNext, mdiSkipPrevious, mdiPlay, mdiStop, mdiPause } from "@mdi/js"
 import messages from '@/static/visualization/LSQL-messages-2022-11-10-08-50-57.json'
+import ControlButton from "~/components/visualization/control-button";
 
 export default {
   name: 'pageVisualization',
-  components: {Distribution, Scatter, LocalIndexMap},
+  components: {ControlButton, Distribution, Scatter, LocalIndexMap},
   data () {
     return {
       messages,
@@ -281,7 +308,9 @@ export default {
       heights: {
         dist: 200,
         scatter: 200,
-        map: 400
+        map: 600,
+        controls: 88,
+        overview: 88
       },
       index: 0,
       disabled: {
@@ -301,19 +330,6 @@ export default {
 
   created () {
     this.calcChartHeights()
-    this.$nuxt.$on('time-play', async (time) => {
-      console.log('time: ' + time)
-      if (this.topic === '') {
-        return
-      }
-      let query = 'SELECT * FROM ' + this.topic + ' WHERE windowEnd = \'' + time + '\' LIMIT 1;'
-      console.log(query)
-      this.socketRequest(query, false)
-      while (true) {
-        await new Promise(r => setTimeout(r, 2000));
-        this.$nuxt.$emit('next-set')
-      }
-    })
   },
 
   mounted () {
@@ -337,8 +353,8 @@ export default {
     },
     calcChartHeights () {
       const ratio = 1.2
-      this.heights.map = 700
-      this.heights.dist = (this.heights.map - 88) / (1 + ratio)
+      this.heights.map = 600
+      this.heights.dist = (this.heights.map - 88 + 24) / (1 + ratio)
       this.heights.scatter = ratio * this.heights.dist
     },
     createDistData (data) {
@@ -407,12 +423,11 @@ export default {
     async autoPlay() {
       this.playing = true
       // this.index = 0
-      console.log('this.playing = true: ' + this.playing)
       for (let i = this.index; i < this.messages.length -1; i++) {
         if (!this.playing) {
           return
         }
-        console.log('i: ' + i)
+
         this.index = i
         this.setDataToIndex(this.index)
         await new Promise(r => setTimeout(r, 2000));

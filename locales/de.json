@@ -1,6 +1,6 @@
 {
   "footer_imprint": "Impressum",
-  "action_back_home": "Zurück zu Startseite",
+  "action_back_home": "Zurück zur Startseite",
   "catalog_title": "Katalog-App",
   "catalog_text_1": "Im Sommer 2020 habe ich einen Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands geschrieben.",
   "catalog_text_2": "Hauptsächlicher Zweck der App war es zu ermitteln, welche Gegenstände eigentlich noch jemand haben möchte und welche verkauft oder entsorgt werden können. Dazu wurden alle Gebrauchsgegenstände, Möbel und weitere Einrichtung in den Katalog aufgenommen und anschließend konnten alle Beteiligten auswählen, an welchen Teilen sie noch Interesse haben. So erhält man schließlich eine Liste aller Gegenstände mit Angabe darüber, wer diesen gerne mitnehmen möchte.",
@@ -10,5 +10,20 @@
   "visualization_title": "Live Data Visualization",
   "visualization_actions_skip_next": "nächstes Zeitfenster",
   "visualization_actions_skip_previous": "vorheriges Zeitfenster",
-  "visualization_actions_auto_play": "Zeitfenster automatisch abspielen"
+  "visualization_actions_auto_play": "Zeitfenster automatisch abspielen",
+  "visualization_actions_auto_pause": "Automatisches Abspielen pausieren",
+  "visualization_actions_auto_stop": "Automatisches Abspielen stoppen",
+  "visualization_title_control": "Zeitfensterauswahl",
+  "visualization_title_scatter": "Moran-Scatterplot",
+  "visualization_title_dist": "Permutationstests",
+  "visualization_title_map": "Lokaler erweiterter Moran’s I",
+
+  "wood_working_title": "Wood working",
+  "contact_button_tooltip_github": "GitHub",
+  "contact_button_tooltip_gitlab": "GitLab",
+  "contact_button_tooltip_linkedin": "LinkedIn",
+  "contact_button_tooltip_email": "E-Mail",
+
+  "lorem_ipsum_1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ",
+  "lorem_ipsum_2": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. "
 }

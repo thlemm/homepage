@@ -10,60 +10,44 @@
         class="text-center"
         cols="12"
       >
-        <v-btn
-          class="ma-1"
+        <contact-button
+          v-for="(button, i) in buttons"
+          :key="i"
+          :icon="button.icon"
+          :tooltip="button.tooltip"
+          css-helper="ma-1"
           color="secondary"
-          elevation="8"
-          fab
-          x-large
-          icon
-          outlined
-          href=""
-          target="_blank"
-        >
-          <v-icon>{{ mdiGithub }}</v-icon>
-        </v-btn>
-        <v-btn
-          class="ma-1"
-          color="secondary"
-          elevation="8"
-          fab
-          x-large
-          icon
-          outlined
-          href=""
-          target="_blank"
-        >
-          <v-icon>{{ mdiLinkedin }}</v-icon>
-        </v-btn>
-        <v-btn
-          class="ma-1"
-          color="secondary"
-          elevation="8"
-          fab
-          x-large
-          icon
-          outlined
-          href=""
-          target="_blank"
-        >
-          <v-icon>{{ mdiEmail }}</v-icon>
-        </v-btn>
+        />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import { mdiGithub, mdiLinkedin, mdiEmail } from '@mdi/js'
+import { mdiGithub, mdiGitlab, mdiLinkedin, mdiEmail } from '@mdi/js'
+import ContactButton from "~/components/contact/contact-button";
 export default {
   name: 'sectionContact',
-
+  components: {ContactButton},
   data () {
     return {
       mdiGithub,
+      mdiGitlab,
       mdiLinkedin,
-      mdiEmail
+      mdiEmail,
+      buttons: [{
+        icon: mdiGithub,
+        tooltip: this.$t('contact_button_tooltip_github')
+      },{
+        icon: mdiGitlab,
+        tooltip: this.$t('contact_button_tooltip_gitlab')
+      },{
+        icon: mdiLinkedin,
+        tooltip: this.$t('contact_button_tooltip_linkedin')
+      },{
+        icon: mdiEmail,
+        tooltip: this.$t('contact_button_tooltip_email')
+      }]
     }
   }
 }
