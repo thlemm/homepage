@@ -2,9 +2,9 @@
   <div>
     <v-card color="background" elevation="0" height="150" />
     <v-row
-        align="center"
-        justify="center"
-        class="mb-8"
+      align="center"
+      justify="center"
+      class="mb-8"
     >
       <v-col
         class="text-center"
@@ -25,10 +25,10 @@
 
 <script>
 import { mdiGithub, mdiGitlab, mdiLinkedin, mdiEmail } from '@mdi/js'
-import ContactButton from "~/components/contact/contact-button";
+import ContactButton from '~/components/contact/contact-button'
 export default {
-  name: 'sectionContact',
-  components: {ContactButton},
+  name: 'SectionContact',
+  components: { ContactButton },
   data () {
     return {
       mdiGithub,
@@ -38,13 +38,13 @@ export default {
       buttons: [{
         icon: mdiGithub,
         tooltip: this.$t('contact_button_tooltip_github')
-      },{
+      }, {
         icon: mdiGitlab,
         tooltip: this.$t('contact_button_tooltip_gitlab')
-      },{
+      }, {
         icon: mdiLinkedin,
         tooltip: this.$t('contact_button_tooltip_linkedin')
-      },{
+      }, {
         icon: mdiEmail,
         tooltip: this.$t('contact_button_tooltip_email')
       }]

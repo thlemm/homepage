@@ -4,7 +4,9 @@
       align="center"
       justify="center"
     >
-      <div class="text-h4 secondary--text ml-5 pa-2">Experience</div>
+      <div class="text-h4 secondary--text ml-5 pa-2">
+        {{ $t('section_title_experience') }}
+      </div>
     </v-row>
     <v-row
       align="center"
@@ -49,9 +51,10 @@
 
 <script>
 import { mdiAnchor, mdiThermometer, mdiMapMarkerRadius, mdiGraph } from '@mdi/js'
-import ProjectTile from "~/components/projects/projectsTile";
+import ProjectTile from '~/components/projects/projectsTile'
+
 export default {
-  name: 'sectionExperience',
+  name: 'SectionExperience',
   components: { ProjectTile },
 
   data () {

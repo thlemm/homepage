@@ -8,10 +8,16 @@
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
-    <v-card-title :class="colorText + '--text'"> {{ title }}</v-card-title>
-    <v-card-text class="colorText + '--text'">{{ subtitle }}</v-card-text>
+    <v-card-title :class="colorText + '--text'">
+      {{ title }}
+    </v-card-title>
+    <v-card-text class="colorText + '--text'">
+      {{ subtitle }}
+    </v-card-text>
     <v-card-text class="text-center">
-      <v-icon :color="colorText" :size="width - 50">{{ icon }}</v-icon>
+      <v-icon :color="colorText" :size="width - 50">
+        {{ icon }}
+      </v-icon>
     </v-card-text>
   </v-card>
 </template>
@@ -19,7 +25,7 @@
 <script>
 
 export default {
-  name: 'projectTile',
+  name: 'ProjectTile',
 
   props: {
     width: {

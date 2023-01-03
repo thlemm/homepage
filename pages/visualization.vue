@@ -1,44 +1,13 @@
 <template>
   <div>
-    <v-row
-      no-gutters
-      align="center"
-      justify="center"
-    >
-      <v-col cols="12">
-        <v-sheet color="secondary" height="120" fill-height fluid>
-          <v-row
-            no-gutters
-            align="center"
-            justify="center"
-            class="text-center fill-height"
-          >
-            <v-scale-transition>
-              <v-col v-show="show.title" cols="12">
-                <div class="text-h2 background--text">{{ $t('visualization_title') }}</div>
-              </v-col>
-            </v-scale-transition>
-          </v-row>
-        </v-sheet>
-      </v-col>
-    </v-row>
+    <page-title
+      :title="$t('visualization_title').toString()"
+      :show="show.title"
+    />
 
-    <v-row
-      no-gutters
-      align="start"
-      justify="center"
-    >
-      <v-col cols="10">
-        <v-btn
-          text
-          to="/#projects"
-        >
-          <v-icon class="mr-1">{{ mdiArrowLeft }}</v-icon>
-          {{ $t('action_back_home') }}
-        </v-btn>
-        <v-spacer/>
-      </v-col>
-    </v-row>
+    <action-back-home
+      to="/#projects"
+    />
 
     <v-row
       v-if="!isMobile"
@@ -274,10 +243,12 @@ import Distribution from "~/components/visualization/distribution"
 import { mdiArrowLeft, mdiSkipNext, mdiSkipPrevious, mdiPlay, mdiStop, mdiPause } from "@mdi/js"
 import messages from '@/static/visualization/LSQL-messages-2022-11-10-08-50-57.json'
 import ControlButton from "~/components/visualization/control-button";
+import PageTitle from "~/components/main/pageTitle";
+import ActionBackHome from "~/components/main/actionBackHome";
 
 export default {
   name: 'pageVisualization',
-  components: {ControlButton, Distribution, Scatter, LocalIndexMap},
+  components: {ActionBackHome, PageTitle, ControlButton, Distribution, Scatter, LocalIndexMap},
   data () {
     return {
       messages,

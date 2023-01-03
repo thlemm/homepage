@@ -10,13 +10,14 @@
 
 <script>
 
-import SectionProjects from "~/components/sections/sectionProjects";
-import SectionImage from "~/components/sections/sectionImage";
-import SectionExperience from "~/components/sections/sectionExperience";
-import SectionContact from "~/components/sections/sectionContact";
-import SectionDetails from "~/components/sections/sectionDetails";
+import SectionProjects from '~/components/sections/sectionProjects'
+import SectionImage from '~/components/sections/sectionImage'
+import SectionExperience from '~/components/sections/sectionExperience'
+import SectionContact from '~/components/sections/sectionContact'
+import SectionDetails from '~/components/sections/sectionDetails'
+
 export default {
-  name: 'index',
-  components: {SectionDetails, SectionContact, SectionExperience, SectionImage, SectionProjects }
+  name: 'Index',
+  components: { SectionDetails, SectionContact, SectionExperience, SectionImage, SectionProjects }
 }
 </script>

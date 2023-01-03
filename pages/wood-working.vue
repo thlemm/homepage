@@ -1,44 +1,14 @@
 <template>
   <div>
-    <v-row
-        no-gutters
-        align="center"
-        justify="center"
-    >
-      <v-col cols="12">
-        <v-sheet color="secondary" height="120" fill-height fluid>
-          <v-row
-              no-gutters
-              align="center"
-              justify="center"
-              class="text-center fill-height"
-          >
-            <v-scale-transition>
-              <v-col v-show="show.title" cols="12">
-                <div class="text-h2 background--text">{{ $t('wood_working_title') }}</div>
-              </v-col>
-            </v-scale-transition>
-          </v-row>
-        </v-sheet>
-      </v-col>
-    </v-row>
-    <v-row
-        no-gutters
-        align="start"
-        justify="center"
-    >
-      <v-col cols="10">
-        <v-btn
-            text
-            to="/#projects"
-        >
-          <v-icon class="mr-1">{{ mdiArrowLeft }}</v-icon>
-          {{ $t('action_back_home') }}
-        </v-btn>
+    <page-title
+      :title="$t('wood_working_title').toString()"
+      :show="show.title"
+    />
 
-        <v-spacer/>
-      </v-col>
-    </v-row>
+    <action-back-home
+      to="/#projects"
+    />
+
     <v-row
       align="center"
       justify="center"
@@ -51,8 +21,12 @@
           justify="start"
         >
           <v-col cols="12" align-self="start">
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('lorem_ipsum_1') }}</v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('lorem_ipsum_2') }}</v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1">
+              {{ $t('lorem_ipsum_1') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1">
+              {{ $t('lorem_ipsum_2') }}
+            </v-card-text>
           </v-col>
         </v-row>
         <v-row
@@ -88,7 +62,7 @@
                       ></v-img>
                       <v-card-text class="tertiary--text pl-5 pr-5 pb-5">
                         {{ item.description }}
-                      </v-card-text >
+                      </v-card-text>
                     </v-card>
                   </v-row>
                 </v-sheet>
@@ -102,15 +76,16 @@
 </template>
 
 <script>
-import { mdiMinus, mdiArrowLeft } from '@mdi/js'
+import { mdiMinus } from '@mdi/js'
+import PageTitle from '~/components/main/pageTitle'
+import ActionBackHome from '~/components/main/actionBackHome'
 
 export default {
-  name: 'pageWoodWorking',
-
+  name: 'PageWoodWorking',
+  components: { ActionBackHome, PageTitle },
   data () {
     return {
       mdiMinus,
-      mdiArrowLeft,
       show: {
         title: false
       },
@@ -148,7 +123,7 @@ export default {
   },
 
   beforeDestroy () {
-    if (typeof window === 'undefined') return
+    if (typeof window === 'undefined') { return }
 
     window.removeEventListener('resize', this.onResize, { passive: true })
   },
@@ -156,7 +131,7 @@ export default {
   methods: {
     onResize () {
       this.isMobile = window.innerWidth < 900
-    },
+    }
   }
 }
 </script>

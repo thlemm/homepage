@@ -1,6 +1,10 @@
 {
   "footer_imprint": "Impressum",
   "action_back_home": "Zurück zur Startseite",
+
+  "section_title_experience": "Experience",
+  "section_title_projects": "Projects",
+
   "catalog_title": "Katalog-App",
   "catalog_text_1": "Im Sommer 2020 habe ich einen Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands geschrieben.",
   "catalog_text_2": "Hauptsächlicher Zweck der App war es zu ermitteln, welche Gegenstände eigentlich noch jemand haben möchte und welche verkauft oder entsorgt werden können. Dazu wurden alle Gebrauchsgegenstände, Möbel und weitere Einrichtung in den Katalog aufgenommen und anschließend konnten alle Beteiligten auswählen, an welchen Teilen sie noch Interesse haben. So erhält man schließlich eine Liste aller Gegenstände mit Angabe darüber, wer diesen gerne mitnehmen möchte.",
@@ -19,6 +23,14 @@
   "visualization_title_map": "Lokaler erweiterter Moran’s I",
 
   "wood_working_title": "Wood working",
+
+  "energy_monitoring_title": "Energy monitoring",
+
+  "stream_processing_title": "Stream processing",
+
+  "gis_title": "Geoinformationssysteme",
+  "gis_text_1": "Geoinformationssysteme sind Computersysteme zur Erfassung, Verwaltung, Analyse und Visualisierung geografischer Daten (Geodaten).",
+
   "contact_button_tooltip_github": "GitHub",
   "contact_button_tooltip_gitlab": "GitLab",
   "contact_button_tooltip_linkedin": "LinkedIn",

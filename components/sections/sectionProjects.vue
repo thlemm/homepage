@@ -4,7 +4,9 @@
       align="center"
       justify="center"
     >
-      <div class="text-h4 primary--text ml-5 pa-2">Projects</div>
+      <div class="text-h4 primary--text ml-5 pa-2">
+        {{ $t('section_title_projects') }}
+      </div>
     </v-row>
     <v-row
       align="center"
@@ -49,9 +51,10 @@
 
 <script>
 import { mdiAnchor, mdiChartBarStacked, mdiCellphoneText, mdiHandSaw } from '@mdi/js'
-import ProjectTile from "~/components/projects/projectsTile";
+import ProjectTile from '~/components/projects/projectsTile'
+
 export default {
-  name: 'sectionProjects',
+  name: 'SectionProjects',
   components: { ProjectTile },
 
   data () {

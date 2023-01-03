@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'contactButton',
+  name: 'ContactButton',
 
   props: {
     icon: {
@@ -45,7 +45,7 @@ export default {
     }
   },
 
-  data() {
+  data () {
     return {}
   }
 }
