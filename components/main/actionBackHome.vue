@@ -4,33 +4,39 @@
     align="start"
     justify="center"
   >
-    <v-col cols="10">
+    <v-col :cols="cols">
       <v-btn
         text
         :to="to"
       >
-        <v-icon class="mr-1">{{ mdiArrowLeft }}</v-icon>
+        <v-icon class="mr-1">
+          {{ mdiArrowLeft }}
+        </v-icon>
         {{ $t('action_back_home') }}
       </v-btn>
-      <v-spacer/>
+      <v-spacer />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import { mdiArrowLeft } from "@mdi/js"
+import { mdiArrowLeft } from '@mdi/js'
 
 export default {
-  name: 'actionBackHome',
+  name: 'ActionBackHome',
 
   props: {
     to: {
       type: String,
       required: true
+    },
+    cols: {
+      type: Number,
+      required: true
     }
   },
 
-  data() {
+  data () {
     return {
       mdiArrowLeft
     }

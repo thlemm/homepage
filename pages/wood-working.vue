@@ -7,6 +7,7 @@
 
     <action-back-home
       to="/#projects"
+      :cols="isMobile ? 10 : 8"
     />
 
     <v-row
@@ -14,17 +15,17 @@
       justify="center"
       class="mb-15"
     >
-      <v-col cols="10">
+      <v-col :cols="isMobile ? 10 : 8">
         <v-row
           no-gutters
           align="center"
           justify="start"
         >
           <v-col cols="12" align-self="start">
-            <v-card-text class="mb-3 text-subtitle-1">
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
               {{ $t('lorem_ipsum_1') }}
             </v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
               {{ $t('lorem_ipsum_2') }}
             </v-card-text>
           </v-col>

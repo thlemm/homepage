@@ -7,6 +7,7 @@
 
     <action-back-home
       to="/#experience"
+      :cols="isMobile ? 10 : 8"
     />
 
     <v-row
@@ -14,25 +15,29 @@
       justify="center"
       class="mb-15"
     >
-      <v-col cols="10">
+      <v-col :cols="isMobile ? 10 : 8">
         <v-row
           no-gutters
           align="center"
           justify="start"
         >
           <v-col cols="12" align-self="start">
-            <v-card-text class="mb-3 text-subtitle-1">
-              {{ $t('lorem_ipsum_1') }}
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('gis_text_1') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('gis_text_2') }}
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
-              {{ $t('lorem_ipsum_2') }}
+              Hier finden sich weiterführende Informationen:
+              <ul>
+                <li>Projekt-Website OpenGeoResearch: <a href="https://opengeoresearch.org/" target="_blank">OpenGeoResearch <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>Weitere Informationen zu Citizen Science: <a href="https://www.buergerschaffenwissen.de/netzwerk/ag-weissbuch" target="_blank">Bürger schaffen Wissen <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>FOSSGIS-Konferenz 2022: <a href="https://fossgis-konferenz.de/2022/" target="_blank">FOSSGIS <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>Forum Citizen Science 2022: <a href="https://www.buergerschaffenwissen.de/veranstaltungen/forum-citizen-science-2022" target="_blank">Forum Citizen Science <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>ECSA Conference 2022: <a href="https://2022.ecsa-conference.eu/startseite.html" target="_blank">ECSA <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+              </ul>
             </v-card-text>
-            <ul>
-              <li>HiWi-Job Stefan</li>
-              <li>Wissenschaftlicher Mitarbeite gia</li>
-              <li>OpenGeoResearch</li>
-              <li>evtl. kleines eigenes Applet</li>
-            </ul>
           </v-col>
         </v-row>
       </v-col>
@@ -42,6 +47,7 @@
 
 <script>
 
+import { mdiOpenInNew } from '@mdi/js'
 import ActionBackHome from '~/components/main/actionBackHome'
 import PageTitle from '~/components/main/pageTitle'
 
@@ -51,9 +57,11 @@ export default {
 
   data () {
     return {
+      mdiOpenInNew,
       show: {
         title: false
-      }
+      },
+      isMobile: false
     }
   },
 
