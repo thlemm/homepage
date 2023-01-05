@@ -9,11 +9,10 @@
     @mouseout="hover = false"
   >
     <v-card-title :class="colorText + '--text'">
+      <v-spacer />
       {{ title }}
+      <v-spacer />
     </v-card-title>
-    <v-card-text class="colorText + '--text'">
-      {{ subtitle }}
-    </v-card-text>
     <v-card-text class="text-center">
       <v-icon :color="colorText" :size="width - 50">
         {{ icon }}
@@ -39,10 +38,6 @@ export default {
       default: 300
     },
     title: {
-      type: String,
-      required: true
-    },
-    subtitle: {
       type: String,
       required: true
     },

@@ -7,6 +7,7 @@
 
     <action-back-home
       to="/#experience"
+      :cols="isMobile ? 10 : 8"
     />
     <ul>
       <li>Beispiel Mastarbeit</li>
@@ -29,7 +30,8 @@ export default {
     return {
       show: {
         title: false
-      }
+      },
+      isMobile: false
     }
   },
 

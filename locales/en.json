@@ -1,13 +1,54 @@
 {
   "footer_imprint": "Imprint",
   "action_back_home": "Back to home",
+
+  "details_name": "Thomas Lemmerz",
+  "details_profession": "Civil Engineer, Software Developer",
+  "details_location": "Aachen, Germany",
+  "details_mail": "kontakt@thlemm.de",
+
+  "section_title_experience": "Experience",
+  "section_title_projects": "Projects",
+
   "catalog_title": "Catalog App",
   "catalog_text_1": "In the summer of 2020, I wrote a smartphone app for collaborative digital management and resolution of a household.",
   "catalog_text_2": "The main purpose of the app was to determine which items someone would actually still like to have and which could be sold or disposed of. For this purpose, all utility items, furniture and other furnishings were added to the catalog and then everyone could select which parts they were still interested in. In this way, a list of all items is finally obtained, with an indication of who would like to take it.",
   "catalog_text_3": "Another function was to be able to compactly store the furnishings without losing track of where each item was located. For this purpose, the number of the box or shelf in which an item was placed could be entered. In addition, each item was assigned a sequential unique number.",
   "catalog_text_4": "Via the search function, items can be searched by keyword, type (decoration, furniture, ...) or by their original location (kitchen, living room, ...). Using the part number and the number of the shelf or box, they can then be found quickly. To this day, I regularly search and find things via this app.",
+
+  "visualization_title": "Live Data Visualization",
+  "visualization_actions_skip_next": "nest time window",
+  "visualization_actions_skip_previous": "previous time window",
+  "visualization_actions_auto_play": "Play time windows automatically",
+  "visualization_actions_auto_pause": "Pause automatic playback",
+  "visualization_actions_auto_stop": "Stop automatic playback",
+  "visualization_title_control": "Time window selection",
   "visualization_title_scatter": "Moran scatterplot",
   "visualization_title_dist": "Permutation tests",
-  "visualization_title_map": "Local extended Moran’s I"
+  "visualization_title_map": "Local extended Moran’s I",
+
+  "wood_working_title": "Wood working",
+
+  "energy_monitoring_title": "Energy monitoring",
+
+  "stream_processing_title": "Stream processing",
+
+  "citizen_science_title": "Citizen Science",
+
+  "geostatistics_title": "Geostatistics",
+
+  "software_development_title": "Software development",
+
+  "gis_title": "Geoinformation systems",
+  "gis_text_1": "Geoinformationssysteme sind Computersysteme zur Erfassung, Verwaltung, Analyse und Visualisierung geografischer Daten (Geodaten). Meine Faszination für Geodaten und deren digitale Verarbeitung entstand im Laufe meines Masterstudiums, als ich in verschiedenen Lehrveranstaltungen Einblicke in diese Thematik bekam. In meiner Zeit als studentische Hilfskraft am Geodätischen Institut und Lehrstuhl für Bauinformatik & Geoinformationssysteme der RWTH Aachen (von September 2020 bis September 2021) konnte ich viele spannende Erfragungen sammeln und habe ein besonderes Interesse an webbasierten Geoinformationssystemen (Web-GIS) entwickelt. Ich habe dort am Projekt OpenGeoResearch mitgearbeitet und dabei zunächst vor allem die Smartphone-App für das Projekt entwickelt. OpenGeoResearch war ein Projekt innerhalb der Wissenschaftsjahres 2022 initiiert vom Bildungsministerium für Bildung und Forschung und hatte zum Ziel eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen zu entwickeln. ",
+  "gis_text_2": "Nach dem ich ab November 2022 als wissenschaftlicher Mitarbeiter am Geodätischen Institut und Lehrstuhl für Bauinformatik & Geoinformationssysteme der RWTH Aachen gearbeitet habe, habe ich neben der Smartphone App auch das Geoportal und die Backend-Systeme und Datenbanken von OpenGeoResearch weiterentwickelt und im Sommer 2022 das Projekt selbst koordiniert. Im Rahmen dieses Projekts konnte ich auch interessante Einblicke in die Citizen Science bekommen. In der Citizen Science werden Menschen in die Forschung einbezogen, welche in den jeweiligen wissenschaftlichen Bereichen nicht selbst arbeiten. Durch diesen Einbezug von interessierten Menschen aus der Bevölkerung können große Datenmengen in der Realwelt gesammelt werden. Es können aber auch neue wissenschaftliche Fragestellungen durch die Partizipation der Bevölkerung am wissenschaftlichen Prozess entstehen. In diesem Zusammenhang habe ich verschiedene Vorträge auf der FOSSGIS-Konferenz 2022, dem Forum Citizen Science 2022 und der ECSA Conference 2022 gehalten. Nach Abschluss von OpenGeoResearch habe ich noch an mehreren anderen spannenden GIS-Projekten gearbeitet.",
+
+  "contact_button_tooltip_github": "GitHub",
+  "contact_button_tooltip_gitlab": "GitLab",
+  "contact_button_tooltip_linkedin": "LinkedIn",
+  "contact_button_tooltip_email": "E-Mail",
+
+  "lorem_ipsum_1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ",
+  "lorem_ipsum_2": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. "
 
 }

@@ -2,8 +2,13 @@
   "footer_imprint": "Impressum",
   "action_back_home": "Zurück zur Startseite",
 
-  "section_title_experience": "Experience",
-  "section_title_projects": "Projects",
+  "details_name": "Thomas Lemmerz",
+  "details_profession": "Bauingenieur, Softwareentwickler",
+  "details_location": "Aachen, Deutschland",
+  "details_mail": "kontakt@thlemm.de",
+
+  "section_title_experience": "Erfahrung",
+  "section_title_projects": "Projekte",
 
   "catalog_title": "Katalog-App",
   "catalog_text_1": "Im Sommer 2020 habe ich einen Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands geschrieben.",
@@ -11,7 +16,7 @@
   "catalog_text_3": "Eine weitere Funktion war es die Einrichtungsgegenstände platzsparend zusammen packen zu können, ohne dabei den Überblick zu verlieren, wo sich welcher Gegenstand eigentlich befindet. Dazu konnte die Nummer des Kartons oder des Regals eingetragen werden, in den ein Gegenstand eingeräumt wurde. Zusätzlich bekam jedes Teil eine fortlaufende eindeutige Nummer zugewiesen.",
   "catalog_text_4": "Durch die Suchfunktion können Gegenstände per Schlagwort, Typ (Dekoration, Möbel, ...) oder über ihren ursprünglichen Standort (Küche, Wohnzimmer, …) gesucht werden. Über die Teilenummer und die Nummer des Regals oder Kartons sind diese dann schnell aufzufinden. Bis heute suche und finde ich regelmäßig Sachen über diese App.",
 
-  "visualization_title": "Live Data Visualization",
+  "visualization_title": "Echtzeit Datenvisualisierung",
   "visualization_actions_skip_next": "nächstes Zeitfenster",
   "visualization_actions_skip_previous": "vorheriges Zeitfenster",
   "visualization_actions_auto_play": "Zeitfenster automatisch abspielen",
@@ -22,11 +27,17 @@
   "visualization_title_dist": "Permutationstests",
   "visualization_title_map": "Lokaler erweiterter Moran’s I",
 
-  "wood_working_title": "Wood working",
+  "wood_working_title": "Werkstatt",
 
-  "energy_monitoring_title": "Energy monitoring",
+  "energy_monitoring_title": "Energiemonitoring",
 
   "stream_processing_title": "Stream processing",
+
+  "citizen_science_title": "Citizen Science",
+
+  "geostatistics_title": "Geostatistik",
+
+  "software_development_title": "Softwareentwicklung",
 
   "gis_title": "Geoinformationssysteme",
   "gis_text_1": "Geoinformationssysteme sind Computersysteme zur Erfassung, Verwaltung, Analyse und Visualisierung geografischer Daten (Geodaten). Meine Faszination für Geodaten und deren digitale Verarbeitung entstand im Laufe meines Masterstudiums, als ich in verschiedenen Lehrveranstaltungen Einblicke in diese Thematik bekam. In meiner Zeit als studentische Hilfskraft am Geodätischen Institut und Lehrstuhl für Bauinformatik & Geoinformationssysteme der RWTH Aachen (von September 2020 bis September 2021) konnte ich viele spannende Erfragungen sammeln und habe ein besonderes Interesse an webbasierten Geoinformationssystemen (Web-GIS) entwickelt. Ich habe dort am Projekt OpenGeoResearch mitgearbeitet und dabei zunächst vor allem die Smartphone-App für das Projekt entwickelt. OpenGeoResearch war ein Projekt innerhalb der Wissenschaftsjahres 2022 initiiert vom Bildungsministerium für Bildung und Forschung und hatte zum Ziel eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen zu entwickeln. ",

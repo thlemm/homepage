@@ -21,8 +21,7 @@
         >
           <project-tile
             :icon="mdiChartBarStacked"
-            title="Live data visualization"
-            subtitle="Hallo das ist Inhalt"
+            :title="$t('visualization_title').toString()"
             color-text="primary"
             color-tile="#C6D2CB"
             to="/visualization"
@@ -30,15 +29,13 @@
           <project-tile
             :icon="mdiCellphoneText"
             :title="$t('catalog_title').toString()"
-            subtitle="Hallo das ist Inhalt"
             color-text="primary"
             color-tile="#C6D2CB"
             to="/catalog"
           />
           <project-tile
             :icon="mdiHandSaw"
-            title="Wood working"
-            subtitle="Hallo das ist Inhalt"
+            :title="$t('wood_working_title').toString()"
             color-text="primary"
             color-tile="#C6D2CB"
             to="/wood-working"
