@@ -30,9 +30,17 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{
+    src: '@/plugins/vuelayers.js',
+    ssr: false,
+    mode: 'client'
+  }, {
+    src: '@/plugins/ol.js',
+    ssr: false,
+    mode: 'client'
+  }, {
     src: '@/plugins/vue-observe-visibility.js',
     ssr: false
-  },{
+  }, {
     src: '@/plugins/highcharts.js',
     ssr: false
   }],

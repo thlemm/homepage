@@ -25,7 +25,7 @@
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
               {{ $t('gis_text_1') }}
             </v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+            <!---<v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
               {{ $t('gis_text_2') }}
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
@@ -37,8 +37,43 @@
                 <li>Forum Citizen Science 2022: <a href="https://www.buergerschaffenwissen.de/veranstaltungen/forum-citizen-science-2022" target="_blank">Forum Citizen Science <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
                 <li>ECSA Conference 2022: <a href="https://2022.ecsa-conference.eu/startseite.html" target="_blank">ECSA <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
               </ul>
-            </v-card-text>
+            </v-card-text>--->
           </v-col>
+        </v-row>
+        <v-row
+          no-gutters
+          align="center"
+          justify="start"
+        >
+          <v-card width="100%">
+            <v-app-bar color="primary" height="44">
+              <v-spacer />
+              <v-tooltip bottom>
+                <template #activator="{ on, attrs }">
+                  <v-btn
+                    icon
+                    v-bind="attrs"
+                    v-on="on"
+                    @click="drawer = !drawer"
+                  >
+                    <v-icon>{{ mdiLayers }}</v-icon>
+                  </v-btn>
+                </template>
+                <span>{{ $t('tooltip_gis_layers') }}</span>
+              </v-tooltip>
+            </v-app-bar>
+            <v-card width="100%">
+              <v-navigation-drawer
+                :value="drawer"
+                absolute
+                right
+              ></v-navigation-drawer>
+              <gis-map
+                :height="'500px'"
+                :selectable="false"
+              />
+            </v-card>
+          </v-card>
         </v-row>
       </v-col>
     </v-row>
@@ -46,8 +81,7 @@
 </template>
 
 <script>
-
-import { mdiOpenInNew } from '@mdi/js'
+import { mdiOpenInNew, mdiLayers } from '@mdi/js'
 import ActionBackHome from '~/components/main/actionBackHome'
 import PageTitle from '~/components/main/pageTitle'
 
@@ -57,11 +91,13 @@ export default {
 
   data () {
     return {
+      mdiLayers,
       mdiOpenInNew,
       show: {
         title: false
       },
-      isMobile: false
+      isMobile: false,
+      drawer: true
     }
   },
 

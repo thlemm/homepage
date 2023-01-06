@@ -1,0 +1,43 @@
+{
+  "base":
+    {
+      "id": 1,
+      "color": "neutral",
+      "title": "OpenStreetMap",
+      "description": null,
+      "legend": null,
+      "cmp": "vl-layer-tile",
+      "visible": true,
+      "selectable": false,
+      "opacity": 1,
+      "source": {
+        "cmp": "vl-source-osm"
+      }
+    }
+  ,
+  "overlays": [
+    {
+      "id": 3,
+      "title": "Straße, 24h-Pegel LDEN",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "primary",
+      "cmp": "vl-layer-tile",
+      "visible": true,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "STR_DEN",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    }
+  ]
+}
