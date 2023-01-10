@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-title
-      :title="$t('stream_processing_title').toString()"
+      :title="$t('citizen_science_title').toString()"
       :show="show.title"
     />
 
@@ -22,28 +22,19 @@
           justify="start"
         >
           <v-col cols="12" align-self="start">
-            <v-card-text class="mb-0 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              {{ $t('stream_processing_text_1') }}
-            </v-card-text>
-            <v-card-text class="mb-0 pl-10 text-subtitle-1" style="word-break: break-word; text-align: justify; font-style: italic;">
-              {{ $t('stream_processing_text_2') }}
-            </v-card-text>
-            <v-card-text class="mb-2 pl-10 text-subtitle-1" style="word-break: break-word; text-align: justify; font-style: italic;">
-              {{ $t('stream_processing_text_3') }}
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('citizen_science_text_1') }}
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              {{ $t('stream_processing_text_4') }}
+              {{ $t('citizen_science_text_2') }}
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
               {{ $t('further_info_and_links') }}
               <ul>
-                <li>{{ $t('stream_processing_link_description_1') }} <a :href="$t('stream_processing_link_address_1')" target="_self">{{ $t('stream_processing_link_alias_1') }}</a></li>
-              </ul>
-            </v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">
-              {{ $t('further_literature') }}
-              <ul>
-                <li>{{ $t('stream_processing_ref_1') }}</li>
+                <li>{{ $t('citizen_science_link_description_1') }} <a :href="$t('citizen_science_link_address_1')" target="_blank">{{ $t('citizen_science_link_alias_1') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>{{ $t('citizen_science_link_description_2') }} <a :href="$t('citizen_science_link_address_2')" target="_blank">{{ $t('citizen_science_link_alias_2') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>{{ $t('citizen_science_link_description_3') }} <a :href="$t('citizen_science_link_address_3')" target="_blank">{{ $t('citizen_science_link_alias_3') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>{{ $t('citizen_science_link_description_4') }} <a :href="$t('citizen_science_link_address_4')" target="_blank">{{ $t('citizen_science_link_alias_4') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
               </ul>
             </v-card-text>
           </v-col>
@@ -54,18 +45,17 @@
 </template>
 
 <script>
-
-import { mdiFormatQuoteOpen } from '@mdi/js'
-import PageTitle from '~/components/main/pageTitle'
+import { mdiOpenInNew } from '@mdi/js'
 import ActionBackHome from '~/components/main/actionBackHome'
+import PageTitle from '~/components/main/pageTitle'
 
 export default {
-  name: 'PageStreamProcessing',
-  components: { ActionBackHome, PageTitle },
+  name: 'PageCitizenScience',
+  components: { PageTitle, ActionBackHome },
 
   data () {
     return {
-      mdiFormatQuoteOpen,
+      mdiOpenInNew,
       show: {
         title: false
       },

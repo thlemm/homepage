@@ -7,12 +7,34 @@
 
     <action-back-home
       to="/#experience"
+      :cols="isMobile ? 10 : 8"
     />
-    <ul>
-      <li>Hiwi-Job Caro</li>
-      <li>Hiwi-Job Christian</li>
-      <li>Amsel Bachelorarbeit</li>
-    </ul>
+
+    <v-row
+      align="center"
+      justify="center"
+      class="mb-15"
+    >
+      <v-col :cols="isMobile ? 10 : 8">
+        <v-row
+          no-gutters
+          align="center"
+          justify="start"
+        >
+          <v-col cols="12" align-self="start">
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('energy_monitoring_text_1') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('energy_monitoring_text_2') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('energy_monitoring_text_3') }}
+            </v-card-text>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -29,7 +51,8 @@ export default {
     return {
       show: {
         title: false
-      }
+      },
+      isMobile: false
     }
   },
 

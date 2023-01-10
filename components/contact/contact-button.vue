@@ -9,7 +9,7 @@
         x-large
         icon
         outlined
-        href=""
+        :href="link"
         target="_blank"
         v-bind="attrs"
         v-on="on"
@@ -42,7 +42,12 @@ export default {
       type: String,
       required: false,
       default: ''
-    }
+    },
+    link: {
+      type: String,
+      required: false,
+      default: ''
+    },
   },
 
   data () {

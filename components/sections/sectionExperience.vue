@@ -38,7 +38,7 @@
             :title="$t('energy_monitoring_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
-            to="energy-monitoring"
+            to="/energy-monitoring"
           />
         </v-row>
         <v-row
@@ -51,21 +51,21 @@
             :title="$t('citizen_science_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
-            to="/gis"
+            to="/citizen-science"
           />
           <project-tile
             :icon="mdiChartBellCurve"
             :title="$t('geostatistics_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
-            to="/stream-processing"
+            to="/geostatistics"
           />
           <project-tile
             :icon="mdiCodeTags"
             :title="$t('software_development_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
-            to="energy-monitoring"
+            to="/software-development"
           />
         </v-row>
       </v-col>

@@ -15,6 +15,7 @@
           :key="i"
           :icon="button.icon"
           :tooltip="button.tooltip"
+          :link="button.link"
           css-helper="ma-1"
           color="secondary"
         />
@@ -37,10 +38,12 @@ export default {
       mdiEmail,
       buttons: [{
         icon: mdiGithub,
-        tooltip: this.$t('contact_button_tooltip_github')
+        tooltip: this.$t('contact_button_tooltip_github'),
+        link: 'https://github.com/thlemm'
       }, {
         icon: mdiGitlab,
-        tooltip: this.$t('contact_button_tooltip_gitlab')
+        tooltip: this.$t('contact_button_tooltip_gitlab'),
+        link: 'https://git.rwth-aachen.de/thomas.lemmerz'
       }, {
         icon: mdiLinkedin,
         tooltip: this.$t('contact_button_tooltip_linkedin')
