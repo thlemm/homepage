@@ -23,16 +23,112 @@
         >
           <v-col cols="12" align-self="start">
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              {{ $t('gis_text_1') }}
+              Mein Interesse für Programmierung und Softwareentwicklung wurde schon in der Schule geweckt. Im Informatikunterricht lernte ich einfache Anwendungen mit Java und SQL zu entwickeln und hatte schnell Spaß daran gefunden auch außerhalb der Schule eigene kleine Anwendungen zu programmieren. Während meines Studiums im Bauingenieurwesen in Aachen ich dieses Interesse stetig weiterverfolgt. Sowohl in Rahmen von freiwilligem Engagement in der Netzwerk-AG meines Studierenden Wohnheims als auch in meinen verschiedenen Tätigkeiten als studentische Hilfskraft. In meinen Abschlussabreiten (Bachelor und Master) konnte ich meine Erfahrungen in der Programmierung gut einbringen und weiterentwickeln und so spannende Themen im Bereich der Bau- und Geoinformatik bearbeitet. Auch nach Abschluss meines Studiums habe ich die Softwareentwicklung weiterverfolgt und im Bereich der Geoinformationssysteme einiges lernen und vielseitige Erfahrungen machen können.
             </v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              {{ $t('gis_text_2') }}
+            <v-card-text class="mb-0 pb-0 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              Einige meiner Erfahrungen und Tätigkeiten in der Softwareentwicklung habe ich hier zusammengefasst:
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
-              {{ $t('further_info_and_links') }}
               <ul>
-                <li>{{ $t('gis_link_description_1') }} <a :href="$t('gis_link_address_1')" target="_blank">{{ $t('gis_link_alias_1') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
-                <li>{{ $t('gis_link_description_2') }} <a :href="$t('gis_link_address_2')" target="_blank">{{ $t('gis_link_alias_2') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>
+                  Erste Erfahrungen im Informatikunterricht in der Schule
+                  <ul>
+                    <li>Einfache Anwendungen Java und SQL</li>
+                  </ul>
+                </li>
+                <li>
+                  Engagement in der Netzwerk-AG in Studierendenwohnanlage während des Studiums
+                  <ul>
+                    <li>Nutzerdatenverwaltung, Support für die Netzwerkadministration</li>
+                    <li>Kalender und Raumbuchungssysteme für Gemeinschaftsräume</li>
+                    <li>Info-Screen mit aktuellen Nachrichten, Busfahrplan und Speisekarte der Mensa</li>
+                  </ul>
+                </li>
+                <li>
+                  Tätigkeiten als studentische Hilfskraft während des Studiums
+                  <ul>
+                    <li>
+                      Webanwendungen für Sensordatenverwaltung
+                      <ul>
+                        <li>Backend: PHP und Python</li>
+                        <li>Frontend: JavaScript und HTML-Template-Engines</li>
+                      </ul>
+                    </li>
+                    <li>Programmierung auf Arduino und Raspberry-Pi für Sensorabfrage, One-Wire-Sensoren</li>
+                    <li>App-Entwicklung für Smartphones als Progressive Web App (PWA)</li>
+                  </ul>
+                </li>
+                <li>
+                  Private Projekte
+                  <ul>
+                    <li>Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands</li>
+                  </ul>
+                </li>
+                <li>
+                  Abschlussarbeiten
+                  <ul>
+                    <li>Lightweight Sensordatenlogger mit Datenbank, Sensor-BUS, Backend (Verwaltung, Plausibilitätsprüfung), Web-Frontend (Konfiguration, Datenvisualisierung) auf Einplatinencomputern</li>
+                    <li>Distributed Stream Processing Applikation für Analyse raum-zeitlicher Autokorrelation in Geodatenströmen in Echtzeit</li>
+                  </ul>
+                </li>
+                <li>
+                  Tätigkeit als wissenschaftlicher Mitarbeiter
+                  <ul>
+                    <li>Produktive Web-GIS-Anwendungen mit Forum und Verwaltungsoberflächen im Rahmen des Projekts OpenGeoResearch innerhalb des Wissenschaftsjahres 2022</li>
+                    <li>GIS-Anwendungen mit verteilten Architekturen (SOA)</li>
+                    <li>Management von User Generated Content, Anwendung künstlicher Neuronaler Netze zur automatisierten Erkennung unerwünschter Inhalte</li>
+                    <li>App-Entwicklung, PWA, mobiles GIS</li>
+                    <li>Entwicklung von intuitiven und benutzerfreundlichen Weboberflächen für Partizipation an der Wissenschaft</li>
+                    <li>Mitarbeit in der Hochschullehre in den Bereichen Bauinformatik, Java-Programmierung, Geoinformationssysteme und verteile Geoinformationssysteme</li>
+                  </ul>
+                </li>
+              </ul>
+            </v-card-text>
+            <v-card-text class="mb-0 pb-0 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              Mit diesen Technologien habe ich bisher gearbeitet:
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1">
+              <ul>
+                <li>
+                  Frontend (Web)
+                  <ul>
+                    <li>JavaScript, Frameworks Vue.js, Nuxt.js</li>
+                    <li>JavaScript Bibliotheken zur Datenvisualisierung: Highcharts, D3, C3, OpenLayers, Cesium</li>
+                  </ul>
+                </li>
+                <li>
+                  Backend (Web)
+                  <ul>
+                    <li>Java, Spring Boot</li>
+                    <li>Python, Bottle (Micro Web-Framework)</li>
+                    <li>PHP</li>
+                  </ul>
+                </li>
+                <li>
+                  Backend (Stream processing)
+                  <ul>
+                    <li>Apache Flink</li>
+                    <li>Apache Kafka</li>
+                    <li>Apache ZooKeeper</li>
+                  </ul>
+                </li>
+                <li>
+                  Datenbank
+                  <ul>
+                    <li>Relationale Datenbanken: PostgreSQL, PostGIS, MySQL, MariaDB</li>
+                    <li>Tools zur Verwaltung: Hibernate, Liquibase</li>
+                  </ul>
+                </li>
+                <li>
+                  Tools
+                  <ul>
+                    <li>Containerization: Docker</li>
+                    <li>CD/CI: GitLab-Workers</li>
+                  </ul>
+                </li>
+                <li>
+                  Programmiersprachen: Java, JavaScript, Python, PHP, C, SQL, Fortran
+                </li>
               </ul>
             </v-card-text>
           </v-col>
