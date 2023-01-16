@@ -77,7 +77,8 @@ export default {
           error: colors.purple.base,
           success: colors.green.base,
           // custom colors
-          background: colors.beige.base
+          background: colors.beige.base,
+          day: colors.red.lighten_40
         },
         dark: {
           // standard colors

@@ -48,12 +48,13 @@
               {{ $t('gis_text_3') }}
             </v-card-text>
             <v-card-text width="100%">
-              <v-app-bar color="primary" height="44">
+              <v-app-bar color="primary" height="44" clipped-right>
                 <v-spacer />
                 <v-tooltip bottom>
                   <template #activator="{ on, attrs }">
                     <v-btn
                       icon
+                      color="tertiary"
                       v-bind="attrs"
                       v-on="on"
                       @click="drawer = !drawer"
@@ -66,10 +67,39 @@
               </v-app-bar>
               <v-card width="100%">
                 <v-navigation-drawer
+                  v-show="drawer"
                   :value="drawer"
+                  width="350"
                   absolute
                   right
-                ></v-navigation-drawer>
+                  clipped
+                >
+                  <v-card class="pa-2" elevation="0">
+                    <v-menu
+                      v-for="(layer, i) in layers.overlays"
+                      :key="i"
+                      bottom
+                      left
+                      offset-y
+                      absolute
+                    >
+                      <template #activator="{ on }">
+                        <v-checkbox
+                          :input-value="layer.visible"
+                          :label="layer.title"
+                          :append-icon="mdiInformationOutline"
+                          hide-details
+                          :color="layer.color"
+                          @change="setLayerVisibility($event, layer.id)"
+                          @click:append="on.click"
+                        />
+                      </template>
+                      <v-card class="pa-1">
+                        <v-img width="220" contain :src="layer.legend" />
+                      </v-card>
+                    </v-menu>
+                  </v-card>
+                </v-navigation-drawer>
                 <gis-map
                   :height="'500px'"
                   :selectable="false"
@@ -84,9 +114,11 @@
 </template>
 
 <script>
-import { mdiOpenInNew, mdiLayers } from '@mdi/js'
+import { mdiOpenInNew, mdiLayers, mdiInformationOutline } from '@mdi/js'
 import ActionBackHome from '~/components/main/actionBackHome'
 import PageTitle from '~/components/main/pageTitle'
+// eslint-disable-next-line camelcase
+import layer_config from '~/static/map/layer_config.json'
 
 export default {
   name: 'PageGis',
@@ -96,11 +128,14 @@ export default {
     return {
       mdiLayers,
       mdiOpenInNew,
+      mdiInformationOutline,
       show: {
         title: false
       },
       isMobile: false,
-      drawer: true
+      drawer: true,
+      // eslint-disable-next-line camelcase
+      layers: layer_config
     }
   },
 
@@ -120,6 +155,9 @@ export default {
   methods: {
     onResize () {
       this.isMobile = window.innerWidth < 900
+    },
+    setLayerVisibility (event, layerId) {
+      this.$nuxt.$emit('setLayerVisibility', layerId, !!event)
     }
   }
 }
