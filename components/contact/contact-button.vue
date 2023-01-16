@@ -4,7 +4,7 @@
       <v-btn
         :class="cssHelper"
         :color="color"
-        elevation="8"
+        :elevation="hover ? 14 : 8"
         fab
         x-large
         icon
@@ -13,6 +13,8 @@
         target="_blank"
         v-bind="attrs"
         v-on="on"
+        @mouseover="hover = true"
+        @mouseout="hover = false"
       >
         <v-icon>{{ icon }}</v-icon>
       </v-btn>
@@ -51,7 +53,9 @@ export default {
   },
 
   data () {
-    return {}
+    return {
+      hover: false
+    }
   }
 }
 </script>
