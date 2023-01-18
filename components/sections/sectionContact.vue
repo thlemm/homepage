@@ -46,7 +46,8 @@ export default {
         link: 'https://git.rwth-aachen.de/thomas.lemmerz'
       }, {
         icon: mdiLinkedin,
-        tooltip: this.$t('contact_button_tooltip_linkedin')
+        tooltip: this.$t('contact_button_tooltip_linkedin'),
+        link: 'https://www.linkedin.com/in/thomas-lemmerz-0267ba262/'
       }, {
         icon: mdiEmail,
         tooltip: this.$t('contact_button_tooltip_email')
