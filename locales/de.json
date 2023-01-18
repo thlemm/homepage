@@ -7,7 +7,7 @@
   "details_location": "Aachen, Deutschland",
   "details_mail": "kontakt@thlemm.de",
 
-  "section_title_experience": "Erfahrung",
+  "section_title_experience": "Interessen und Erfahrungen",
   "section_title_projects": "Projekte",
 
   "catalog_title": "Katalog-App",
@@ -17,6 +17,8 @@
   "catalog_text_4": "Durch die Suchfunktion können Gegenstände per Schlagwort, Typ (Dekoration, Möbel, ...) oder über ihren ursprünglichen Standort (Küche, Wohnzimmer, …) gesucht werden. Über die Teilenummer und die Nummer des Regals oder Kartons sind diese dann schnell aufzufinden. Bis heute suche und finde ich regelmäßig Sachen über diese App.",
 
   "visualization_title": "Echtzeit Datenvisualisierung",
+  "visualization_text_1": "Eine Wirkungsvolle und intuitive Visualisierung trägt enorm zum Verständnis von Daten bei. Im Rahmen meiner Masterarbeit habe ich unter anderem ein webbasiertes Tool zur Visualisierung der Analyseergebnisse aus einer geostatistischen Analyse raumzeitlicher Autokorrelation in Geodatenströmen entwickelt. Dieses Tool enthält ein Histogramm mit Ergebnissen aus Permutationstests für einen Indikatorwert für die Autokorrelation sowie einen sogenannten Moran-Scatterplot zur Visualisierung der Gestalt der gemessenen Autokorrelation. Daneben befindet sich eine Karte des Untersuchungsgebiets (New York City). In dieser Karte sind die verschiedenen Distrikte entsprechend der lokalen Stärke der Autokorrelation eingefärbt. ",
+  "visualization_text_2": "Eine solche Darstellung mit dynamischen und interaktiven Diagrammen und Karten macht ein schnelles Verständnis der Daten möglich. Speziell da sich die gezeigten Ergebnisse aus der Analyse schnell verändern und so die Entwicklung der Autokorrelation gut erkennbar wird. Diese Adaption des ursprünglichen Tools ist als Anschauungsbeispiel zum Ausprobieren konzipiert. Mit den Steuer-Buttons kann die Wiedergabe von verschiedenen Zeitfenstern der Analyse nachgestellt werden. Ursprünglich wurden die neuen Analyseergebnisse über einen Websocket direkt an die Diagramme übergeben und so stetig aktualisiert.",
   "visualization_actions_skip_next": "nächstes Zeitfenster",
   "visualization_actions_skip_previous": "vorheriges Zeitfenster",
   "visualization_actions_auto_play": "Zeitfenster automatisch abspielen",
@@ -28,6 +30,16 @@
   "visualization_title_map": "Lokaler erweiterter Moran’s I",
 
   "wood_working_title": "Werkstatt",
+  "wood_working_text": "In meiner Freizeit ziehe ich mich gerne mal in meine kleine Werkstatt im Keller zurück. Hier entstehen vor allem kleinere Möbel oder Holzdeko. Im letzten Jahr habe ich mich dann auch dem Bau meiner eigenen Küche gewidmet. Die praktische Arbeit an kleinen Heimwerksprojekten macht mir immer viel Spaß und ist ein super Ausgleich zur Arbeit am Schreibtisch. Ein paar der entstandenen Stücke und Projekte habe ich in den untenstehenden Fotoserien zusammengestellt.",
+  "wood_working_subtitle_christmas": "Winter- und Weihnachtsdeko",
+  "wood_working_schneemann_1": "Dieser Schneemann wurde aus einem Reststück Fichtenholz gesägt. Als Knöpfe und Augen dienen ein paar angemalte Linsen und als Nase eine Messingschraube.",
+  "wood_working_schneemann_2": "An diesen verschiedenen Schneemännern sieht man gut den Unterschied zwischen gesägten (links und rechts) und gedrechselten (mitte) Figuren.",
+  "wood_working_tannen_1": "Auch diese kleinen Tannen wurden auf der Bandsäge hergestellt. Anschließend wurden sie noch mit verschiedenfarbigen Holzwachsen behandelt.",
+  "wood_working_tannen_2": "Diese kleinen Tannen wurden aus Fichtenholzresten gemacht.",
+  "wood_working_tannen_altholz_4": "Nachdem ich keine Verwendung für vier etwa gleich große Stücke Altholz gefunden hatte habe ich im Winter 2020 beschlossen drei Dekotannen daraus zu machen. In jeder der Tannen findet sich ein Stück der vier verschiedenen Hölzer.",
+  "wood_working_tanne_licht_1": "Diese Tanne wurde aus einem Rest von einen Dachsparren aus Fichtenholz gemacht. Die eingesetzten Lichter stammen aus einer einfachen Lichterkette.",
+  "wood_working_tanne_licht_2": "Auch diese Tanne war mal ein Abschnitt von einem Sparren. Durch die breitere Form sind die Lichter hier eher wie bei einem klassischen Lichterbogen angeordnet.",
+
 
   "energy_monitoring_title": "Energiemonitoring",
   "energy_monitoring_text_1": "Im Bereich des Energiemonitorings habe ich vor allem durch meine Hiwi-Jobs am Lehrstuhl für Energieeffizientes Bauen der RWTH Aachen Erfahrungen sammeln können. In meinem ersten HiWi-Job in diesem Bereich (von März 2017 bis November 2018) waren meine Aufgaben die Wartung und Weiterentwicklung eines bestehenden Monitoringsystems im Rahmen eines energetischen Langzeitmonitorings eines Wohngebäudekomplexes in Neu-Ulm. Dieses Monitoringsystem umfasste Serversysteme zur Speicherung, Verwaltung und Analyse von Monitoringdaten. In meinem zweiten HiWi-Job (von Dezember 2018 bis Juli 2020) habe ich an Entwicklung und Betrieb eines Fassadenprüfstands sowie dazugehöriger Messtechnik im Rahmen einer zerstörungsfreien Analyse von Wandkonstruktionen mitgearbeitet. Hier gehörten zu meinen Aufgaben die Mitarbeit an der Entwicklung und der Aufbau des Prüfstands, sowie die Entwicklung von Apparaturen zur Messung von Oberflächentemperaturen. Auch die Programmierung eines automatischen Datenloggers für die Temperatursensoren gehörte hier dazu.",

@@ -233,6 +233,35 @@
         </v-row>
       </v-col>
     </v-row>
+    <v-row
+      align="center"
+      justify="center"
+      class="mb-15"
+    >
+      <v-col :cols="isMobile ? 10 : 8">
+        <v-row
+          no-gutters
+          align="center"
+          justify="start"
+        >
+          <v-col cols="12" align-self="start">
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('visualization_text_1') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('visualization_text_2') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1">
+              {{ $t('further_info_and_links') }}
+              <ul>
+                <li>{{ $t('stream_processing_link_description_1') }} <a :href="$t('stream_processing_link_address_1')" target="_self">{{ $t('stream_processing_link_alias_1') }}</a></li>
+                <li>{{ $t('geostatistics_link_description_2') }} <a :href="$t('geostatistics_link_address_2')" target="_self">{{ $t('geostatistics_link_alias_2') }}</a></li>
+              </ul>
+            </v-card-text>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

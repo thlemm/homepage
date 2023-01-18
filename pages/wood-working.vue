@@ -23,10 +23,7 @@
         >
           <v-col cols="12" align-self="start">
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              {{ $t('lorem_ipsum_1') }}
-            </v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              {{ $t('lorem_ipsum_2') }}
+              {{ $t('wood_working_text') }}
             </v-card-text>
           </v-col>
         </v-row>
@@ -36,6 +33,7 @@
           justify="center"
         >
           <v-col cols="10" align-self="center">
+            <v-card-title class="ml-0 pl-0 mb-0 pb-0">{{ $t('wood_working_subtitle_christmas') }}</v-card-title>
             <v-carousel
               class="ma-0 pa-0"
               height="auto"
@@ -93,24 +91,32 @@ export default {
       isMobile: false,
       items: [
         {
-          src: '/woodworking/test/IMG_20200927_165146.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/schneemann_1.jpg',
+          description: this.$t('wood_working_schneemann_1')
         },
         {
-          src: '/woodworking/test/IMG_20200927_165638.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/schneemann_2.jpg',
+          description: this.$t('wood_working_schneemann_2')
         },
         {
-          src: '/woodworking/test/IMG_20201003_161011.jpg',
-          description: this.$t('lorem_ipsum_1')
+          src: '/woodworking/christmas/tannen_1.jpg',
+          description: this.$t('wood_working_tannen_1')
         },
         {
-          src: '/woodworking/test/IMG_20201003_161021.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/tannen_2.jpg',
+          description: this.$t('wood_working_tannen_2')
         },
         {
-          src: '/woodworking/test/IMG_20201003_161028.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/tannen_altholz_4.jpg',
+          description: this.$t('wood_working_tannen_altholz_4')
+        },
+        {
+          src: '/woodworking/christmas/tanne_licht_1.jpg',
+          description: this.$t('wood_working_tanne_licht_1')
+        },
+        {
+          src: '/woodworking/christmas/tanne_licht_2.jpg',
+          description: this.$t('wood_working_tanne_licht_2')
         }
       ]
     }
