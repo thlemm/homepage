@@ -27,6 +27,7 @@
             </v-card-text>
           </v-col>
         </v-row>
+        <v-card width="800" height="500">Hier kommt noch ein Video vom Grill</v-card>
         <image-carousel
           :min-height="isMobile ? 250 : 600"
           :title="$t('wood_working_subtitle_christmas').toString()"
@@ -84,31 +85,31 @@ export default {
       christmas: [
         {
           src: '/woodworking/christmas/schneemann_1.jpg',
-          description: this.$t('wood_working_schneemann_1')
+          description: this.$t('wood_working_description_christmas_schneemann_1')
         },
         {
           src: '/woodworking/christmas/schneemann_2.jpg',
-          description: this.$t('wood_working_schneemann_2')
+          description: this.$t('wood_working_description_christmas_schneemann_2')
         },
         {
           src: '/woodworking/christmas/tannen_1.jpg',
-          description: this.$t('wood_working_tannen_1')
+          description: this.$t('wood_working_description_christmas_tannen_1')
         },
         {
           src: '/woodworking/christmas/tannen_2.jpg',
-          description: this.$t('wood_working_tannen_2')
+          description: this.$t('wood_working_description_christmas_tannen_2')
         },
         {
           src: '/woodworking/christmas/tannen_altholz_4.jpg',
-          description: this.$t('wood_working_tannen_altholz_4')
+          description: this.$t('wood_working_description_christmas_tannen_altholz_4')
         },
         {
           src: '/woodworking/christmas/tanne_licht_1.jpg',
-          description: this.$t('wood_working_tanne_licht_1')
+          description: this.$t('wood_working_description_christmas_tanne_licht_1')
         },
         {
           src: '/woodworking/christmas/tanne_licht_2.jpg',
-          description: this.$t('wood_working_tanne_licht_2')
+          description: this.$t('wood_working_description_christmas_tanne_licht_2')
         },
         {
           src: '/woodworking/christmas/kerzen_1.jpg',
@@ -122,81 +123,81 @@ export default {
       klavier: [
         {
           src: '/woodworking/klavier/klavier_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_klavier_1')
         },
         {
           src: '/woodworking/klavier/klavier_2.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_klavier_2')
         },
         {
           src: '/woodworking/klavier/klavier_3.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_klavier_3')
         },
         {
           src: '/woodworking/klavier/klavier_4.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_klavier_4')
         },
         {
           src: '/woodworking/klavier/klavier_5.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_klavier_5')
         },
         {
           src: '/woodworking/klavier/klavier_6.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_klavier_6')
         }
       ],
       vogelhaus: [
         {
           src: '/woodworking/vogelhaus/vogelhaus_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_vogelhaus_1')
         },
         {
           src: '/woodworking/vogelhaus/vogelhaus_2.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_vogelhaus_2')
         },
         {
           src: '/woodworking/vogelhaus/vogelhaus_3.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_vogelhaus_3')
         },
         {
           src: '/woodworking/vogelhaus/vogelhaus_4.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_vogelhaus_4')
         },
         {
           src: '/woodworking/vogelhaus/vogelhaus_5.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_vogelhaus_5')
         },
         {
           src: '/woodworking/vogelhaus/vogelhaus_6.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_vogelhaus_6')
         }
       ],
       kueche: [
         {
           src: '/woodworking/kueche/kueche_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_kueche_1')
         },
         {
           src: '/woodworking/kueche/kueche_2.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_kueche_2')
         },
         {
           src: '/woodworking/kueche/kueche_3.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_kueche_3')
         },
         {
           src: '/woodworking/kueche/kueche_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_kueche_4')
         }
       ],
       schleif: [
         {
           src: '/woodworking/schleif/schleif_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_schleif_1')
         },
         {
           src: '/woodworking/schleif/schleif_2.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_schleif_2')
         }
       ],
       pumpe: [
@@ -220,15 +221,15 @@ export default {
       weitere: [
         {
           src: '/woodworking/weitere/kamin.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_weitere_1')
         },
         {
           src: '/woodworking/weitere/klapptisch.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_weitere_3')
         },
         {
           src: '/woodworking/weitere/anhaenger.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_weitere_3')
         }
       ]
     }
