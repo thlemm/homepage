@@ -27,7 +27,10 @@
             </v-card-text>
           </v-col>
         </v-row>
-        <v-card width="800" height="500">Hier kommt noch ein Video vom Grill</v-card>
+        <video-carousel
+          :title="$t('wood_working_subtitle_grill').toString()"
+          :min-height="isMobile ? 250 : 600"
+        ></video-carousel>
         <image-carousel
           :min-height="isMobile ? 250 : 600"
           :title="$t('wood_working_subtitle_christmas').toString()"
@@ -72,10 +75,11 @@
 import PageTitle from '~/components/main/pageTitle'
 import ActionBackHome from '~/components/main/actionBackHome'
 import ImageCarousel from '~/components/woodworking/imageCarousel'
+import VideoCarousel from '~/components/woodworking/videoCarousel'
 
 export default {
   name: 'PageWoodWorking',
-  components: { ImageCarousel, ActionBackHome, PageTitle },
+  components: { VideoCarousel, ImageCarousel, ActionBackHome, PageTitle },
   data () {
     return {
       show: {
@@ -240,6 +244,8 @@ export default {
     this.onResize()
 
     window.addEventListener('resize', this.onResize, { passive: true })
+
+    setTimeout(() => (this.show.title = true), 500)
   },
 
   beforeDestroy () {

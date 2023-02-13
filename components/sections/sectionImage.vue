@@ -1,7 +1,8 @@
 <template>
   <v-card color="background" elevation="0" height="100vh">
-    <v-card color="background" elevation="0" height="25vh">
+   <v-card color="background" elevation="0" height="25vh">
       <v-select
+        v-if="false"
         v-model="selectedLocale"
         class="ma-2"
         :items="availableLocales"
