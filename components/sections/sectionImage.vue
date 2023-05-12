@@ -1,6 +1,6 @@
 <template>
   <v-card color="background" elevation="0" height="100vh">
-   <v-card color="background" elevation="0" height="25vh">
+    <v-card color="background" elevation="0" height="25vh">
       <v-select
         v-if="false"
         v-model="selectedLocale"
@@ -12,7 +12,7 @@
         dense
       />
     </v-card>
-    <v-row no-gutters>
+    <v-row no-gutters :class="isMobile ? 'pl-2 pr-2' : ''">
       <v-spacer />
       <v-card class="ma-0 pa-0" width="600" color="background" elevation="0">
         <v-card-title class="ma-0 pa-0 text-h4 font-weight-light">
@@ -24,15 +24,16 @@
     </v-row>
     <v-row
       no-gutters
+      :class="isMobile ? 'pl-2 pr-2' : ''"
       align="center"
       justify="center"
     >
       <v-spacer />
-      <v-img max-width="600" src="placeholder.jpg" />
+      <v-img :max-width="isMobile ? '100%' : 600" src="placeholder.jpg" />
       <v-spacer />
     </v-row>
     <v-scroll-y-transition>
-      <v-row v-show="isVisible" no-gutters>
+      <v-row v-show="isVisible" no-gutters :class="isMobile ? 'pl-2 pr-2' : ''">
         <v-spacer />
         <v-card class="ma-0 pa-0 mt-2" width="600" color="background" elevation="0">
           <v-card-title class="ma-0 pa-0 text-h5 font-weight-light">
@@ -58,6 +59,13 @@
 
 export default {
   name: 'SectionImage',
+
+  props: {
+    isMobile: {
+      type: Boolean,
+      required: true
+    }
+  },
 
   data () {
     return {

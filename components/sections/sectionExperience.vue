@@ -1,12 +1,13 @@
 <template>
   <div>
     <v-row
+      class="text-center"
       align="center"
       justify="center"
     >
-      <div class="text-h4 secondary--text ml-5 pa-2">
+      <span class="text-h4 secondary--text ml-5 pa-2">
         {{ $t('section_title_experience') }}
-      </div>
+      </span>
     </v-row>
     <v-row
       align="center"
