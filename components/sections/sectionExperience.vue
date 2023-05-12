@@ -20,21 +20,21 @@
           align="center"
           justify="center"
         >
-          <project-tile
+          <subpage-tile
             :icon="mdiMapMarkerRadius"
             :title="$t('gis_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
             to="/gis"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiGraph"
             :title="$t('stream_processing_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
             to="/stream-processing"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiThermometer"
             :title="$t('energy_monitoring_title').toString()"
             color-text="secondary"
@@ -47,21 +47,21 @@
           align="center"
           justify="center"
         >
-          <project-tile
+          <subpage-tile
             :icon="mdiBookEducation"
             :title="$t('citizen_science_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
             to="/citizen-science"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiChartBellCurve"
             :title="$t('geostatistics_title').toString()"
             color-text="secondary"
             color-tile="#C6D2CB"
             to="/geostatistics"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiCodeTags"
             :title="$t('software_development_title').toString()"
             color-text="secondary"
@@ -76,11 +76,11 @@
 
 <script>
 import { mdiAnchor, mdiThermometer, mdiMapMarkerRadius, mdiGraph, mdiBookEducation, mdiChartBellCurve, mdiCodeTags } from '@mdi/js'
-import ProjectTile from '~/components/projects/projectsTile'
+import SubpageTile from '~/components/tiles/subpageTile'
 
 export default {
   name: 'SectionExperience',
-  components: { ProjectTile },
+  components: { SubpageTile },
 
   data () {
     return {

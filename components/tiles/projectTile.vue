@@ -8,21 +8,35 @@
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
-    <v-card-title :class="colorText + '--text'">
-      <v-spacer />
-      {{ title }}
-      <v-spacer />
-    </v-card-title>
-    <v-card-text class="text-center">
-      <v-icon :color="colorText" :size="width - 50">
-        {{ icon }}
-      </v-icon>
-    </v-card-text>
+    <v-list-item>
+      <v-list-item-avatar
+        tile
+        size="100"
+        color="colorTile"
+      >
+        <v-img :src="img" />
+      </v-list-item-avatar>
+      <v-list-item-content class="mx-0">
+        <v-list-item-title class="title" style="word-break: break-word;">
+          {{ title }}
+        </v-list-item-title>
+        <v-list-item-subtitle>
+          {{ text }}
+        </v-list-item-subtitle>
+        <v-list-item-subtitle>
+          <v-chip
+            v-for="tag in tags"
+            :key="tag"
+          >
+            {{ tag }}
+          </v-chip>
+        </v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
   </v-card>
 </template>
 
 <script>
-
 export default {
   name: 'ProjectTile',
 
@@ -41,6 +55,10 @@ export default {
       type: String,
       required: true
     },
+    text: {
+      type: String,
+      required: true
+    },
     colorTile: {
       type: String,
       required: true
@@ -49,7 +67,7 @@ export default {
       type: String,
       required: true
     },
-    icon: {
+    img: {
       type: String,
       required: true
     },
@@ -57,6 +75,11 @@ export default {
       type: String,
       required: false,
       default: '/'
+    },
+    tags: {
+      type: Array,
+      required: true,
+      default: () => { return [] }
     }
   },
 

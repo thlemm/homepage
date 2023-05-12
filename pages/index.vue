@@ -2,23 +2,25 @@
   <div>
     <section-image id="image" :is-mobile="isMobile" />
     <section-details id="details" />
-    <section-experience id="experience" />
     <section-projects id="projects" />
+    <section-experience id="experience" />
+    <section-more id="more" />
     <section-contact id="contact" />
   </div>
 </template>
 
 <script>
 
-import SectionProjects from '~/components/sections/sectionProjects'
+import SectionMore from '~/components/sections/sectionMore'
 import SectionImage from '~/components/sections/sectionImage'
 import SectionExperience from '~/components/sections/sectionExperience'
 import SectionContact from '~/components/sections/sectionContact'
 import SectionDetails from '~/components/sections/sectionDetails'
+import SectionProjects from '~/components/sections/sectionProjects'
 
 export default {
   name: 'Index',
-  components: { SectionDetails, SectionContact, SectionExperience, SectionImage, SectionProjects },
+  components: { SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
 
   data () {
     return {

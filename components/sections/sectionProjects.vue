@@ -21,26 +21,15 @@
           justify="center"
         >
           <project-tile
-            :icon="mdiChartBarStacked"
-            :title="$t('visualization_title').toString()"
-            color-text="primary"
-            color-tile="#C6D2CB"
-            to="/visualization"
-          />
-          <project-tile
-            :icon="mdiCellphoneText"
-            :title="$t('catalog_title').toString()"
-            color-text="primary"
-            color-tile="#C6D2CB"
-            to="/catalog"
-          />
-          <project-tile
-            :icon="mdiHandSaw"
-            :title="$t('wood_working_title').toString()"
-            color-text="primary"
-            color-tile="#C6D2CB"
-            to="/wood-working"
-          />
+            :height="200"
+            :width="'100%'"
+            title="Mein Projekt mit Namen"
+            :color-tile="'primary'"
+            :color-text="'black'"
+            text="Hallo ich bin einen kurze BEschreibung dieses Projekts"
+            :img="'/woodworking/christmas/tannen_2.jpg'"
+            :tags="['java', 'apache flink']"
+          ></project-tile>
         </v-row>
       </v-col>
     </v-row>
@@ -49,7 +38,7 @@
 
 <script>
 import { mdiAnchor, mdiChartBarStacked, mdiCellphoneText, mdiHandSaw } from '@mdi/js'
-import ProjectTile from '~/components/projects/projectsTile'
+import ProjectTile from '~/components/tiles/projectTile'
 
 export default {
   name: 'SectionProjects',
