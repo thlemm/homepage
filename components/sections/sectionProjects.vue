@@ -14,21 +14,24 @@
       justify="center"
       class="mb-15"
     >
-      <v-col cols="9">
+      <v-col cols="5">
         <v-row
           no-gutters
           align="center"
           justify="center"
         >
           <project-tile
-            :height="200"
-            :width="'100%'"
-            title="Mein Projekt mit Namen"
-            :color-tile="'primary'"
+            v-for="project in projects"
+            :key="project.title"
+            :height="150"
+            :width="'88%'"
+            :title="project.title"
+            :color-tile="'#C6D2CB'"
             :color-text="'black'"
-            text="Hallo ich bin einen kurze BEschreibung dieses Projekts"
-            :img="'/woodworking/christmas/tannen_2.jpg'"
-            :tags="['java', 'apache flink']"
+            :text="project.text"
+            :img="project.img"
+            :tags="project.tags"
+            :to="project.link"
           ></project-tile>
         </v-row>
       </v-col>
@@ -49,7 +52,15 @@ export default {
       mdiAnchor,
       mdiChartBarStacked,
       mdiCellphoneText,
-      mdiHandSaw
+      mdiHandSaw,
+      projects: [{
+        title: 'OpenGeoResearch',
+        text: 'Eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen im Ramhen des Wissensschaftsjahres 2022.',
+        img: '/projects/opengeoresearch.png',
+        tags: [{ tag: 'javascript', color: 'primary' }, { tag: 'nuxt', color: 'secondary' }, { tag: 'vue', color: 'secondary' }, { tag: 'java', color: 'primary' }, { tag: 'spring boot', color: 'secondary' }, { tag: 'postgres', color: 'tertiary' }, { tag: 'postgis', color: 'tertiary' }, { tag: 'pwa', color: 'error' }],
+        link: 'https://opengeoresearch.org',
+        extern: true
+      }]
     }
   }
 }

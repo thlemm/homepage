@@ -4,33 +4,36 @@
     :elevation="hover ? 3 : 0"
     :color="colorTile"
     class="pt-3 pb-2 ma-3"
-    :to="to"
+    :link="to"
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
     <v-list-item>
       <v-list-item-avatar
         tile
-        size="100"
+        :size="height"
         color="colorTile"
       >
         <v-img :src="img" />
       </v-list-item-avatar>
       <v-list-item-content class="mx-0">
-        <v-list-item-title class="title" style="word-break: break-word;">
+        <v-card-title class="title ma-0 pa-0" style="word-break: break-word;">
           {{ title }}
-        </v-list-item-title>
-        <v-list-item-subtitle>
+        </v-card-title>
+        <v-card-text class="ma-0 pa-0">
           {{ text }}
-        </v-list-item-subtitle>
-        <v-list-item-subtitle>
+        </v-card-text>
+        <v-card-text class="ma-0 pa-0 mt-2">
           <v-chip
             v-for="tag in tags"
             :key="tag"
+            class="mr-2 mb-1"
+            :color="tag.color"
+            small
           >
-            {{ tag }}
+            {{ tag.tag }}
           </v-chip>
-        </v-list-item-subtitle>
+        </v-card-text>
       </v-list-item-content>
     </v-list-item>
   </v-card>
