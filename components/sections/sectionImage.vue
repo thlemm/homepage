@@ -29,7 +29,7 @@
       justify="center"
     >
       <v-spacer />
-      <v-img :max-width="isMobile ? '100%' : 600" src="placeholder.jpg" />
+      <v-img :max-width="isMobile ? '100%' : 600" src="portrait.jpg" />
       <v-spacer />
     </v-row>
     <v-scroll-y-transition>
