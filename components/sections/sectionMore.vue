@@ -24,21 +24,21 @@
             :icon="mdiChartBarStacked"
             :title="$t('visualization_title').toString()"
             color-text="primary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/visualization"
           />
           <subpage-tile
             :icon="mdiCellphoneText"
             :title="$t('catalog_title').toString()"
             color-text="primary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/catalog"
           />
           <subpage-tile
             :icon="mdiHandSaw"
             :title="$t('wood_working_title').toString()"
             color-text="primary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/wood-working"
           />
         </v-row>

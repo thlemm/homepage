@@ -24,21 +24,21 @@
             :icon="mdiMapMarkerRadius"
             :title="$t('gis_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/gis"
           />
           <subpage-tile
             :icon="mdiGraph"
             :title="$t('stream_processing_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/stream-processing"
           />
           <subpage-tile
             :icon="mdiThermometer"
             :title="$t('energy_monitoring_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/energy-monitoring"
           />
         </v-row>
@@ -51,21 +51,21 @@
             :icon="mdiBookEducation"
             :title="$t('citizen_science_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/citizen-science"
           />
           <subpage-tile
             :icon="mdiChartBellCurve"
             :title="$t('geostatistics_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/geostatistics"
           />
           <subpage-tile
             :icon="mdiCodeTags"
             :title="$t('software_development_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/software-development"
           />
         </v-row>

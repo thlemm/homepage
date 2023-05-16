@@ -8,15 +8,15 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
-    title: 'Thomas Lemmerz - Homepage',
+    title: 'Thomas Lemmerz',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Bauingenieur | Softwareentwickler' },
+      { name: 'format-detection', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -78,20 +78,8 @@ export default {
           success: colors.green.base,
           // custom colors
           background: colors.beige.base,
-          day: colors.red.lighten_40
-        },
-        dark: {
-          // standard colors
-          primary: colors.blue.base,
-          accent: colors.red.base,
-          secondary: colors.green.base,
-          tertiary: colors.beige.base,
-          info: colors.beige.base,
-          warning: colors.red.base,
-          error: colors.purple.base,
-          success: colors.green.base,
-          // custom colors
-          background: colors.beige.base
+          day: colors.red.lighten_40,
+          light: colors.green.lighten_50
         }
       }
     }

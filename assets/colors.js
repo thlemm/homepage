@@ -10,7 +10,8 @@ const blue = Object.freeze({
 })
 
 const green = Object.freeze({
-  base: '#596F62'
+  base: '#596F62',
+  lighten_50: '#C6D2CB'
 })
 
 const beige = Object.freeze({
