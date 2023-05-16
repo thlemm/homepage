@@ -104,6 +104,22 @@ export default {
         extern: false
       },
       {
+        title: 'SeilNet - Kalender',
+        text: '',
+        img: '',
+        tags: [{ tag: 'python', color: 'primary' }, { tag: 'bottle', color: 'secondary' }, { tag: 'mediawiki', color: 'tertiary' }],
+        link: '',
+        extern: false
+      },
+      {
+        title: 'SeilNet - Buchungssystem und Schlüsselverwaltung',
+        text: '',
+        img: '',
+        tags: [{ tag: 'python', color: 'primary' }, { tag: 'bottle', color: 'secondary' }, { tag: 'sql', color: 'primary' }, { tag: 'mysql', color: 'tertiary' }],
+        link: '',
+        extern: false
+      },
+      {
         title: 'BIMxD-Bauwerksmonitoring',
         text: 'Forschungsprojekt: Sensor- und BIM-basiertes Bauwerksmonitoring von Wasserbauwerken',
         img: '',
