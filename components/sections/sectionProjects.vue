@@ -14,7 +14,7 @@
       justify="center"
       class="mb-15"
     >
-      <v-col cols="5">
+      <v-col cols="7">
         <v-row
           no-gutters
           align="center"
@@ -23,7 +23,7 @@
           <project-tile
             v-for="project in projects"
             :key="project.title"
-            :height="150"
+            :height="120"
             :width="'88%'"
             :title="project.title"
             :color-tile="'#C6D2CB'"
@@ -57,8 +57,56 @@ export default {
         title: 'OpenGeoResearch',
         text: 'Eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen im Ramhen des Wissensschaftsjahres 2022.',
         img: '/projects/opengeoresearch.png',
-        tags: [{ tag: 'javascript', color: 'primary' }, { tag: 'nuxt', color: 'secondary' }, { tag: 'vue', color: 'secondary' }, { tag: 'java', color: 'primary' }, { tag: 'spring boot', color: 'secondary' }, { tag: 'postgres', color: 'tertiary' }, { tag: 'postgis', color: 'tertiary' }, { tag: 'pwa', color: 'error' }],
+        tags: [{ tag: 'javascript', color: 'primary' }, { tag: 'nuxt', color: 'secondary' }, { tag: 'vue', color: 'secondary' }, { tag: 'java', color: 'primary' }, { tag: 'spring boot', color: 'secondary' }, { tag: 'postgres', color: 'tertiary' }, { tag: 'postgis', color: 'tertiary' }, { tag: 'IoT', color: 'error' }, { tag: 'pwa', color: 'error' }],
         link: 'https://opengeoresearch.org',
+        extern: true
+      },
+      {
+        title: 'AMSEL',
+        text: '',
+        img: '',
+        tags: [{ tag: 'javascript', color: 'primary' }],
+        link: '',
+        extern: true
+      },
+      {
+        title: 'Katalog-App',
+        text: '',
+        img: '',
+        tags: [{ tag: 'javascript', color: 'primary' }],
+        link: '',
+        extern: true
+      },
+      {
+        title: 'Bauwerksmonitoring',
+        text: '',
+        img: '',
+        tags: [{ tag: 'javascript', color: 'primary' }],
+        link: '',
+        extern: true
+      },
+      {
+        title: 'GeoWaermeWende',
+        text: '',
+        img: '',
+        tags: [{ tag: 'javascript', color: 'primary' }],
+        link: '',
+        extern: true
+      },
+      {
+        title: 'Spatiotemporal autocorrelation with Apache Flink',
+        text: '',
+        img: '',
+        tags: [{ tag: 'javascript', color: 'primary' }],
+        link: '',
+        extern: true
+      },
+      {
+        title: 'Live data visualization',
+        text: '',
+        img: '',
+        tags: [{ tag: 'javascript', color: 'primary' }],
+        link: '',
         extern: true
       }]
     }
