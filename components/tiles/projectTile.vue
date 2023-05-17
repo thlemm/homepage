@@ -4,7 +4,6 @@
     :elevation="hover ? 3 : 0"
     :color="colorTile"
     class="pt-3 pb-2 ma-3"
-    :link="to"
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
@@ -25,11 +24,14 @@
         </v-card-text>
         <v-card-text class="ma-0 pa-0 mt-2">
           <v-chip
-            v-for="tag in tags"
-            :key="tag"
+            v-for="(tag, i) in tags"
+            :key="'d' + i"
             class="mr-2 mb-1"
             :color="tag.color"
             small
+            link
+            :href="tag?.link"
+            target="blank"
           >
             {{ tag.tag }}
           </v-chip>
@@ -52,8 +54,8 @@
       </v-card-text>
       <v-card-text class="ma-0 pa-0 mt-2">
         <v-chip
-          v-for="tag in tags"
-          :key="tag"
+          v-for="(tag, i) in tags"
+          :key="'m' + i"
           class="mr-2 mb-1"
           :color="tag.color"
           small

@@ -1,0 +1,63 @@
+[
+  {
+    "title": "OpenGeoResearch",
+    "text": "Forschungsprojekt: Eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen im Ramhen des Wissensschaftsjahres 2022.",
+    "img": "/projects/opengeoresearch.png",
+    "tags": [
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
+      { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },
+      { "tag": "vue", "color": "secondary", "link": "https://vuejs.org/" },
+      { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
+      { "tag": "spring boot", "color": "secondary", "link": "https://spring.io/" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" },
+      { "tag": "postgis", "color": "tertiary", "link": "https://postgis.net/" },
+      { "tag": "gis", "color": "error", "link": "https://de.wikipedia.org/wiki/Geoinformationssystem" },
+      { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" },
+      { "tag": "pwa", "color": "error", "link": "https://de.wikipedia.org/wiki/Progressive_Web_App" }],
+    "link": "https://opengeoresearch.org",
+    "extern": true
+  },
+  {
+    "title": "Straße der Zukunft (SFB TRR 339 Teilprojekt B01)",
+    "text": "Forschungsprojekt: Adaptives geometrisch-semantisches multi-LOD Bauwerksmodell der Straßeninfrastruktur des Cyber-Physical System (CPS) Straße",
+    "img": "",
+    "tags": [
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
+      { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
+      { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
+      { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" }],
+    "link": "http://www.gia.rwth-aachen.de/BIMxD-Bauwerksmonitoring",
+    "extern": true
+  },
+  {
+    "title": "BIMxD-Bauwerksmonitoring",
+    "text": "Forschungsprojekt: Sensor- und BIM-basiertes Bauwerksmonitoring von Wasserbauwerken",
+    "img": "",
+    "tags": [
+      { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" },
+      { "tag": "postgis", "color": "tertiary", "link": "https://postgis.net/" }
+    ],
+    "link": "https://www.sfbtrr339.de/de/projekt/projektbereich-b/b01",
+    "extern": true
+  },
+  {
+    "title": "EnEff:Wärme: GeoWaermeWende ",
+    "text": "Forschungsprojekt: Geoportal-basiertes Monitoring eines geothermisch gespeisten kalten Nahwärmenetzes als Beitrag zur Wärmewende mit aktiver Nutzereinbindung",
+    "img": "",
+    "tags": [
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
+      { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },
+      { "tag": "vue", "color": "secondary", "link": "https://vuejs.org/" },
+      { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
+      { "tag": "spring boot", "color": "secondary", "link": "https://spring.io/" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" },
+      { "tag": "postgis", "color": "tertiary", "link": "https://postgis.net/" },
+      { "tag": "gis", "color": "error", "link": "https://de.wikipedia.org/wiki/Geoinformationssystem" }],
+    "link": "http://www.gia.rwth-aachen.de/GeoWaermeWende",
+    "extern": true
+  }
+]
