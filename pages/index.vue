@@ -3,7 +3,7 @@
     <section-image id="image" :is-mobile="isMobile" />
     <section-details id="details" />
     <section-projects id="projects" />
-    <section-experience id="experience" />
+    <section-experience id="experience" :is-mobile="isMobile" />
     <section-more id="more" />
     <section-contact id="contact" />
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-title
-      :title="$t('gis_title').toString()"
+      :title="isMobile ? 'GIS' : $t('gis_title').toString()"
       :show="show.title"
     />
 

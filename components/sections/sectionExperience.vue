@@ -14,7 +14,7 @@
       justify="center"
       class="mb-15"
     >
-      <v-col cols="9">
+      <v-col :cols="isMobile ? 12 : 9">
         <v-row
           no-gutters
           align="center"
@@ -81,6 +81,12 @@ import SubpageTile from '~/components/tiles/subpageTile'
 export default {
   name: 'SectionExperience',
   components: { SubpageTile },
+  props: {
+    isMobile: {
+      type: Boolean,
+      required: true
+    }
+  },
 
   data () {
     return {

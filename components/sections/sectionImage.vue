@@ -36,7 +36,7 @@
       <v-row no-gutters :class="isMobile ? 'pl-2 pr-2' : ''">
         <v-spacer />
         <v-card class="ma-0 pa-0 mt-2" width="600" color="background" elevation="0">
-          <v-card-title class="ma-0 pa-0 text-h5 font-weight-light">
+          <v-card-title class="ma-0 pa-0 text-h5 font-weight-light text-end" style="word-break: normal;">
             <v-spacer />
             {{ $t('details_profession') }}
           </v-card-title>
