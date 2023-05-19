@@ -6,7 +6,7 @@
     />
 
     <action-back-home
-      to="/#projects"
+      to="/#more"
       :cols="isMobile ? 10 : 8"
     />
 

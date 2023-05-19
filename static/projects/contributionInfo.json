@@ -21,32 +21,32 @@
   {
     "title": "Straße der Zukunft (SFB TRR 339 Teilprojekt B01)",
     "text": "Forschungsprojekt: Adaptives geometrisch-semantisches multi-LOD Bauwerksmodell der Straßeninfrastruktur des Cyber-Physical System (CPS) Straße",
-    "img": "",
+    "img": "/projects/strasse.png",
     "tags": [
       { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
       { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
       { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
       { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" }],
-    "link": "http://www.gia.rwth-aachen.de/BIMxD-Bauwerksmonitoring",
+    "link": "https://www.sfbtrr339.de/de/projekt/projektbereich-b/b01",
     "extern": true
   },
   {
     "title": "BIMxD-Bauwerksmonitoring",
     "text": "Forschungsprojekt: Sensor- und BIM-basiertes Bauwerksmonitoring von Wasserbauwerken",
-    "img": "",
+    "img": "/projects/bwm.png",
     "tags": [
       { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
       { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
       { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" },
       { "tag": "postgis", "color": "tertiary", "link": "https://postgis.net/" }
     ],
-    "link": "https://www.sfbtrr339.de/de/projekt/projektbereich-b/b01",
+    "link": "http://www.gia.rwth-aachen.de/BIMxD-Bauwerksmonitoring",
     "extern": true
   },
   {
     "title": "EnEff:Wärme: GeoWaermeWende ",
     "text": "Forschungsprojekt: Geoportal-basiertes Monitoring eines geothermisch gespeisten kalten Nahwärmenetzes als Beitrag zur Wärmewende mit aktiver Nutzereinbindung",
-    "img": "",
+    "img": "/projects/gww.png",
     "tags": [
       { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
       { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },

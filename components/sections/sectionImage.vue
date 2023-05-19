@@ -44,10 +44,6 @@
             <v-spacer />
             {{ $t('details_location') }}
           </v-card-title>
-          <v-card-title class="ma-0 pa-0 text-body-1 font-weight-light">
-            <v-spacer />
-            <a :href="'mailto:' + $t('details_mail')">{{ $t('details_mail') }}</a>
-          </v-card-title>
         </v-card>
         <v-spacer />
       </v-row>

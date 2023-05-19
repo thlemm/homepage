@@ -35,6 +35,7 @@
             :img="project.img"
             :tags="project.tags"
             :to="project.link"
+            :extern="project.extern"
             :is-mobile="isMobile"
           />
         </v-row>
@@ -58,6 +59,7 @@
             :img="contribution.img"
             :tags="contribution.tags"
             :to="contribution.link"
+            :extern="contribution.extern"
             :is-mobile="isMobile"
           />
         </v-row>
@@ -89,7 +91,6 @@ export default {
   },
 
   mounted () {
-    setTimeout(() => (this.show.title = true), 100)
     this.onResize()
 
     window.addEventListener('resize', this.onResize, { passive: true })

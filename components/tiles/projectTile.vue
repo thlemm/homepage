@@ -4,9 +4,20 @@
     :elevation="hover ? 3 : 0"
     :color="colorTile"
     class="pt-3 pb-2 ma-3"
+    :href="to"
+    :target="extern ? '_blank' : '_self'"
     @mouseover="hover = true"
     @mouseout="hover = false"
   >
+    <v-btn
+      v-if="extern"
+      icon
+      absolute
+      top
+      right
+    >
+      <v-icon>{{ mdiOpenInNew }}</v-icon>
+    </v-btn>
     <v-list-item v-if="!isMobile">
       <v-list-item-avatar
         tile
@@ -31,7 +42,7 @@
             small
             link
             :href="tag?.link"
-            target="blank"
+            target="_blank"
           >
             {{ tag.tag }}
           </v-chip>
@@ -59,6 +70,9 @@
           class="mr-2 mb-1"
           :color="tag.color"
           small
+          link
+          :href="tag?.link"
+          target="_blank"
         >
           {{ tag.tag }}
         </v-chip>
@@ -68,14 +82,16 @@
 </template>
 
 <script>
+import { mdiOpenInNew } from '@mdi/js'
+
 export default {
   name: 'ProjectTile',
 
   props: {
     width: {
-      type: Number,
+      type: String,
       required: false,
-      default: 300
+      default: '88%'
     },
     height: {
       type: Number,
@@ -107,6 +123,10 @@ export default {
       required: false,
       default: '/'
     },
+    extern: {
+      type: Boolean,
+      required: true
+    },
     tags: {
       type: Array,
       required: true,
@@ -121,6 +141,7 @@ export default {
 
   data () {
     return {
+      mdiOpenInNew,
       hover: false
     }
   }
