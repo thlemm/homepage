@@ -102,7 +102,9 @@ export default {
     }],
     defaultLocale: 'de',
     fallbackLocale: 'de',
-    useCookie: false
+    detectBrowserLanguage: {
+      useCookie: false
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
