@@ -5,7 +5,7 @@
       align="center"
       justify="center"
     >
-      <span class="text-h4 secondary--text ml-5 pa-2">
+      <span class="text-h4 secondary--text pa-2">
         {{ $t('section_title_experience') }}
       </span>
     </v-row>
@@ -14,31 +14,31 @@
       justify="center"
       class="mb-15"
     >
-      <v-col cols="9">
+      <v-col :cols="isMobile ? 12 : 9">
         <v-row
           no-gutters
           align="center"
           justify="center"
         >
-          <project-tile
+          <subpage-tile
             :icon="mdiMapMarkerRadius"
             :title="$t('gis_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/gis"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiGraph"
             :title="$t('stream_processing_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/stream-processing"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiThermometer"
             :title="$t('energy_monitoring_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/energy-monitoring"
           />
         </v-row>
@@ -47,25 +47,25 @@
           align="center"
           justify="center"
         >
-          <project-tile
+          <subpage-tile
             :icon="mdiBookEducation"
             :title="$t('citizen_science_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/citizen-science"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiChartBellCurve"
             :title="$t('geostatistics_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/geostatistics"
           />
-          <project-tile
+          <subpage-tile
             :icon="mdiCodeTags"
             :title="$t('software_development_title').toString()"
             color-text="secondary"
-            color-tile="#C6D2CB"
+            color-tile="light"
             to="/software-development"
           />
         </v-row>
@@ -76,11 +76,17 @@
 
 <script>
 import { mdiAnchor, mdiThermometer, mdiMapMarkerRadius, mdiGraph, mdiBookEducation, mdiChartBellCurve, mdiCodeTags } from '@mdi/js'
-import ProjectTile from '~/components/projects/projectsTile'
+import SubpageTile from '~/components/tiles/subpageTile'
 
 export default {
   name: 'SectionExperience',
-  components: { ProjectTile },
+  components: { SubpageTile },
+  props: {
+    isMobile: {
+      type: Boolean,
+      required: true
+    }
+  },
 
   data () {
     return {

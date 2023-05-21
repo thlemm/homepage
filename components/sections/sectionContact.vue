@@ -50,7 +50,8 @@ export default {
         link: 'https://www.linkedin.com/in/thomas-lemmerz-0267ba262/'
       }, {
         icon: mdiEmail,
-        tooltip: this.$t('contact_button_tooltip_email')
+        tooltip: this.$t('contact_button_tooltip_email'),
+        link: 'mailto:' + this.$t('details_mail')
       }]
     }
   }

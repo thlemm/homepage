@@ -1,0 +1,96 @@
+[
+  {
+    "title": "Spatiotemporal autocorrelation with Apache Flink",
+    "text": "Distributed stream processing chain to calculate spatiotemporal autocorrelation in real-time",
+    "img": "/projects/st_ac_2.png",
+    "tags": [
+      { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
+      { "tag": "apache flink", "color": "secondary", "link": "https://flink.apache.org/" },
+      { "tag": "apache kafka", "color": "secondary", "link": "https://kafka.apache.org/" },
+      { "tag": "apache zookeeper", "color": "secondary", "link": "https://zookeeper.apache.org/" },
+      { "tag": "distributed stream processing", "color": "error", "link": "https://en.wikipedia.org/wiki/Stream_processing" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" }],
+    "link": "https://github.com/thlemm/spatio-temporal-autocorrelation-with-apache-flink",
+    "extern": true
+  },
+  {
+    "title": "Live data visualization",
+    "text": "Ein webbasiertes Tool zur Visualisierung räumlicher und statistischer Daten mit push-basierter Schnittstelle via Websocket zu Apache Kafka topics",
+    "img": "/projects/visualization_2.png",
+    "tags": [
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
+      { "tag": "highcharts", "color": "secondary", "link": "https://www.highcharts.com/" },
+      { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },
+      { "tag": "vue", "color": "secondary", "link": "https://vuejs.org/" },
+      { "tag": "apache kafka", "color": "secondary", "link": "https://kafka.apache.org/" }],
+    "link": "/visualization",
+    "extern": false
+  },
+  {
+    "title": "AMSEL - Automated Monitoring System for Energy Logging",
+    "text": "Ein Datenlogger zum automatisierten Auslesen intelligenter Stromzähler umgesetzt mit Open-Source-Software auf einem Einplatinencomputer.",
+    "img": "/projects/amsel.png",
+    "tags": [
+      { "tag": "python", "color": "primary", "link": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)" },
+      { "tag": "bottle", "color": "secondary", "link": "https://bottlepy.org/docs/dev/" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "mysql", "color": "tertiary", "link": "https://www.mysql.com/de/" },
+      { "tag": "C", "color": "primary", "link": "https://de.wikipedia.org/wiki/C_(Programmiersprache)" },
+      { "tag": "m-bus", "color": "error", "link": "https://de.wikipedia.org/wiki/M-Bus_(Feldbus)" },
+      { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" }],
+    "link": "/energy-monitoring",
+    "extern": false
+  },
+  {
+    "title": "Katalog-App",
+    "text": "Eine Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands",
+    "img": "/projects/catalog.png",
+    "tags": [
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
+      { "tag": "php", "color": "primary", "link": "https://de.wikipedia.org/wiki/PHP" },
+      { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },
+      { "tag": "vue", "color": "secondary", "link": "https://vuejs.org/" },
+      { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" },
+      { "tag": "pwa", "color": "error", "link": "https://de.wikipedia.org/wiki/Progressive_Web_App" }],
+    "link": "/catalog",
+    "extern": false
+  },
+  {
+    "title": "Homepage",
+    "text": "Eine persönliche Homepage mit Projektportfolio und thematisch strukturierten Detailansichten.",
+    "img": "/projects/homepage.png",
+    "tags": [
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
+      { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },
+      { "tag": "vue", "color": "secondary", "link": "https://vuejs.org/" }],
+    "link": "",
+    "extern": false
+  },
+  {
+    "title": "SeilNet - Homepage",
+    "text": "Eine Homepage für das Studierendenwohnheims Seilgraben in Aachen.",
+    "img": "/projects/seilgraben.png",
+    "tags": [
+      { "tag": "html", "color": "primary", "link": "https://de.wikipedia.org/wiki/Hypertext_Markup_Language" },
+      { "tag": "php", "color": "primary", "link": "https://de.wikipedia.org/wiki/PHP" },
+      { "tag": "css", "color": "primary", "link": "https://de.wikipedia.org/wiki/Cascading_Style_Sheets" },
+      { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" }],
+    "link": "https://seilgraben.rwth-aachen.de",
+    "extern": true
+  },
+  {
+    "title": "SeilNet - Buchungssystem und Schlüsselverwaltung",
+    "text": "Ein Buchungssystem für die Gemeinschaftsräume wie Bar, Medienraum und Gartenhütte des Studierendenwohnheims Seilgraben in Aachen.",
+    "img": "/projects/seilgraben.png",
+    "tags": [
+      { "tag": "python", "color": "primary", "link": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)" },
+      { "tag": "bottle", "color": "secondary", "link": "https://bottlepy.org/docs/dev/" },
+      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "mysql", "color": "tertiary", "link": "https://www.mysql.com/de/" }],
+    "link": "",
+    "extern": false
+  }
+]

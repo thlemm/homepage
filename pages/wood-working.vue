@@ -6,7 +6,7 @@
     />
 
     <action-back-home
-      to="/#projects"
+      to="/#more"
       :cols="isMobile ? 10 : 8"
     />
 
@@ -207,19 +207,19 @@ export default {
       pumpe: [
         {
           src: '/woodworking/pumpe/pumpe_4.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_pumpe_1')
         },
         {
           src: '/woodworking/pumpe/pumpe_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_pumpe_2')
         },
         {
           src: '/woodworking/pumpe/pumpe_2.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_pumpe_3')
         },
         {
           src: '/woodworking/pumpe/pumpe_3.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_pumpe_4')
         }
       ],
       weitere: [

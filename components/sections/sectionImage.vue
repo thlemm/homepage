@@ -29,24 +29,20 @@
       justify="center"
     >
       <v-spacer />
-      <v-img :max-width="isMobile ? '100%' : 600" src="placeholder.jpg" />
+      <v-img :max-width="isMobile ? '100%' : 600" src="portrait.jpg" />
       <v-spacer />
     </v-row>
     <v-scroll-y-transition>
-      <v-row v-show="isVisible" no-gutters :class="isMobile ? 'pl-2 pr-2' : ''">
+      <v-row no-gutters :class="isMobile ? 'pl-2 pr-2' : ''">
         <v-spacer />
         <v-card class="ma-0 pa-0 mt-2" width="600" color="background" elevation="0">
-          <v-card-title class="ma-0 pa-0 text-h5 font-weight-light">
+          <v-card-title class="ma-0 pa-0 text-h5 font-weight-light text-end" style="word-break: normal;">
             <v-spacer />
             {{ $t('details_profession') }}
           </v-card-title>
           <v-card-title class="ma-0 pa-0 text-body-1 font-weight-light">
             <v-spacer />
             {{ $t('details_location') }}
-          </v-card-title>
-          <v-card-title class="ma-0 pa-0 text-body-1 font-weight-light">
-            <v-spacer />
-            <a :href="'mailto:' + $t('details_mail')">{{ $t('details_mail') }}</a>
           </v-card-title>
         </v-card>
         <v-spacer />

@@ -433,7 +433,7 @@ export default {
         this.index = i
         this.setDataToIndex(this.index)
         // eslint-disable-next-line promise/param-names
-        await new Promise(r => setTimeout(r, 2000))
+        await new Promise(r => setTimeout(r, 1000))
       }
     },
     toggleAutoPlay () {
