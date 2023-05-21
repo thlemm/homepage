@@ -23,7 +23,7 @@
         >
           <v-col cols="12" align-self="start">
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              Mein Interesse für Programmierung und Softwareentwicklung wurde schon in der Schule geweckt. Im Informatikunterricht lernte ich einfache Anwendungen mit Java und SQL zu entwickeln und hatte schnell Spaß daran gefunden auch außerhalb der Schule eigene kleine Anwendungen zu programmieren. Während meines Studiums im Bauingenieurwesen in Aachen ich dieses Interesse stetig weiterverfolgt. Sowohl in Rahmen von freiwilligem Engagement in der Netzwerk-AG meines Studierenden Wohnheims als auch in meinen verschiedenen Tätigkeiten als studentische Hilfskraft. In meinen Abschlussabreiten (Bachelor und Master) konnte ich meine Erfahrungen in der Programmierung gut einbringen und weiterentwickeln und so spannende Themen im Bereich der Bau- und Geoinformatik bearbeitet. Auch nach Abschluss meines Studiums habe ich die Softwareentwicklung weiterverfolgt und im Bereich der Geoinformationssysteme einiges lernen und vielseitige Erfahrungen machen können.
+              Mein Interesse für Programmierung und Softwareentwicklung wurde schon in der Schule geweckt. Im Informatikunterricht lernte ich einfache Anwendungen mit Java und SQL zu entwickeln und hatte schnell Spaß daran gefunden auch außerhalb der Schule eigene kleine Anwendungen zu programmieren. Während meines Studiums im Bauingenieurwesen in Aachen habe ich dieses Interesse stetig weiterverfolgt. Sowohl in Rahmen meines freiwilligen Engagements in der Netzwerk-AG meines Studierendenwohnheims als auch in meinen verschiedenen Tätigkeiten als studentische Hilfskraft habe ich meine Kenntnisse in der Softwareentwicklung erfolgreich anwenden und weiterentwickeln können. In meinen Abschlussarbeiten (Bachelor und Master) konnte ich meine Erfahrungen in der Programmierung gut einbringen und weiterentwickeln und so spannende Themen im Bereich der Bau- und Geoinformatik erfolgreich bearbeiten. Auch nach Abschluss meines Studiums habe ich die Softwareentwicklung weiterverfolgt und im Bereich der Geoinformationssysteme vertiefen und dabei vielseitige Erfahrungen machen können.
             </v-card-text>
             <v-card-text class="mb-0 pb-0 text-subtitle-1" style="word-break: break-word; text-align: justify;">
               Einige meiner Erfahrungen und Tätigkeiten in der Softwareentwicklung habe ich hier zusammengefasst:
@@ -79,7 +79,7 @@
                     <li>Management von User Generated Content, Anwendung künstlicher Neuronaler Netze zur automatisierten Erkennung unerwünschter Inhalte</li>
                     <li>App-Entwicklung, PWA, mobiles GIS</li>
                     <li>Entwicklung von intuitiven und benutzerfreundlichen Weboberflächen für Partizipation an der Wissenschaft</li>
-                    <li>Mitarbeit in der Hochschullehre in den Bereichen Bauinformatik, Java-Programmierung, Geoinformationssysteme und verteile Geoinformationssysteme</li>
+                    <li>Mitarbeit in der Hochschullehre in den Bereichen Bauinformatik, Java-Programmierung, Geoinformationssysteme und verteilte Geoinformationssysteme</li>
                   </ul>
                 </li>
               </ul>
