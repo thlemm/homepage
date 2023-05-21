@@ -44,7 +44,7 @@
           align="center"
           justify="center"
         >
-          <span class="text-h5 primary--text pa-2 mt-3">
+          <span class="text-h5 primary--text pa-2 mt-3 text-center">
             {{ $t('section_subtitle_projects_contributions') }}
           </span>
           <project-tile

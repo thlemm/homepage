@@ -66,7 +66,7 @@
       { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
       { "tag": "nuxt", "color": "secondary", "link": "https://nuxtjs.org/" },
       { "tag": "vue", "color": "secondary", "link": "https://vuejs.org/" }],
-    "link": "",
+    "link": "https://thlemm.de/",
     "extern": false
   },
   {
@@ -80,17 +80,5 @@
       { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" }],
     "link": "https://seilgraben.rwth-aachen.de",
     "extern": true
-  },
-  {
-    "title": "SeilNet - Buchungssystem und Schlüsselverwaltung",
-    "text": "Ein Buchungssystem für die Gemeinschaftsräume wie Bar, Medienraum und Gartenhütte des Studierendenwohnheims Seilgraben in Aachen.",
-    "img": "/projects/seilgraben.png",
-    "tags": [
-      { "tag": "python", "color": "primary", "link": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)" },
-      { "tag": "bottle", "color": "secondary", "link": "https://bottlepy.org/docs/dev/" },
-      { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
-      { "tag": "mysql", "color": "tertiary", "link": "https://www.mysql.com/de/" }],
-    "link": "",
-    "extern": false
   }
 ]

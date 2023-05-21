@@ -5,7 +5,7 @@
       align="center"
       justify="center"
     >
-      <span class="text-h4 secondary--text pa-2">
+      <span class="text-h4 secondary--text pa-2 ml-3 mr-3">
         {{ $t('section_title_experience') }}
       </span>
     </v-row>

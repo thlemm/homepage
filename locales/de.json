@@ -7,11 +7,11 @@
   "details_location": "Aachen, Deutschland",
   "details_mail": "kontakt@thlemm.de",
 
-  "section_title_experience": "Interessen und Erfahrungen",
+  "section_title_experience": "Interessen und berufliche Erfahrungen",
   "section_title_projects": "Software-Projekte",
-  "section_title_more": "Mehr",
+  "section_title_more": "Apps und private Projekte",
   "section_subtitle_projects_projects": "Meine Projekte",
-  "section_subtitle_projects_contributions": "Beiträge und Mitwirkung",
+  "section_subtitle_projects_contributions": "Meine Beiträge und Mitwirkungen bei Forschungsprojekten",
 
   "catalog_title": "Katalog-App",
   "catalog_text_1": "Im Sommer 2020 habe ich einen Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands geschrieben.",
@@ -31,6 +31,9 @@
   "visualization_title_scatter": "Moran-Scatterplot",
   "visualization_title_dist": "Permutationstests",
   "visualization_title_map": "Lokaler erweiterter Moran’s I",
+  "visualization_link_alias_1": "Zum GitHub-Repository",
+  "visualization_link_address_1": "https://github.com/thlemm/live-data-visualization-with-highcharts",
+  "visualization_link_description_1": "GitHub-Repository der Visualisierung inkl. Websocket:",
 
   "wood_working_title": "Werkstatt",
   "wood_working_text": "In meiner Freizeit ziehe ich mich gerne mal in meine kleine Werkstatt im Keller zurück. Hier entstehen vor allem kleinere Möbel oder Holzdeko. Im letzten Jahr habe ich mich dann auch dem Bau meiner eigenen Küche gewidmet. Die praktische Arbeit an kleinen Heimwerksprojekten macht mir immer viel Spaß und ist ein super Ausgleich zur Arbeit am Schreibtisch. Ein paar der entstandenen Stücke und Projekte habe ich in den untenstehenden Fotoserien zusammengestellt.",

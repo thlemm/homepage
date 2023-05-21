@@ -5,7 +5,7 @@
       align="center"
       justify="center"
     >
-      <span class="text-h4 primary--text pa-2">
+      <span class="text-h4 primary--text pa-2 mr-3 ml-3">
         {{ $t('section_title_more') }}
       </span>
     </v-row>
