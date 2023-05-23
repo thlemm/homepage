@@ -23,112 +23,112 @@
         >
           <v-col cols="12" align-self="start">
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              Mein Interesse für Programmierung und Softwareentwicklung wurde schon in der Schule geweckt. Im Informatikunterricht lernte ich einfache Anwendungen mit Java und SQL zu entwickeln und hatte schnell Spaß daran gefunden auch außerhalb der Schule eigene kleine Anwendungen zu programmieren. Während meines Studiums im Bauingenieurwesen in Aachen habe ich dieses Interesse stetig weiterverfolgt. Sowohl in Rahmen meines freiwilligen Engagements in der Netzwerk-AG meines Studierendenwohnheims als auch in meinen verschiedenen Tätigkeiten als studentische Hilfskraft habe ich meine Kenntnisse in der Softwareentwicklung erfolgreich anwenden und weiterentwickeln können. In meinen Abschlussarbeiten (Bachelor und Master) konnte ich meine Erfahrungen in der Programmierung gut einbringen und weiterentwickeln und so spannende Themen im Bereich der Bau- und Geoinformatik erfolgreich bearbeiten. Auch nach Abschluss meines Studiums habe ich die Softwareentwicklung weiterverfolgt und im Bereich der Geoinformationssysteme vertiefen und dabei vielseitige Erfahrungen machen können.
+              {{ $t('software_development_text') }}
             </v-card-text>
             <v-card-text class="mb-0 pb-0 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              Einige meiner Erfahrungen und Tätigkeiten in der Softwareentwicklung habe ich hier zusammengefasst:
+              {{ $t('software_development_list_exp_title') }}
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
               <ul>
                 <li>
-                  Erste Erfahrungen im Informatikunterricht in der Schule
+                  {{ $t('software_development_list_exp_item_1') }}
                   <ul>
-                    <li>Einfache Anwendungen Java und SQL</li>
+                    <li>{{ $t('software_development_list_exp_item_1_1') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Engagement in der Netzwerk-AG in Studierendenwohnanlage während des Studiums
+                  {{ $t('software_development_list_exp_item_2') }}
                   <ul>
-                    <li>Nutzerdatenverwaltung, Support für die Netzwerkadministration</li>
-                    <li>Kalender und Raumbuchungssysteme für Gemeinschaftsräume</li>
-                    <li>Info-Screen mit aktuellen Nachrichten, Busfahrplan und Speisekarte der Mensa</li>
+                    <li>{{ $t('software_development_list_exp_item_2_1') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_2_2') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_2_3') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Tätigkeiten als studentische Hilfskraft während des Studiums
+                  {{ $t('software_development_list_exp_item_3') }}
                   <ul>
                     <li>
-                      Webanwendungen für Sensordatenverwaltung
+                      {{ $t('software_development_list_exp_item_3_1') }}
                       <ul>
-                        <li>Backend: PHP und Python</li>
-                        <li>Frontend: JavaScript und HTML-Template-Engines</li>
+                        <li>{{ $t('software_development_list_exp_item_3_1_1') }}</li>
+                        <li>{{ $t('software_development_list_exp_item_3_1_2') }}</li>
                       </ul>
                     </li>
-                    <li>Programmierung auf Arduino und Raspberry-Pi für Sensorabfrage, One-Wire-Sensoren</li>
-                    <li>App-Entwicklung für Smartphones als Progressive Web App (PWA)</li>
+                    <li>{{ $t('software_development_list_exp_item_3_2') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_3_3') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Private Projekte
+                  {{ $t('software_development_list_exp_item_4') }}
                   <ul>
-                    <li>Smartphone-App zur gemeinschaftlichen digitalen Verwaltung und Auflösung eines Hausstands</li>
+                    <li>{{ $t('software_development_list_exp_item_4_1') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Abschlussarbeiten
+                  {{ $t('software_development_list_exp_item_5') }}
                   <ul>
-                    <li>Lightweight Sensordatenlogger mit Datenbank, Sensor-BUS, Backend (Verwaltung, Plausibilitätsprüfung), Web-Frontend (Konfiguration, Datenvisualisierung) auf Einplatinencomputern</li>
-                    <li>Distributed Stream Processing Applikation für Analyse raum-zeitlicher Autokorrelation in Geodatenströmen in Echtzeit</li>
+                    <li>{{ $t('software_development_list_exp_item_5_1') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_5_2') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Tätigkeit als wissenschaftlicher Mitarbeiter
+                  {{ $t('software_development_list_exp_item_6') }}
                   <ul>
-                    <li>Produktive Web-GIS-Anwendungen mit Forum und Verwaltungsoberflächen im Rahmen des Projekts OpenGeoResearch innerhalb des Wissenschaftsjahres 2022</li>
-                    <li>GIS-Anwendungen mit verteilten Architekturen (SOA)</li>
-                    <li>Management von User Generated Content, Anwendung künstlicher Neuronaler Netze zur automatisierten Erkennung unerwünschter Inhalte</li>
-                    <li>App-Entwicklung, PWA, mobiles GIS</li>
-                    <li>Webbasierte BIM-Tools</li>
-                    <li>Entwicklung von intuitiven und benutzerfreundlichen Weboberflächen für Partizipation an der Wissenschaft</li>
-                    <li>Mitarbeit in der Hochschullehre in den Bereichen Bauinformatik, Java-Programmierung, Geoinformationssysteme und verteilte Geoinformationssysteme</li>
+                    <li>{{ $t('software_development_list_exp_item_6_1') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_6_2') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_6_3') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_6_4') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_6_5') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_6_6') }}</li>
+                    <li>{{ $t('software_development_list_exp_item_6_7') }}</li>
                   </ul>
                 </li>
               </ul>
             </v-card-text>
             <v-card-text class="mb-0 pb-0 text-subtitle-1" style="word-break: break-word; text-align: justify;">
-              Mit diesen Technologien habe ich bisher gearbeitet:
+              {{ $t('software_development_list_tech_title') }}
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
               <ul>
                 <li>
-                  Frontend (Web)
+                  {{ $t('software_development_list_tech_item_1') }}
                   <ul>
-                    <li>JavaScript, Frameworks Vue.js, Nuxt.js</li>
-                    <li>JavaScript Bibliotheken zur Datenvisualisierung: Highcharts, D3, C3, OpenLayers, Cesium, IFC.js</li>
+                    <li>{{ $t('software_development_list_tech_item_1_1') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_1_2') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Backend (Web)
+                  {{ $t('software_development_list_tech_item_2') }}
                   <ul>
-                    <li>Java, Spring Boot</li>
-                    <li>Python, Bottle (Micro Web-Framework)</li>
-                    <li>PHP</li>
+                    <li>{{ $t('software_development_list_tech_item_2_1') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_2_2') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_2_3') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Backend (Stream processing)
+                  {{ $t('software_development_list_tech_item_3') }}
                   <ul>
-                    <li>Apache Flink</li>
-                    <li>Apache Kafka</li>
-                    <li>Apache ZooKeeper</li>
+                    <li>{{ $t('software_development_list_tech_item_3_1') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_3_2') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_3_3') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Datenbank
+                  {{ $t('software_development_list_tech_item_4') }}
                   <ul>
-                    <li>Relationale Datenbanken: PostgreSQL, PostGIS, MySQL, MariaDB</li>
-                    <li>Tools zur Verwaltung: Hibernate, Liquibase</li>
+                    <li>{{ $t('software_development_list_tech_item_4_1') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_4_2') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Tools
+                  {{ $t('software_development_list_tech_item_5') }}
                   <ul>
-                    <li>Containerization: Docker</li>
-                    <li>CD/CI: GitLab-Workers</li>
+                    <li>{{ $t('software_development_list_tech_item_5_1') }}</li>
+                    <li>{{ $t('software_development_list_tech_item_5_2') }}</li>
                   </ul>
                 </li>
                 <li>
-                  Programmiersprachen: Java, JavaScript, Python, PHP, C, SQL, Fortran
+                  {{ $t('software_development_list_tech_item_6') }}
                 </li>
               </ul>
             </v-card-text>
