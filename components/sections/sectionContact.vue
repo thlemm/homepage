@@ -27,6 +27,7 @@
 <script>
 import { mdiGithub, mdiGitlab, mdiLinkedin, mdiEmail } from '@mdi/js'
 import ContactButton from '~/components/contact/contact-button'
+
 export default {
   name: 'SectionContact',
   components: { ContactButton },
@@ -39,15 +40,15 @@ export default {
       buttons: [{
         icon: mdiGithub,
         tooltip: this.$t('contact_button_tooltip_github'),
-        link: 'https://github.com/thlemm'
+        link: this.$t('contact_button_link_github')
       }, {
         icon: mdiGitlab,
         tooltip: this.$t('contact_button_tooltip_gitlab'),
-        link: 'https://git.rwth-aachen.de/thomas.lemmerz'
+        link: this.$t('contact_button_link_gitlab')
       }, {
         icon: mdiLinkedin,
         tooltip: this.$t('contact_button_tooltip_linkedin'),
-        link: 'https://www.linkedin.com/in/thomas-lemmerz-0267ba262/'
+        link: this.$t('contact_button_link_linkedin')
       }, {
         icon: mdiEmail,
         tooltip: this.$t('contact_button_tooltip_email'),

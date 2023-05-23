@@ -30,14 +30,14 @@
             </v-card-text>
             <v-card class="ml-5 mr-5 text-center" elevation="0" color="light">
               <v-img contain src="/monitoring/amsel_structure.PNG"></v-img>
-              <span class="text-subtitle-2">Aufbau des Datenloggerns (AMSEL) und Bilder des Messnetzes</span>
+              <span class="text-subtitle-2">{{ $t('energy_monitoring_caption_1') }}</span>
             </v-card>
             <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
               {{ $t('energy_monitoring_text_3') }}
             </v-card-text>
             <v-card class="ml-5 mr-5 text-center" elevation="0" color="light">
               <v-img contain src="/monitoring/amsel_time.png"></v-img>
-              <span class="text-subtitle-2">Vergleich der Transmissionsdauer für unterschiedliche Konfigurationen. Durch die automatisierte Konfiguration der Zähler konnten die Transmissionsdauern deutlich verringert werden.</span>
+              <span class="text-subtitle-2">{{ $t('energy_monitoring_caption_2') }}</span>
             </v-card>
             <v-card class="ml-5 mr-5 mt-8 text-center" elevation="0" color="light">
               <video
@@ -51,7 +51,7 @@
                 <source src="/monitoring/data_logger.mp4" type="video/mp4" />
                 Your browser does not support the video tag or the file format of this video.
               </video>
-              <span class="text-subtitle-2">Dieses Video zeigt den Aufbau der Bedienoberfläche des Datenloggers.</span>
+              <span class="text-subtitle-2">{{ $t('energy_monitoring_caption_3') }}</span>
             </v-card>
           </v-col>
         </v-row>

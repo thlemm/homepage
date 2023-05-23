@@ -78,11 +78,17 @@
   "wood_working_description_weitere_3": "Dieser kleine Fahrradanhänger ist superpraktisch, um sperrige Sachen vom Baumarkt zu holen.",
   "wood_working_subtitle_grill": "Grill",
   "wood_working_description_grill_1": "Diesen Grill habe ich vor einigen Jahren mal gebaut. Ich wollte einfach einmal ein Projekt mit Zahnrädern aus Holz machen und bin auf die Idee gekommen damit einen Antrieb für Grillspieße zu bauen. Die Zahnräder habe ich mit dem Online-Tool von woodgears.ca erstellt und dann auf der Bandsäge ausgesägt. Als Motor dient ein alter Motor aus einem Akkuschrauber.",
+  "wood_working_link_short_grill": "https://woodgears.ca",
+  "wood_working_link_long_grill": "https://woodgears.ca/gear_cutting/template.html",
+  "wood_working_link_description_grill": "Online-Tool: ",
 
   "energy_monitoring_title": "Energiemonitoring",
   "energy_monitoring_text_1": "Im Bereich des Energiemonitorings habe ich vor allem durch meine Hiwi-Jobs am Lehrstuhl für Energieeffizientes Bauen der RWTH Aachen Erfahrungen sammeln können. In meinem ersten HiWi-Job in diesem Bereich (von März 2017 bis November 2018) waren meine Aufgaben die Wartung und Weiterentwicklung eines bestehenden Monitoringsystems im Rahmen eines energetischen Langzeitmonitorings für einen Wohngebäudekomplex in Neu-Ulm. Dieses Monitoringsystem umfasste Serversysteme zur Speicherung, Verwaltung und Analyse von Monitoringdaten. In meinem zweiten HiWi-Job (von Dezember 2018 bis Juli 2020) habe ich an Entwicklung und Betrieb eines Fassadenprüfstands sowie dazugehöriger Messtechnik im Rahmen einer zerstörungsfreien Analyse von Wandkonstruktionen mitgearbeitet. Hier gehörten zu meinen Aufgaben die Mitarbeit an der Entwicklung und der Aufbau des Prüfstands, sowie die Entwicklung von Apparaturen zur Messung von Oberflächentemperaturen. Auch die Programmierung eines automatischen Datenloggers für die Temperatursensoren gehörte hier dazu.",
   "energy_monitoring_text_2": "Meine Bachelorarbeit habe ich im Jahr 2017 auch im Bereich des Energiemonitorings geschrieben. Das Thema der Arbeit war der „Aufbau eines M-Bus-basierten Messnetzes für den Einsatzbereich ‚Energetisches Monitoring‘“. Dabei habe ich einen Datenlogger zum automatisierten Auslesen intelligenter Stromzähler entwickelt. Dieser Datenlogger wurde mit einem Einplatinencomputer und unter Verwendung frei verfügbarer Software realisiert. Der Datenlogger hat ein Netz aus mehreren intelligenten Stromzählern über das M-BUS-Protokoll gesteuert und automatisiert ausgelesen.",
   "energy_monitoring_text_3": "In diesem Zusammenhang habe ich auch eine Methodik zur automatischen Konfiguration intelligenter Stromzähler über das M-BUS-Protokoll entwickelt, welches eine weitaus schnellere und effizientere Abfrage der Monitoringdaten von derartigen Zählern erlaubt. Darüber habe ich auch auf dem 29. Forum Bauinformatik in Dresden einen Vortrag halten können.",
+  "energy_monitoring_caption_1": "Aufbau des Datenloggerns (AMSEL) und Bilder des Messnetzes",
+  "energy_monitoring_caption_2": "Vergleich der Transmissionsdauer für unterschiedliche Konfigurationen. Durch die automatisierte Konfiguration der Zähler konnten die Transmissionsdauern deutlich verringert werden.",
+  "energy_monitoring_caption_3": "Dieses Video zeigt den Aufbau der Bedienoberfläche des Datenloggers.",
 
   "stream_processing_title": "Stream processing",
   "stream_processing_text_1": "Im Sommer 2021 habe ich meine Masterarbeit über das Thema „Raumzeitliche Autokorrelation in Geodatenströmen mittels Distributed Stream Processing“ geschrieben. Das Thema Stream Processing hat dabei eine wichtige Rolle gespielt. Das Ziel der Arbeit war es eine Methodik zur Analyse raumzeitlicher Autokorrelation in Geodatenströmen mit den Mechanismen des distributed stream processing zu entwickeln und diese anschließend zu evaluieren. Das stream processing bietet interessante Möglichkeiten komplexe Analysen hoch performant und leistungsfähig durchzuführen. Außerdem können Analysen auf neu eintreffenden Daten in Echtzeit realisiert werden. Im Folgenden habe ich zwei Auszüge aus meiner Mastarbeit eingefügt, in welchen ich das Grundkonzept des stream processing zusmmenfasse:",
@@ -151,11 +157,15 @@
   "gis_link_description_3": "Wissenschaftsjahr 2022 - Nachgefragt!:",
   "gis_link_alias_3": "Wissenschaftsjahr 2022",
   "gis_link_address_3": "https://www.wissenschaftsjahr.de/2022/",
+  "gis_source_description": "Quelle: Land NRW unter ",
 
   "contact_button_tooltip_github": "GitHub",
   "contact_button_tooltip_gitlab": "GitLab",
   "contact_button_tooltip_linkedin": "LinkedIn",
   "contact_button_tooltip_email": "E-Mail",
+  "contact_button_link_github": "https://github.com/thlemm",
+  "contact_button_link_gitlab": "https://git.rwth-aachen.de/thomas.lemmerz",
+  "contact_button_link_linkedin": "https://www.linkedin.com/in/thomas-lemmerz-0267ba262/",
 
   "further_info_and_links": "Hier gibt es weiterführende Informationen:",
   "further_literature": "Literaturangaben:",

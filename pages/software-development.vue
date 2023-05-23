@@ -78,6 +78,7 @@
                     <li>GIS-Anwendungen mit verteilten Architekturen (SOA)</li>
                     <li>Management von User Generated Content, Anwendung künstlicher Neuronaler Netze zur automatisierten Erkennung unerwünschter Inhalte</li>
                     <li>App-Entwicklung, PWA, mobiles GIS</li>
+                    <li>Webbasierte BIM-Tools</li>
                     <li>Entwicklung von intuitiven und benutzerfreundlichen Weboberflächen für Partizipation an der Wissenschaft</li>
                     <li>Mitarbeit in der Hochschullehre in den Bereichen Bauinformatik, Java-Programmierung, Geoinformationssysteme und verteilte Geoinformationssysteme</li>
                   </ul>
@@ -93,7 +94,7 @@
                   Frontend (Web)
                   <ul>
                     <li>JavaScript, Frameworks Vue.js, Nuxt.js</li>
-                    <li>JavaScript Bibliotheken zur Datenvisualisierung: Highcharts, D3, C3, OpenLayers, Cesium</li>
+                    <li>JavaScript Bibliotheken zur Datenvisualisierung: Highcharts, D3, C3, OpenLayers, Cesium, IFC.js</li>
                   </ul>
                 </li>
                 <li>
