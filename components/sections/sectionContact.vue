@@ -2,9 +2,9 @@
   <div>
     <v-card color="background" elevation="0" height="150" />
     <v-row
-        align="center"
-        justify="center"
-        class="mb-8"
+      align="center"
+      justify="center"
+      class="mb-8"
     >
       <v-col
         class="text-center"
@@ -15,6 +15,7 @@
           :key="i"
           :icon="button.icon"
           :tooltip="button.tooltip"
+          :link="button.link"
           css-helper="ma-1"
           color="secondary"
         />
@@ -25,10 +26,11 @@
 
 <script>
 import { mdiGithub, mdiGitlab, mdiLinkedin, mdiEmail } from '@mdi/js'
-import ContactButton from "~/components/contact/contact-button";
+import ContactButton from '~/components/contact/contact-button'
+
 export default {
-  name: 'sectionContact',
-  components: {ContactButton},
+  name: 'SectionContact',
+  components: { ContactButton },
   data () {
     return {
       mdiGithub,
@@ -37,16 +39,20 @@ export default {
       mdiEmail,
       buttons: [{
         icon: mdiGithub,
-        tooltip: this.$t('contact_button_tooltip_github')
-      },{
+        tooltip: this.$t('contact_button_tooltip_github'),
+        link: this.$t('contact_button_link_github')
+      }, {
         icon: mdiGitlab,
-        tooltip: this.$t('contact_button_tooltip_gitlab')
-      },{
+        tooltip: this.$t('contact_button_tooltip_gitlab'),
+        link: this.$t('contact_button_link_gitlab')
+      }, {
         icon: mdiLinkedin,
-        tooltip: this.$t('contact_button_tooltip_linkedin')
-      },{
+        tooltip: this.$t('contact_button_tooltip_linkedin'),
+        link: this.$t('contact_button_link_linkedin')
+      }, {
         icon: mdiEmail,
-        tooltip: this.$t('contact_button_tooltip_email')
+        tooltip: this.$t('contact_button_tooltip_email'),
+        link: 'mailto:' + this.$t('details_mail')
       }]
     }
   }

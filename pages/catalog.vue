@@ -1,63 +1,42 @@
 <template>
   <div>
-    <v-row
-      no-gutters
-      align="center"
-      justify="center"
-    >
-      <v-col cols="12">
-        <v-sheet color="secondary" height="120" fill-height fluid>
-          <v-row
-            no-gutters
-            align="center"
-            justify="center"
-            class="text-center fill-height"
-          >
-            <v-scale-transition>
-              <v-col v-show="show.title" cols="12">
-                <div class="text-h2 background--text">{{ $t('catalog_title') }}</div>
-              </v-col>
-            </v-scale-transition>
-          </v-row>
-        </v-sheet>
-      </v-col>
-    </v-row>
-    <v-row
-      no-gutters
-      align="start"
-      justify="center"
-    >
-      <v-col cols="10">
-        <v-btn
-          text
-          to="/#projects"
-        >
-          <v-icon class="mr-1">{{ mdiArrowLeft }}</v-icon>
-          {{ $t('action_back_home') }}
-        </v-btn>
+    <page-title
+      :title="$t('catalog_title').toString()"
+      :show="show.title"
+    />
 
-        <v-spacer/>
-      </v-col>
-    </v-row>
+    <action-back-home
+      to="/#projects"
+      :cols="isMobile ? 10 : 8"
+    />
+
     <v-row
       v-if="!isMobile"
       align="center"
       justify="center"
       class="mb-15"
     >
-      <v-col cols="10">
+      <v-col cols="8">
         <v-row
           no-gutters
           align="center"
           justify="start"
         >
           <v-col cols="7" align-self="start">
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_1') }}</v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_2') }}</v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_3') }}</v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_4') }}</v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('catalog_text_1') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('catalog_text_2') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('catalog_text_3') }}
+            </v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('catalog_text_4') }}
+            </v-card-text>
           </v-col>
-          <v-spacer></v-spacer>
+          <v-spacer />
           <v-col cols="4">
             <v-card class="pa-0" color="background" elevation="0" width="370">
               <v-carousel
@@ -70,7 +49,7 @@
                   v-for="(item,i) in items"
                   :key="i"
                 >
-                  <v-img :src="item.src" height="700" contain></v-img>
+                  <v-img :src="item.src" height="700" contain />
                 </v-carousel-item>
               </v-carousel>
             </v-card>
@@ -91,17 +70,25 @@
           align="center"
           justify="start"
         >
-          <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_1') }}</v-card-text>
-          <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_2') }}</v-card-text>
-          <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_3') }}</v-card-text>
-          <v-card-text class="mb-3 text-subtitle-1">{{ $t('catalog_text_4') }}</v-card-text>
+          <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+            {{ $t('catalog_text_1') }}
+          </v-card-text>
+          <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+            {{ $t('catalog_text_2') }}
+          </v-card-text>
+          <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+            {{ $t('catalog_text_3') }}
+          </v-card-text>
+          <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+            {{ $t('catalog_text_4') }}
+          </v-card-text>
         </v-row>
         <v-row
           no-gutters
           align="center"
           justify="start"
         >
-          <v-spacer></v-spacer>
+          <v-spacer />
           <v-card class="pa-0" color="background" elevation="0" width="370">
             <v-carousel
               height="700"
@@ -113,11 +100,11 @@
                 v-for="(item,i) in items"
                 :key="i"
               >
-                <v-img :src="item.src" height="700" contain></v-img>
+                <v-img :src="item.src" height="700" contain />
               </v-carousel-item>
             </v-carousel>
           </v-card>
-          <v-spacer></v-spacer>
+          <v-spacer />
         </v-row>
       </v-col>
     </v-row>
@@ -126,10 +113,12 @@
 
 <script>
 import { mdiMinus, mdiArrowLeft } from '@mdi/js'
+import PageTitle from '~/components/main/pageTitle'
+import ActionBackHome from '~/components/main/actionBackHome'
 
 export default {
-  name: 'pageCatalog',
-
+  name: 'PageCatalog',
+  components: { ActionBackHome, PageTitle },
   data () {
     return {
       mdiMinus,
@@ -163,7 +152,7 @@ export default {
   },
 
   beforeDestroy () {
-    if (typeof window === 'undefined') return
+    if (typeof window === 'undefined') { return }
 
     window.removeEventListener('resize', this.onResize, { passive: true })
   },
@@ -171,7 +160,7 @@ export default {
   methods: {
     onResize () {
       this.isMobile = window.innerWidth < 900
-    },
+    }
   }
 }
 </script>

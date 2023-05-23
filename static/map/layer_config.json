@@ -1,0 +1,197 @@
+{
+  "base":
+    {
+      "id": 1,
+      "color": "neutral",
+      "title": "OpenStreetMap",
+      "description": null,
+      "legend": null,
+      "cmp": "vl-layer-tile",
+      "visible": true,
+      "selectable": false,
+      "opacity": 1,
+      "source": {
+        "cmp": "vl-source-osm"
+      }
+    }
+  ,
+  "overlays": [
+    {
+      "id": 3,
+      "title": "Straße, 24h-Pegel LDEN",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "#d9424f",
+      "cmp": "vl-layer-tile",
+      "visible": true,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "STR_DEN",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 4,
+      "title": "Flugverkehr, 24h-Pegel LDEN",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=FLG_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "#d9424f",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "FLG_DEN",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 5,
+      "title": "Industrie, 24h-Pegel LDEN",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=IND_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "#d9424f",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "IND_DEN",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 6,
+      "title": "Schiene Bund, 24h-Pegel LDEN",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=SCB_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "#d9424f",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "SCB_DEN",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 7,
+      "title": "Straße, Nachtpegel LNight",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_NGT&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "primary",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "STR_NGT",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 8,
+      "title": "Flugverkehr, Nachtpegel LNight",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=FLG_NGT&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "primary",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "FLG_NGT",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 9,
+      "title": "Industrie, Nachtpegel LNight",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=IND_NGT&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "primary",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "IND_NGT",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    },{
+      "id": 10,
+      "title": "Schiene Bund, Nachtpegel LNight",
+      "description": "",
+      "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=SCB_NGT&sld_version=1.1.0&version=1.1.1&styles=&format=image%2Fpng",
+      "color": "primary",
+      "cmp": "vl-layer-tile",
+      "visible": false,
+      "selectable": false,
+      "opacity": 1,
+      "serviceInfo": {
+        "title": "WMS Lärmkarte NRW",
+        "description": "Veröffentlichung der Lärmkarten gemäß Lärmkartierung nach Richtlinie 2002/49/EG - EU-Umgebungslärmrichtlinie",
+        "legend": "https://www.wms.nrw.de/umwelt/laerm?request=GetLegendGraphic&service=WMS&layer=STR_DEN&sld_version=1.1.0&version=1.1.1&styles=&format=image/png&"
+      },
+      "source": {
+        "type": "wms",
+        "cmp": "vl-source-wms",
+        "tiled": true,
+        "layers": "SCB_NGT",
+        "url": "https://www.wms.nrw.de/umwelt/laerm?"
+      }
+    }
+  ]
+}

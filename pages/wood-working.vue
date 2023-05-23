@@ -1,140 +1,239 @@
 <template>
   <div>
-    <v-row
-        no-gutters
-        align="center"
-        justify="center"
-    >
-      <v-col cols="12">
-        <v-sheet color="secondary" height="120" fill-height fluid>
-          <v-row
-              no-gutters
-              align="center"
-              justify="center"
-              class="text-center fill-height"
-          >
-            <v-scale-transition>
-              <v-col v-show="show.title" cols="12">
-                <div class="text-h2 background--text">{{ $t('wood_working_title') }}</div>
-              </v-col>
-            </v-scale-transition>
-          </v-row>
-        </v-sheet>
-      </v-col>
-    </v-row>
-    <v-row
-        no-gutters
-        align="start"
-        justify="center"
-    >
-      <v-col cols="10">
-        <v-btn
-            text
-            to="/#projects"
-        >
-          <v-icon class="mr-1">{{ mdiArrowLeft }}</v-icon>
-          {{ $t('action_back_home') }}
-        </v-btn>
+    <page-title
+      :title="$t('wood_working_title').toString()"
+      :show="show.title"
+    />
 
-        <v-spacer/>
-      </v-col>
-    </v-row>
+    <action-back-home
+      to="/#more"
+      :cols="isMobile ? 10 : 8"
+    />
+
     <v-row
       align="center"
       justify="center"
       class="mb-15"
     >
-      <v-col cols="10">
+      <v-col :cols="isMobile ? 10 : 8">
         <v-row
           no-gutters
           align="center"
           justify="start"
         >
           <v-col cols="12" align-self="start">
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('lorem_ipsum_1') }}</v-card-text>
-            <v-card-text class="mb-3 text-subtitle-1">{{ $t('lorem_ipsum_2') }}</v-card-text>
+            <v-card-text class="mb-3 text-subtitle-1" style="word-break: break-word; text-align: justify;">
+              {{ $t('wood_working_text') }}
+            </v-card-text>
           </v-col>
         </v-row>
-        <v-row
-          no-gutters
-          align="center"
-          justify="center"
-        >
-          <v-col cols="10" align-self="center">
-            <v-carousel
-              class="ma-0 pa-0"
-              height="auto"
-              :delimiter-icon="mdiMinus"
-            >
-              <v-carousel-item
-                v-for="(item,i) in items"
-                :key="i"
-              >
-                <v-sheet
-                  color="tertiary"
-                  height="100%"
-                  tile
-                >
-                  <v-row
-                    align="center"
-                    justify="center"
-                  >
-                    <v-card class="pb-12" color="secondary">
-                      <v-img
-                        :src="item.src"
-                        :min-height="isMobile ? 250 : 600"
-                        height="100%"
-                        contain
-                      ></v-img>
-                      <v-card-text class="tertiary--text pl-5 pr-5 pb-5">
-                        {{ item.description }}
-                      </v-card-text >
-                    </v-card>
-                  </v-row>
-                </v-sheet>
-              </v-carousel-item>
-            </v-carousel>
-          </v-col>
-        </v-row>
+        <video-carousel
+          :title="$t('wood_working_subtitle_grill').toString()"
+          :min-height="isMobile ? 250 : 600"
+        ></video-carousel>
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_christmas').toString()"
+          :images="christmas"
+        />
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_klavier').toString()"
+          :images="klavier"
+        />
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_vogelhaus').toString()"
+          :images="vogelhaus"
+        />
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_kueche').toString()"
+          :images="kueche"
+        />
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_schleif').toString()"
+          :images="schleif"
+        />
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_pumpe').toString()"
+          :images="pumpe"
+        />
+        <image-carousel
+          :min-height="isMobile ? 250 : 600"
+          :title="$t('wood_working_subtitle_weitere').toString()"
+          :images="weitere"
+        />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import { mdiMinus, mdiArrowLeft } from '@mdi/js'
+import PageTitle from '~/components/main/pageTitle'
+import ActionBackHome from '~/components/main/actionBackHome'
+import ImageCarousel from '~/components/woodworking/imageCarousel'
+import VideoCarousel from '~/components/woodworking/videoCarousel'
 
 export default {
-  name: 'pageWoodWorking',
-
+  name: 'PageWoodWorking',
+  components: { VideoCarousel, ImageCarousel, ActionBackHome, PageTitle },
   data () {
     return {
-      mdiMinus,
-      mdiArrowLeft,
       show: {
         title: false
       },
       isMobile: false,
-      items: [
+      christmas: [
         {
-          src: '/woodworking/test/IMG_20200927_165146.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/schneemann_1.jpg',
+          description: this.$t('wood_working_description_christmas_schneemann_1')
         },
         {
-          src: '/woodworking/test/IMG_20200927_165638.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/schneemann_2.jpg',
+          description: this.$t('wood_working_description_christmas_schneemann_2')
         },
         {
-          src: '/woodworking/test/IMG_20201003_161011.jpg',
+          src: '/woodworking/christmas/tannen_1.jpg',
+          description: this.$t('wood_working_description_christmas_tannen_1')
+        },
+        {
+          src: '/woodworking/christmas/tannen_2.jpg',
+          description: this.$t('wood_working_description_christmas_tannen_2')
+        },
+        {
+          src: '/woodworking/christmas/tannen_altholz_4.jpg',
+          description: this.$t('wood_working_description_christmas_tannen_altholz_4')
+        },
+        {
+          src: '/woodworking/christmas/tanne_licht_1.jpg',
+          description: this.$t('wood_working_description_christmas_tanne_licht_1')
+        },
+        {
+          src: '/woodworking/christmas/tanne_licht_2.jpg',
+          description: this.$t('wood_working_description_christmas_tanne_licht_2')
+        },
+        {
+          src: '/woodworking/christmas/kerzen_1.jpg',
           description: this.$t('lorem_ipsum_1')
         },
         {
-          src: '/woodworking/test/IMG_20201003_161021.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/christmas/wichtel_1.jpg',
+          description: this.$t('lorem_ipsum_1')
+        }
+      ],
+      klavier: [
+        {
+          src: '/woodworking/klavier/klavier_1.jpg',
+          description: this.$t('wood_working_description_klavier_1')
         },
         {
-          src: '/woodworking/test/IMG_20201003_161028.jpg',
-          description: this.$t('lorem_ipsum_2')
+          src: '/woodworking/klavier/klavier_2.jpg',
+          description: this.$t('wood_working_description_klavier_2')
+        },
+        {
+          src: '/woodworking/klavier/klavier_3.jpg',
+          description: this.$t('wood_working_description_klavier_3')
+        },
+        {
+          src: '/woodworking/klavier/klavier_4.jpg',
+          description: this.$t('wood_working_description_klavier_4')
+        },
+        {
+          src: '/woodworking/klavier/klavier_5.jpg',
+          description: this.$t('wood_working_description_klavier_5')
+        },
+        {
+          src: '/woodworking/klavier/klavier_6.jpg',
+          description: this.$t('wood_working_description_klavier_6')
+        }
+      ],
+      vogelhaus: [
+        {
+          src: '/woodworking/vogelhaus/vogelhaus_1.jpg',
+          description: this.$t('wood_working_description_vogelhaus_1')
+        },
+        {
+          src: '/woodworking/vogelhaus/vogelhaus_2.jpg',
+          description: this.$t('wood_working_description_vogelhaus_2')
+        },
+        {
+          src: '/woodworking/vogelhaus/vogelhaus_3.jpg',
+          description: this.$t('wood_working_description_vogelhaus_3')
+        },
+        {
+          src: '/woodworking/vogelhaus/vogelhaus_4.jpg',
+          description: this.$t('wood_working_description_vogelhaus_4')
+        },
+        {
+          src: '/woodworking/vogelhaus/vogelhaus_5.jpg',
+          description: this.$t('wood_working_description_vogelhaus_5')
+        },
+        {
+          src: '/woodworking/vogelhaus/vogelhaus_6.jpg',
+          description: this.$t('wood_working_description_vogelhaus_6')
+        }
+      ],
+      kueche: [
+        {
+          src: '/woodworking/kueche/kueche_1.jpg',
+          description: this.$t('wood_working_description_kueche_1')
+        },
+        {
+          src: '/woodworking/kueche/kueche_2.jpg',
+          description: this.$t('wood_working_description_kueche_2')
+        },
+        {
+          src: '/woodworking/kueche/kueche_3.jpg',
+          description: this.$t('wood_working_description_kueche_3')
+        },
+        {
+          src: '/woodworking/kueche/kueche_1.jpg',
+          description: this.$t('wood_working_description_kueche_4')
+        }
+      ],
+      schleif: [
+        {
+          src: '/woodworking/schleif/schleif_1.jpg',
+          description: this.$t('wood_working_description_schleif_1')
+        },
+        {
+          src: '/woodworking/schleif/schleif_2.jpg',
+          description: this.$t('wood_working_description_schleif_2')
+        }
+      ],
+      pumpe: [
+        {
+          src: '/woodworking/pumpe/pumpe_4.jpg',
+          description: this.$t('wood_working_description_pumpe_1')
+        },
+        {
+          src: '/woodworking/pumpe/pumpe_1.jpg',
+          description: this.$t('wood_working_description_pumpe_2')
+        },
+        {
+          src: '/woodworking/pumpe/pumpe_2.jpg',
+          description: this.$t('wood_working_description_pumpe_3')
+        },
+        {
+          src: '/woodworking/pumpe/pumpe_3.jpg',
+          description: this.$t('wood_working_description_pumpe_4')
+        }
+      ],
+      weitere: [
+        {
+          src: '/woodworking/weitere/kamin.jpg',
+          description: this.$t('wood_working_description_weitere_1')
+        },
+        {
+          src: '/woodworking/weitere/klapptisch.jpg',
+          description: this.$t('wood_working_description_weitere_3')
+        },
+        {
+          src: '/woodworking/weitere/anhaenger.jpg',
+          description: this.$t('wood_working_description_weitere_3')
         }
       ]
     }
@@ -145,10 +244,12 @@ export default {
     this.onResize()
 
     window.addEventListener('resize', this.onResize, { passive: true })
+
+    setTimeout(() => (this.show.title = true), 500)
   },
 
   beforeDestroy () {
-    if (typeof window === 'undefined') return
+    if (typeof window === 'undefined') { return }
 
     window.removeEventListener('resize', this.onResize, { passive: true })
   },
@@ -156,7 +257,7 @@ export default {
   methods: {
     onResize () {
       this.isMobile = window.innerWidth < 900
-    },
+    }
   }
 }
 </script>

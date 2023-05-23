@@ -1,22 +1,49 @@
 <template>
   <div>
-    <section-image id="image" />
+    <section-image id="image" :is-mobile="isMobile" />
     <section-details id="details" />
-    <section-experience id="experience" />
     <section-projects id="projects" />
+    <section-experience id="experience" :is-mobile="isMobile" />
+    <section-more id="more" />
     <section-contact id="contact" />
   </div>
 </template>
 
 <script>
 
-import SectionProjects from "~/components/sections/sectionProjects";
-import SectionImage from "~/components/sections/sectionImage";
-import SectionExperience from "~/components/sections/sectionExperience";
-import SectionContact from "~/components/sections/sectionContact";
-import SectionDetails from "~/components/sections/sectionDetails";
+import SectionMore from '~/components/sections/sectionMore'
+import SectionImage from '~/components/sections/sectionImage'
+import SectionExperience from '~/components/sections/sectionExperience'
+import SectionContact from '~/components/sections/sectionContact'
+import SectionDetails from '~/components/sections/sectionDetails'
+import SectionProjects from '~/components/sections/sectionProjects'
+
 export default {
-  name: 'index',
-  components: {SectionDetails, SectionContact, SectionExperience, SectionImage, SectionProjects }
+  name: 'Index',
+  components: { SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
+
+  data () {
+    return {
+      isMobile: false
+    }
+  },
+
+  mounted () {
+    this.onResize()
+
+    window.addEventListener('resize', this.onResize, { passive: true })
+  },
+
+  beforeDestroy () {
+    if (typeof window === 'undefined') { return }
+
+    window.removeEventListener('resize', this.onResize, { passive: true })
+  },
+
+  methods: {
+    onResize () {
+      this.isMobile = window.innerWidth < 900
+    }
+  }
 }
 </script>

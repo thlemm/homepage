@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'controlButton',
+  name: 'ControlButton',
 
   props: {
     icon: {
@@ -54,7 +54,7 @@ export default {
     }
   },
 
-  data() {
+  data () {
     return {}
   }
 }

@@ -8,15 +8,15 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
-    title: 'Thomas Lemmerz - Homepage',
+    title: 'Thomas Lemmerz',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Bauingenieur | Softwareentwickler' },
+      { name: 'format-detection', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -30,9 +30,17 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{
+    src: '@/plugins/vuelayers.js',
+    ssr: false,
+    mode: 'client'
+  }, {
+    src: '@/plugins/ol.js',
+    ssr: false,
+    mode: 'client'
+  }, {
     src: '@/plugins/vue-observe-visibility.js',
     ssr: false
-  },{
+  }, {
     src: '@/plugins/highcharts.js',
     ssr: false
   }],
@@ -69,20 +77,9 @@ export default {
           error: colors.purple.base,
           success: colors.green.base,
           // custom colors
-          background: colors.beige.base
-        },
-        dark: {
-          // standard colors
-          primary: colors.blue.base,
-          accent: colors.red.base,
-          secondary: colors.green.base,
-          tertiary: colors.beige.base,
-          info: colors.beige.base,
-          warning: colors.red.base,
-          error: colors.purple.base,
-          success: colors.green.base,
-          // custom colors
-          background: colors.beige.base
+          background: colors.beige.base,
+          day: colors.red.lighten_40,
+          light: colors.green.lighten_50
         }
       }
     }
@@ -104,11 +101,15 @@ export default {
       file: 'de.json'
     }],
     defaultLocale: 'de',
-    fallbackLocale: 'de'
+    fallbackLocale: 'de',
+    detectBrowserLanguage: {
+      useCookie: false
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: null,
     loaders: {
       css: {
         modules: false

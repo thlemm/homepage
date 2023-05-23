@@ -10,7 +10,7 @@
         align="end"
         justify="center"
       >
-        <v-card class="mt-5" v-observe-visibility="visibilityChanged" width="100%" color="background" elevation="0"></v-card>
+        <v-card v-observe-visibility="visibilityChanged" class="mt-5" width="100%" color="background" elevation="0" />
       </v-row>
     </v-col>
   </v-row>
@@ -19,7 +19,7 @@
 <script>
 
 export default {
-  name: 'sectionDetails',
+  name: 'SectionDetails',
 
   data () {
     return {
@@ -29,8 +29,7 @@ export default {
 
   methods: {
     visibilityChanged (isVisible) {
-      console.log('visibilityChanged: ' + isVisible)
-      if(isVisible) {
+      if (isVisible) {
         this.$nuxt.$emit('details-visible')
       }
     }

@@ -4,15 +4,17 @@
       <v-btn
         :class="cssHelper"
         :color="color"
-        elevation="8"
+        :elevation="hover ? 14 : 8"
         fab
         x-large
         icon
         outlined
-        href=""
+        :href="link"
         target="_blank"
         v-bind="attrs"
         v-on="on"
+        @mouseover="hover = true"
+        @mouseout="hover = false"
       >
         <v-icon>{{ icon }}</v-icon>
       </v-btn>
@@ -23,7 +25,7 @@
 
 <script>
 export default {
-  name: 'contactButton',
+  name: 'ContactButton',
 
   props: {
     icon: {
@@ -42,11 +44,18 @@ export default {
       type: String,
       required: false,
       default: ''
+    },
+    link: {
+      type: String,
+      required: false,
+      default: ''
     }
   },
 
-  data() {
-    return {}
+  data () {
+    return {
+      hover: false
+    }
   }
 }
 </script>
