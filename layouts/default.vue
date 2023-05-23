@@ -11,7 +11,7 @@
     >
       <v-row no-gutters align="center">
         <v-spacer />
-        <a class="white--text text-subtitle-2 font-weight-light mr-3 mb-1"><strong><v-icon color="white" small>{{ mdiCopyright }}</v-icon> Thomas Lemmerz {{ new Date().getFullYear() }}</strong></a>
+        <a class="white--text text-subtitle-2 font-weight-light mr-3 mb-1"><strong><v-icon color="white" small>{{ mdiCopyright }}</v-icon> {{ $t('details_name') }} {{ new Date().getFullYear() }}</strong></a>
         <v-spacer />
       </v-row>
     </v-footer>

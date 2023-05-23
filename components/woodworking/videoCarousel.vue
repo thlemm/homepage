@@ -42,7 +42,7 @@
                 </video>
                 <v-card-text class="tertiary--text pl-5 pr-5 pb-0">
                   {{ $t('wood_working_description_grill_1') }}
-                  Online-Tool: <a style="color: #F2F3D9" href="https://woodgears.ca/gear_cutting/template.html" target="_blank">https://woodgears.ca</a>
+                  {{ $t('wood_working_link_description_grill') }} <a style="color: #F2F3D9" :href="$t('wood_working_link_long_grill')" target="_blank">{{ $t('wood_working_link_short_grill') }}</a>
                 </v-card-text>
               </v-card>
             </v-row>

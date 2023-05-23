@@ -268,7 +268,7 @@
 
 <script>
 
-import { mdiArrowLeft, mdiSkipNext, mdiSkipPrevious, mdiPlay, mdiStop, mdiPause } from '@mdi/js'
+import { mdiArrowLeft, mdiSkipNext, mdiSkipPrevious, mdiPlay, mdiStop, mdiPause, mdiOpenInNew } from '@mdi/js'
 import LocalIndexMap from '~/components/visualization/local-index-map'
 import Scatter from '~/components/visualization/scatter'
 import Distribution from '~/components/visualization/distribution'
@@ -289,6 +289,7 @@ export default {
       mdiPlay,
       mdiStop,
       mdiPause,
+      mdiOpenInNew,
       show: {
         title: false
       },

@@ -97,7 +97,7 @@
                       <v-card class="pa-1">
                         <v-img width="220" contain :src="layer.legend" />
                         <v-card-text>
-                          Quelle: Land NRW unter <a href="http://www.govdata.de/dl-de/by-2-0" target="_blank">dl-de/by-2-0</a>
+                          {{ $t('gis_source_description') }} <a href="http://www.govdata.de/dl-de/by-2-0" target="_blank">dl-de/by-2-0</a>
                         </v-card-text>
                       </v-card>
                     </v-menu>
