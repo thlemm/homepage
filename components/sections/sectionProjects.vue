@@ -71,8 +71,10 @@
 <script>
 import { mdiAnchor, mdiChartBarStacked, mdiCellphoneText, mdiHandSaw } from '@mdi/js'
 import ProjectTile from '~/components/tiles/projectTile'
-import projectInfo from '~/static/projects/projectInfo.json'
-import contributionInfo from '~/static/projects/contributionInfo.json'
+import projectInfoDe from '~/static/projects/projectInfoDe.json'
+import contributionInfoDe from '~/static/projects/contributionInfoDe.json'
+import projectInfoEn from '~/static/projects/projectInfoEn.json'
+import contributionInfoEn from '~/static/projects/contributionInfoEn.json'
 
 export default {
   name: 'SectionProjects',
@@ -84,9 +86,24 @@ export default {
       mdiChartBarStacked,
       mdiCellphoneText,
       mdiHandSaw,
-      isMobile: false,
-      projects: projectInfo,
-      contributions: contributionInfo
+      isMobile: false
+    }
+  },
+
+  computed: {
+    projects () {
+      if (this.$i18n.locale === 'de') {
+        return projectInfoDe
+      } else {
+        return projectInfoEn
+      }
+    },
+    contributions () {
+      if (this.$i18n.locale === 'de') {
+        return contributionInfoDe
+      } else {
+        return contributionInfoEn
+      }
     }
   },
 
@@ -94,6 +111,11 @@ export default {
     this.onResize()
 
     window.addEventListener('resize', this.onResize, { passive: true })
+
+    if (this.$i18n.locale === 'de') {
+      this.projects = projectInfoDe
+      this.contributions = contributionInfoDe
+    }
   },
 
   beforeDestroy () {
