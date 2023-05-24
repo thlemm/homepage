@@ -5,7 +5,8 @@
     <section-projects id="projects" />
     <section-experience id="experience" :is-mobile="isMobile" />
     <section-more id="more" />
-    <section-contact id="contact" />
+    <section-talks id="talks" />
+    <section-contact id="contact" :is-mobile="isMobile" />
   </div>
 </template>
 
@@ -17,10 +18,11 @@ import SectionExperience from '~/components/sections/sectionExperience'
 import SectionContact from '~/components/sections/sectionContact'
 import SectionDetails from '~/components/sections/sectionDetails'
 import SectionProjects from '~/components/sections/sectionProjects'
+import SectionTalks from '~/components/sections/sectionTalks'
 
 export default {
   name: 'Index',
-  components: { SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
+  components: { SectionTalks, SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
 
   data () {
     return {
