@@ -25,20 +25,26 @@
     "tags": [
       { "tag": "javascript", "color": "primary", "link": "https://de.wikipedia.org/wiki/JavaScript" },
       { "tag": "java", "color": "primary", "link": "https://de.wikipedia.org/wiki/Java_(Programmiersprache)" },
+      { "tag": "python", "color": "primary", "link": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)" },
+      { "tag": "apache kafka", "color": "secondary", "link": "https://kafka.apache.org/" },
       { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
-      { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" }],
+      { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" }
+    ],
     "link": "https://www.sfbtrr339.de/de/projekt/projektbereich-b/b01",
     "extern": true
   },
   {
     "title": "BIMxD-Bauwerksmonitoring",
-    "text": "Forschungsprojekt: Sensor- und BIM-basiertes Bauwerksmonitoring von Wasserbauwerken",
+    "text": "Forschungsprojekt: BIM-basiertes Bauwerksmonitoring von Wasserbauwerken",
     "img": "/projects/bwm.png",
     "tags": [
-      { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
       { "tag": "sql", "color": "primary", "link": "https://de.wikipedia.org/wiki/SQL" },
+      { "tag": "python", "color": "primary", "link": "https://de.wikipedia.org/wiki/Python_(Programmiersprache)" },
+      { "tag": "mqtt", "color": "primary", "link": "https://mqtt.org/" },
       { "tag": "postgres", "color": "tertiary", "link": "https://www.postgresql.org/" },
-      { "tag": "postgis", "color": "tertiary", "link": "https://postgis.net/" }
+      { "tag": "postgis", "color": "tertiary", "link": "https://postgis.net/" },
+      { "tag": "BIM", "color": "error", "link": "https://de.wikipedia.org/wiki/Building_Information_Modeling" },
+      { "tag": "IoT", "color": "error", "link": "https://de.wikipedia.org/wiki/Internet_der_Dinge" }
     ],
     "link": "http://www.gia.rwth-aachen.de/BIMxD-Bauwerksmonitoring",
     "extern": true
