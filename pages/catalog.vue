@@ -44,6 +44,8 @@
                 cycle
                 hide-delimiter-background
                 :delimiter-icon="mdiMinus"
+                :prev-icon="mdiChevronLeft"
+                :next-icon="mdiChevronRight"
               >
                 <v-carousel-item
                   v-for="(item,i) in items"
@@ -112,7 +114,7 @@
 </template>
 
 <script>
-import { mdiMinus, mdiArrowLeft } from '@mdi/js'
+import { mdiMinus, mdiArrowLeft, mdiChevronLeft, mdiChevronRight } from '@mdi/js'
 import PageTitle from '~/components/main/pageTitle'
 import ActionBackHome from '~/components/main/actionBackHome'
 
@@ -123,6 +125,8 @@ export default {
     return {
       mdiMinus,
       mdiArrowLeft,
+      mdiChevronLeft,
+      mdiChevronRight,
       show: {
         title: false
       },
