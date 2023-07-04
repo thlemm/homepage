@@ -91,11 +91,6 @@ export default {
     langDir: 'locales/',
     strategy: 'no_prefix',
     locales: [{
-      code: 'en',
-      name: 'English',
-      iso: 'en-US',
-      file: 'en.json'
-    }, {
       code: 'de',
       name: 'Deutsch',
       iso: 'de-DE',
