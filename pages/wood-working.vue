@@ -117,11 +117,11 @@ export default {
         },
         {
           src: '/woodworking/christmas/kerzen_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_christmas_kerzen_1')
         },
         {
           src: '/woodworking/christmas/wichtel_1.jpg',
-          description: this.$t('lorem_ipsum_1')
+          description: this.$t('wood_working_description_christmas_wichtel_1')
         }
       ],
       klavier: [

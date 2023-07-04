@@ -13,6 +13,8 @@
         class="ma-0 pa-0"
         height="auto"
         :delimiter-icon="mdiMinus"
+        :prev-icon="mdiChevronLeft"
+        :next-icon="mdiChevronRight"
       >
         <v-carousel-item
           v-for="(item,i) in images"
@@ -47,7 +49,7 @@
 </template>
 
 <script>
-import { mdiMinus } from '@mdi/js'
+import { mdiMinus, mdiChevronLeft, mdiChevronRight } from '@mdi/js'
 
 export default {
   name: 'ImageCarousel',
@@ -69,7 +71,9 @@ export default {
 
   data () {
     return {
-      mdiMinus
+      mdiMinus,
+      mdiChevronLeft,
+      mdiChevronRight
     }
   }
 }
