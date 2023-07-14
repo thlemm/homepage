@@ -6,7 +6,7 @@
       justify="center"
     >
       <span class="text-h4 primary--text pa-2">
-        {{ $t('section_title_talks') }}
+        {{ $t('section_title_publications') }}
       </span>
     </v-row>
     <v-row
@@ -20,19 +20,19 @@
           align="center"
           justify="center"
         >
-          <talk-tile
-            v-for="(talk, i) in talks"
+          <publication-tile
+            v-for="(publication, i) in publications"
             :key="i"
             :height="50"
             :width="'88%'"
-            :conference="talk.conference"
-            :host="talk.host"
-            :color-tile="'light'"
+            :title="publication.title"
+            :issue="publication.issue"
+            :color-tile="publication.color"
             :color-text="'black'"
-            :topic="talk.topic"
-            :date="talk.date"
-            :to="talk.link"
-            :extern="talk.extern"
+            :publisher="publication.publisher"
+            :date="publication.date"
+            :to="publication.link"
+            :extern="publication.extern"
             :is-mobile="isMobile"
           />
         </v-row>
@@ -42,12 +42,12 @@
 </template>
 
 <script>
-import TalkTile from '~/components/tiles/talkTile'
-import talks from '~/static/talks/talks.json'
+import publications from '~/static/publications/publications.json'
+import PublicationTile from '~/components/tiles/publicationTile'
 
 export default {
-  name: 'SectionTalks',
-  components: { TalkTile },
+  name: 'SectionPublications',
+  components: { PublicationTile },
 
   props: {
     isMobile: {
@@ -58,7 +58,7 @@ export default {
 
   data () {
     return {
-      talks
+      publications
     }
   }
 }

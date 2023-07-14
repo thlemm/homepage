@@ -6,7 +6,9 @@ Object.defineProperty(exports, '__esModule', {
 exports.default = undefined
 
 const blue = Object.freeze({
-  base: '#294965'
+  base: '#294965',
+  lighten_50: '#7ca5c9',
+  lighten_70: '#b0c9df'
 })
 
 const green = Object.freeze({
@@ -21,7 +23,8 @@ const beige = Object.freeze({
 const red = Object.freeze({
   base: '#70161E',
   lighten_40: '#d9424f',
-  lighten_50: '#e0616d'
+  lighten_50: '#e0616d',
+  lighten_70: '#eca0a7'
 })
 
 const purple = Object.freeze({
