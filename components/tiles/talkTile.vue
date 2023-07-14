@@ -3,7 +3,7 @@
     :width="width"
     :elevation="hover ? 3 : 0"
     :color="colorTile"
-    class="pt-3 pb-2 ma-3"
+    :class="isMobile ? 'pt-7 pb-4 ma-3' : 'pt-3 pb-2 ma-3'"
     :href="to"
     :target="extern ? '_blank' : '_self'"
     @mouseover="hover = true"
@@ -24,7 +24,7 @@
           {{ conference }}
         </v-card-title>
         <v-card-subtitle class="subtitle-2 ma-0 pa-0" style="word-break: break-word;">
-          {{ host }}, {{ date }}
+          {{ date }}, {{ host }}
         </v-card-subtitle>
         <v-card-text class="subtitle-1 ma-0 pa-0">
           {{ topic }}
