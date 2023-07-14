@@ -1,0 +1,34 @@
+[
+  {
+    "conference": "29. Forum Bauinformatik",
+    "host": "Technische Universität Dresden",
+    "topic": "Enhanced M-Bus Metering with Microprocessor Control Units for Building Energy Monitoring",
+    "date": "08. September 2017",
+    "link": "",
+    "extern": false
+  },
+  {
+    "conference": "FOSSGIS Konferenz 2022",
+    "host": "Philipps Universität Marburg (Online-Event)",
+    "topic": "OpenGeoResearch - Eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen",
+    "date": "10. März 2022",
+    "link": "https://pretalx.com/fossgis2022/talk/PV7LTS/",
+    "extern": true
+  },
+  {
+    "conference": "Forum Citizen Science 2022",
+    "host": "Hochschule Bonn-Rhein-Sieg",
+    "topic": "OpenGeoResearch - Eine partizipative Plattform für wissenschaftlicheraumbezogene Fragestellungen",
+    "date": "13. Mai 2022",
+    "link": "https://www.buergerschaffenwissen.de/veranstaltungen/forum-citizen-science-2022/programm",
+    "extern": true
+  },
+  {
+    "conference": "ECSA 2022 Conference: Citizen Science for Planetary Health",
+    "host": "Museum für Naturkunde Berlin",
+    "topic": "OpenGeoResearch – A citizen science platform to collect geospatial research questions for planetary health",
+    "date": "07. Oktober 2022",
+    "link": "https://ecsa.ngo/past_conferences/2022/Programme.html",
+    "extern": true
+  }
+]
