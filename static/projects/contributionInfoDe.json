@@ -67,11 +67,13 @@
     "extern": true
   },
   {
-    "title": "RiverCloud",
-    "text": "Forschungsprojekt: UAV/USV-Tandemsystem für Management und Unterhaltung von Wasserstraßen",
+    "title": "RiverCloud (Hackathon)",
+    "text": "Organisation eines Hackathons mit Studierenden im Rahmen des Forschungsprojekts RiverCloud: UAV/USV-Tandemsystem für Management und Unterhaltung von Wasserstraßen",
     "img": "/projects/rivercloud.png",
     "tags": [
-      { "tag": "gis", "color": "error", "link": "https://de.wikipedia.org/wiki/Geoinformationssystem" }
+      { "tag": "gis", "color": "error", "link": "https://de.wikipedia.org/wiki/Geoinformationssystem" },
+      { "tag": "spatial analysis", "color": "error", "link": "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/spatial-analysis" },
+      { "tag": "R", "color": "primary", "link": "https://de.wikipedia.org/wiki/R_(Programmiersprache)" }
     ],
     "link": "https://hackathon.gia.rwth-aachen.de",
     "extern": true
