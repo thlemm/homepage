@@ -58,7 +58,7 @@
         {{ title }}
       </v-card-title>
       <v-card-text class="ma-0 pa-0">
-        Issued by <a :href="issuerLink">{{ issuerName }}</a>
+        Issued by <a :href="issuerLink" target="_blank">{{ issuerName }}</a>
       </v-card-text>
       <v-card-text class="ma-0 pa-0 mt-2">
         <v-chip
