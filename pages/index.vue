@@ -4,7 +4,7 @@
     <section-details id="details" />
     <section-projects id="projects" :is-mobile="isMobile" />
     <section-experience id="experience" :is-mobile="isMobile" />
-    <section-more id="more" />
+    <section-more id="more" :is-mobile="isMobile" />
     <section-publications id="talks" :is-mobile="isMobile" />
     <section-talks id="talks" :is-mobile="isMobile" />
     <section-contact id="contact" :is-mobile="isMobile" />
