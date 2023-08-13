@@ -5,6 +5,7 @@
     <section-projects id="projects" :is-mobile="isMobile" />
     <section-experience id="experience" :is-mobile="isMobile" />
     <section-more id="more" :is-mobile="isMobile" />
+    <section-certs id="certs" :is-mobile="isMobile" />
     <section-publications id="talks" :is-mobile="isMobile" />
     <section-talks id="talks" :is-mobile="isMobile" />
     <section-contact id="contact" :is-mobile="isMobile" />
@@ -21,10 +22,11 @@ import SectionDetails from '~/components/sections/sectionDetails'
 import SectionProjects from '~/components/sections/sectionProjects'
 import SectionTalks from '~/components/sections/sectionTalks'
 import SectionPublications from '~/components/sections/sectionPublications'
+import SectionCerts from '~/components/sections/sectionCerts'
 
 export default {
   name: 'Index',
-  components: { SectionPublications, SectionTalks, SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
+  components: { SectionCerts, SectionPublications, SectionTalks, SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
 
   data () {
     return {
