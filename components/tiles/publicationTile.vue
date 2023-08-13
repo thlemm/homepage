@@ -3,7 +3,7 @@
     :width="width"
     :elevation="hover ? 3 : 0"
     :color="colorTile"
-    :class="isMobile ? 'pt-7 pb-4 ma-3 pr-5' : 'pt-3 pb-2 ma-3 pr-5'"
+    :class="isMobile ? 'pt-7 pb-4 ma-3 pr-7' : 'pt-3 pb-2 ma-3 pr-7'"
     :href="to"
     :target="extern ? '_blank' : '_self'"
     @mouseover="hover = true"
@@ -21,22 +21,22 @@
     <v-list-item v-if="!isMobile">
       <v-list-item-content class="mx-0">
         <v-card-title class="title ma-0 pa-0" style="word-break: break-word;">
-          {{ topic }}
+          {{ title }}
         </v-card-title>
         <v-card-subtitle class="subtitle-2 ma-0 pa-0" style="word-break: break-word;">
-          {{ date }}, {{ host }}
+          {{ date }}, {{ issue }}
         </v-card-subtitle>
         <v-card-text class="subtitle-1 ma-0 pa-0">
-          {{ conference }}
+          {{ publisher }}
         </v-card-text>
       </v-list-item-content>
     </v-list-item>
     <v-container v-else>
       <v-card-title class="title ma-0 pa-0" style="word-break: break-word;">
-        {{ topic }}
+        {{ title }}
       </v-card-title>
       <v-card-text class="ma-0 pa-0">
-        {{ conference }}
+        {{ publisher }}
       </v-card-text>
     </v-container>
   </v-card>
@@ -46,7 +46,7 @@
 import { mdiOpenInNew } from '@mdi/js'
 
 export default {
-  name: 'TalkTile',
+  name: 'PublicationTile',
 
   props: {
     width: {
@@ -59,15 +59,15 @@ export default {
       required: false,
       default: 300
     },
-    conference: {
+    title: {
       type: String,
       required: true
     },
-    topic: {
+    publisher: {
       type: String,
       required: true
     },
-    host: {
+    issue: {
       type: String,
       required: true
     },

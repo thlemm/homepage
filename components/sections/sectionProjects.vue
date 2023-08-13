@@ -80,13 +80,19 @@ export default {
   name: 'SectionProjects',
   components: { ProjectTile },
 
+  props: {
+    isMobile: {
+      type: Boolean,
+      required: true
+    }
+  },
+
   data () {
     return {
       mdiAnchor,
       mdiChartBarStacked,
       mdiCellphoneText,
-      mdiHandSaw,
-      isMobile: false
+      mdiHandSaw
     }
   },
 
@@ -104,29 +110,6 @@ export default {
       } else {
         return contributionInfoEn
       }
-    }
-  },
-
-  mounted () {
-    this.onResize()
-
-    window.addEventListener('resize', this.onResize, { passive: true })
-
-    if (this.$i18n.locale === 'de') {
-      this.projects = projectInfoDe
-      this.contributions = contributionInfoDe
-    }
-  },
-
-  beforeDestroy () {
-    if (typeof window === 'undefined') { return }
-
-    window.removeEventListener('resize', this.onResize, { passive: true })
-  },
-
-  methods: {
-    onResize () {
-      this.isMobile = window.innerWidth < 900
     }
   }
 }

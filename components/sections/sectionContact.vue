@@ -49,10 +49,6 @@ export default {
         icon: mdiLinkedin,
         tooltip: this.$t('contact_button_tooltip_linkedin'),
         link: this.$t('contact_button_link_linkedin')
-      }, {
-        icon: mdiEmail,
-        tooltip: this.$t('contact_button_tooltip_email'),
-        link: 'mailto:' + this.$t('details_mail')
       }]
     }
   }

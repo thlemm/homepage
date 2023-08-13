@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Geostatistics on Real-Time Geodata Streams—An Extended Spatiotemporal Moran’s I Index with Distributed Stream Processing Technologies",
+    "publisher": "ISPRS International Journal of Geo-Information",
+    "issue": "Special Issue GIS Software and Engineering for Big Data",
+    "date": "22. Februar 2023",
+    "link": "https://doi.org/10.3390/ijgi12030087",
+    "extern": true,
+    "color": "#eca0a7"
+  },
+  {
+    "title": "OpenGeoResearch: Eine partizipative Plattform für wissenschaftliche raumbezogene Fragestellungen",
+    "publisher": "gis.Business: Das Magazin für Geoinformation",
+    "issue": "Ausgabe 1/2023",
+    "date": "31. Januar 2023",
+    "link": "https://gispoint.de/artikelarchiv/gis/2023/gisbusiness-ausgabe-12023/7657-involvieren-statt-informieren-schafft-mehr-wissen-mit-oeffentlichen-daten-von-buergern-fuer-buerger.html",
+    "extern": true,
+    "color": "light"
+  },
+  {
+    "title": "Projekt GeoWaermeWende - Monitoring eines geothermisch gespeisten kalten Nahwärmenetzes zur Validierung eines Simulationsmodells als Analyse- und Planungstool für Neubau- und Nachrüstprojekte",
+    "publisher": "GeoTHERM 2023, Offenburg ",
+    "issue": "Bd. 2 (2023): GeoTHERM Abstract-Band",
+    "date": "3. März 2023",
+    "link": "https://geotherm-journal.com/index.php/gtj/article/view/69",
+    "extern": true,
+    "color": "light"
+  },
+  {
+    "title": "Enhanced M-Bus Metering with Microprocessor Control Units for Building Energy Monitoring",
+    "publisher": "29. Forum Bauinformatik, Dresden",
+    "issue": "Tagungsband 29. Forum Bauinformatik",
+    "date": "08. September 2017",
+    "link": "",
+    "extern": false,
+    "color": "light"
+  }
+]

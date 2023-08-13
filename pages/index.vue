@@ -2,10 +2,11 @@
   <div>
     <section-image id="image" :is-mobile="isMobile" />
     <section-details id="details" />
-    <section-projects id="projects" />
+    <section-projects id="projects" :is-mobile="isMobile" />
     <section-experience id="experience" :is-mobile="isMobile" />
-    <section-more id="more" />
-    <section-talks id="talks" />
+    <section-more id="more" :is-mobile="isMobile" />
+    <section-publications id="talks" :is-mobile="isMobile" />
+    <section-talks id="talks" :is-mobile="isMobile" />
     <section-contact id="contact" :is-mobile="isMobile" />
   </div>
 </template>
@@ -19,10 +20,11 @@ import SectionContact from '~/components/sections/sectionContact'
 import SectionDetails from '~/components/sections/sectionDetails'
 import SectionProjects from '~/components/sections/sectionProjects'
 import SectionTalks from '~/components/sections/sectionTalks'
+import SectionPublications from '~/components/sections/sectionPublications'
 
 export default {
   name: 'Index',
-  components: { SectionTalks, SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
+  components: { SectionPublications, SectionTalks, SectionProjects, SectionDetails, SectionContact, SectionExperience, SectionImage, SectionMore },
 
   data () {
     return {
