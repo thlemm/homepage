@@ -31,7 +31,7 @@
             issuer-link="https://www.credly.com/organizations/scrum-org/badges"
             badge="certs/professional-scrum-master-i-psm-i.png"
             :skills="['Agile', 'PSM', 'Scrum', 'Scrum Master']"
-            to="https://www.credly.com/earner/earned/badge/3a3d2010-badc-4cfb-8897-517e3ede7e39"
+            to="https://www.credly.com/badges/3a3d2010-badc-4cfb-8897-517e3ede7e39/public_url"
             :extern="true"
           />
         </v-row>
