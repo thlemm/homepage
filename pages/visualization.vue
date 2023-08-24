@@ -254,9 +254,10 @@
             <v-card-text class="mb-3 text-subtitle-1">
               {{ $t('further_info_and_links') }}
               <ul>
-                <li>{{ $t('stream_processing_link_description_1') }} <a :href="$t('stream_processing_link_address_1')" target="_self">{{ $t('stream_processing_link_alias_1') }}</a></li>
                 <li>{{ $t('geostatistics_link_description_2') }} <a :href="$t('geostatistics_link_address_2')" target="_self">{{ $t('geostatistics_link_alias_2') }}</a></li>
-                <li>{{ $t('visualization_link_description_1') }} <a :href="$t('visualization_link_address_1')" target="_blank">{{ $t('visualization_link_alias_1') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>{{ $t('visualization_link_description_1') }} <a :href="$t('visualization_link_address_1')" target="_blank">{{ $t('visualization_link_alias_1') }}</a></li>
+                <li>{{ $t('stream_processing_link_description_1') }} <a :href="$t('stream_processing_link_address_1')" target="_self">{{ $t('stream_processing_link_alias_1') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>{{ $t('geostatistics_link_description_3') }} <a :href="$t('geostatistics_link_address_3')" target="_self">{{ $t('geostatistics_link_alias_3') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
               </ul>
             </v-card-text>
           </v-col>

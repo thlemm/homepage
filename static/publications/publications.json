@@ -1,5 +1,14 @@
 [
   {
+    "title": "Geostatistics on Real-Time Geodata Streams—High-Frequent Dynamic Autocorrelation with an Extended Spatiotemporal Moran’s I Index",
+    "publisher": "ISPRS International Journal of Geo-Information",
+    "issue": "Special Issue Urban Geospatial Analytics Based on Crowdsourced Data",
+    "date": "24. August 2023",
+    "link": "https://doi.org/10.3390/ijgi12090350",
+    "extern": true,
+    "color": "#eca0a7"
+  },
+  {
     "title": "Geostatistics on Real-Time Geodata Streams—An Extended Spatiotemporal Moran’s I Index with Distributed Stream Processing Technologies",
     "publisher": "ISPRS International Journal of Geo-Information",
     "issue": "Special Issue GIS Software and Engineering for Big Data",

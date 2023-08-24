@@ -37,7 +37,7 @@
             <v-card-text class="mb-3 text-subtitle-1">
               {{ $t('further_info_and_links') }}
               <ul>
-                <li>{{ $t('stream_processing_link_description_1') }} <a :href="$t('stream_processing_link_address_1')" target="_self">{{ $t('stream_processing_link_alias_1') }}</a></li>
+                <li>{{ $t('stream_processing_link_description_1') }} <a :href="$t('stream_processing_link_address_1')" target="_blank">{{ $t('stream_processing_link_alias_1') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
               </ul>
             </v-card-text>
             <v-card-text class="mb-3 text-subtitle-1">
@@ -55,7 +55,7 @@
 
 <script>
 
-import { mdiFormatQuoteOpen } from '@mdi/js'
+import { mdiFormatQuoteOpen, mdiOpenInNew } from '@mdi/js'
 import PageTitle from '~/components/main/pageTitle'
 import ActionBackHome from '~/components/main/actionBackHome'
 
@@ -66,6 +66,7 @@ export default {
   data () {
     return {
       mdiFormatQuoteOpen,
+      mdiOpenInNew,
       show: {
         title: false
       },
