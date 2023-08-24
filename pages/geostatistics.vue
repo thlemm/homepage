@@ -58,7 +58,7 @@
               <ul>
                 <li>{{ $t('geostatistics_link_description_1') }} <a :href="$t('geostatistics_link_address_1')" target="_self">{{ $t('geostatistics_link_alias_1') }}</a></li>
                 <li>{{ $t('geostatistics_link_description_2') }} <a :href="$t('geostatistics_link_address_2')" target="_self">{{ $t('geostatistics_link_alias_2') }}</a></li>
-                <li>{{ $t('geostatistics_link_description_3') }} <a :href="$t('geostatistics_link_address_3')" target="_self">{{ $t('geostatistics_link_alias_3') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
+                <li>{{ $t('geostatistics_link_description_3') }} <a :href="$t('geostatistics_link_address_3')" target="_blank">{{ $t('geostatistics_link_alias_3') }} <v-icon small>{{ mdiOpenInNew }}</v-icon></a></li>
 
               </ul>
             </v-card-text>
