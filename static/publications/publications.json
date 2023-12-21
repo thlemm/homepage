@@ -1,5 +1,14 @@
 [
   {
+    "title": "GeoWaermeWende - Empowering Low-Temperature District Heating and Cooling Networks with Comprehensive Geospatial Monitoring, Multi-Purpose Simulation Approaches, and User-Centric Planning Tools",
+    "publisher": "GeoTHERM expo & congress 2023",
+    "issue": "GeoTHERM-Journal 1",
+    "date": "20. Dezember 2023",
+    "link": "https://doi.org/10.53196/gtj-2023.1",
+    "extern": true,
+    "color": "light"
+  },
+  {
     "title": "Geostatistics on Real-Time Geodata Streams—High-Frequent Dynamic Autocorrelation with an Extended Spatiotemporal Moran’s I Index",
     "publisher": "ISPRS International Journal of Geo-Information",
     "issue": "Special Issue Urban Geospatial Analytics Based on Crowdsourced Data",
@@ -23,15 +32,6 @@
     "issue": "Ausgabe 1/2023",
     "date": "31. Januar 2023",
     "link": "https://gispoint.de/artikelarchiv/gis/2023/gisbusiness-ausgabe-12023/7657-involvieren-statt-informieren-schafft-mehr-wissen-mit-oeffentlichen-daten-von-buergern-fuer-buerger.html",
-    "extern": true,
-    "color": "light"
-  },
-  {
-    "title": "Projekt GeoWaermeWende - Monitoring eines geothermisch gespeisten kalten Nahwärmenetzes zur Validierung eines Simulationsmodells als Analyse- und Planungstool für Neubau- und Nachrüstprojekte",
-    "publisher": "GeoTHERM 2023, Offenburg ",
-    "issue": "Bd. 2 (2023): GeoTHERM Abstract-Band",
-    "date": "3. März 2023",
-    "link": "https://geotherm-journal.com/index.php/gtj/article/view/69",
     "extern": true,
     "color": "light"
   },
